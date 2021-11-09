@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kemampuan;
 use App\Models\Team;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class TeamController extends Controller
 {
@@ -14,7 +16,8 @@ class TeamController extends Controller
      */
     public function index()
     {
-        return view('team.index');
+        $team = Team::orderBy('created_at', 'DESC')->paginate(10);
+        return view('team.index',compact('team'));
     }
 
     /**
@@ -25,6 +28,7 @@ class TeamController extends Controller
     public function create()
     {
         //
+        return view('team.create');
     }
 
     /**
@@ -36,6 +40,16 @@ class TeamController extends Controller
     public function store(Request $request)
     {
         //
+        $team = Team::create($request->only(['nama_team', 'jobdes', 'perusahaan', 'deskripsi']));
+        for ($nama_kemampuan = 0; $nama_kemampuan < count($request->nama_kemampuan); $nama_kemampuan++) {
+            $orderdetail = new Kemampuan;
+            $orderdetail->id_team = $team->id;
+            $orderdetail->nama_kemampuan = $request->nama_kemampuan[$nama_kemampuan];
+            $orderdetail->range_kemampuan = $request->range_kemampuan[$nama_kemampuan];
+            $orderdetail->save();
+        }
+        Alert::success('Berhasil !', 'Team berhasil di perbarui !');
+        return redirect()->route('team.index');
     }
 
     /**

@@ -8,5 +8,7 @@
     <li>
         <a href="{{ route('site.sc') }}"><i class="fas fa-chart-line"></i>Konfigurasi Situs</a>
     </li>
+    <li>
+        <a href="{{ route('team.index') }}"><i class="fas fa-chart-line"></i>Team</a>
+    </li>
 </ul>
-    

@@ -17,8 +17,14 @@ class CreateSiteConfigurationsTable extends Migration
             $table->id();
             $table->string('siteName');
             $table->string('siteDescription');
-            $table->string('siteLogo');
-            $table->string('siteFavicon');
+            $table->string('siteLogo')->nullable();
+            $table->string('siteFavicon')->nullable();
+            $table->text('alamat')->nullable();
+            $table->string('telponSatu')->nullable();
+            $table->string('telponDua')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('instagram')->nullable();
             $table->timestamps();
         });
     }

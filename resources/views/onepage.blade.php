@@ -42,7 +42,7 @@
 <header class="site-header">
    <nav class="navbar navbar-expand-lg fixed-bottom gradient_bg">
       <div class="container">
-         <a class="navbar-brand" href="index.html"> <img src=" {{ asset('images/logo-transparent')}}') }}" alt="logo"> </a>
+         <a class="navbar-brand" href="index.html"> <img src=" {{ asset('images/logo-transparent.png')}}') }}" alt="logo"> </a>
          <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#xenav">
             <span> </span>
             <span> </span>
@@ -161,7 +161,7 @@
       <div class="row">
          <div class="col-lg-6 nopadding">
             <div class="image img-container">
-               <img alt="" src="{{ asset('frontEnd/images/split-img1')}}" class="equalheight">
+               <img alt="" src="{{ asset('frontEnd/images/split-img1.jpg')}}" class="equalheight">
             </div>
          </div>
          <div class="col-lg-6 nopadding">
@@ -192,7 +192,7 @@
          </div>
          <div class="col-lg-6 nopadding">
             <div class="image img-container">
-               <img alt="" src="images/split-img2')}}" class="equalheight">
+               <img alt="" src="{{ asset('frontEnd/images/split-img2.jpg') }}" class="equalheight">
             </div>
          </div>
       </div>
@@ -260,7 +260,7 @@
            <div class="col-md-6 col-xs-12">
               <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
                <div class="image">
-                  <img src="{{ asset('frontEnd/images/team-4')}}" alt="">
+                  <img src="{{ asset('frontEnd/images/team-4.jpg')}}" alt="">
                </div>
                <div class="team-content gradient_bg whitecolor">
                   <h3>Johny Walkin.</h3>
@@ -281,7 +281,7 @@
            <div class="col-md-6 col-xs-12">
               <div class="team-box top60 wow fadeIn" data-wow-delay="400ms">
                <div class="image">
-                  <img src="{{ asset('frontEnd/images/team-5')}}" alt="">
+                  <img src="{{ asset('frontEnd/images/team-5.jpg')}}" alt="">
                </div>
                <div class="team-content gradient_bg_default whitecolor">
                   <h3>Peterson Walkin.</h3>
@@ -317,7 +317,7 @@
             <a href="#our-blog" class="button btnsecondary pagescroll">Our blog</a>
          </div>
          <div class="col-md-6 col-sm-5 wow fadeInRight" data-wow-delay="350ms">
-            <div class="image top50"><img alt="SEO" src="{{ asset('frontEnd/images/awesome--feature')}}"></div>
+            <div class="image top50"><img alt="SEO" src="{{ asset('frontEnd/images/awesome--feature.png')}}"></div>
          </div>
       </div>
    </div>
@@ -338,23 +338,23 @@
       </div>
       <div id="flat-gallery" class="cbp">
          <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/portfolio-5')}}" alt="">
+            <img src="{{ asset('frontEnd/images/portfolio-5.jpg')}}" alt="">
             <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/portfolio-5')}}"></a>
+               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/portfolio-5.jpg')}}"></a>
                <h4 class="top30">Wood Work</h4>
                <p>Small Portfolio Detail Here</p>
             </div>
          </div>
          <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/portfolio-6')}}" alt="">
+            <img src="{{ asset('frontEnd/images/portfolio-6.jpg')}}" alt="">
             <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/portfolio-6')}}"></a>
+               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/portfolio-6.jpg')}}"></a>
                <h4 class="top30">Wood Work</h4>
                <p>Small Portfolio Detail Here</p>
             </div>
          </div> 
          <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/portfolio-3')}}" alt="">
+            <img src="{{ asset('frontEnd/images/portfolio-3.jpg')}}" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0"></a>
                <h4 class="top30">Wood Work</h4>
@@ -362,25 +362,25 @@
             </div>
          </div>
          <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/portfolio-4')}}" alt="">
+            <img src="{{ asset('frontEnd/images/portfolio-4.jpg')}}" alt="">
             <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/portfolio-4')}}"></a>
+               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/portfolio-4.jpg')}}"></a>
                <h4 class="top30">Wood Work</h4>
                <p>Small Portfolio Detail Here</p>
             </div>
          </div>
          <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/portfolio-9')}}" alt="">
+            <img src="{{ asset('frontEnd/images/portfolio-9.jpg')}}" alt="">
             <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/portfolio-9')}}"></a>
+               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/portfolio-9.jpg')}}"></a>
                <h4 class="top30">Wood Work</h4>
                <p>Small Portfolio Detail Here</p>
             </div>
          </div>
          <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/portfolio-8')}}" alt="">
+            <img src="{{ asset('frontEnd/images/portfolio-8.jpg')}}" alt="">
             <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/portfolio-8')}}"></a>
+               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/portfolio-8.jpg')}}"></a>
                <h4 class="top30">Wood Work</h4>
                <p>Small Portfolio Detail Here</p>
             </div>
@@ -429,7 +429,7 @@
          </div>
          <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="image feature-item text-center wow fadeIn" data-wow-delay="500ms">
-               <img src="{{ asset('frontEnd/images/responsive')}}" alt="">
+               <img src="{{ asset('frontEnd/images/responsive.png')}}" alt="">
             </div>
          </div>
          <div class="col-lg-4 col-md-4 col-sm-12">
@@ -612,7 +612,7 @@
                      <div class="testimonial-text">
                         <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                      </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-1')}}"></div>
+                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-1.jpg')}}"></div>
                      <h4 class="darkcolor">David Raleway</h4>
                      <small class="defaultcolor">Businessman</small>
                   </div>
@@ -623,7 +623,7 @@
                      <div class="testimonial-text">
                         <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                      </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-2')}}"></div>
+                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-2.jpg')}}"></div>
                      <h4 class="darkcolor">Sam Billings</h4>
                      <small class="defaultcolor">Businessman</small>
                   </div>
@@ -634,7 +634,7 @@
                      <div class="testimonial-text">
                         <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                      </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3')}}"></div>
+                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3.jpg')}}"></div>
                      <h4 class="darkcolor">Jatinder Shahg</h4>
                      <small class="defaultcolor">Businessman</small>
                   </div>
@@ -645,7 +645,7 @@
                      <div class="testimonial-text">
                         <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                      </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-1')}}"></div>
+                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-1.jpg')}}"></div>
                      <h4 class="darkcolor">David Zucker</h4>
                      <small class="defaultcolor">Businessman</small>
                   </div>
@@ -656,7 +656,7 @@
                      <div class="testimonial-text">
                         <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                      </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-2')}}"></div>
+                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-2.jpg')}}"></div>
                      <h4 class="darkcolor">Akten Jansen</h4>
                      <small class="defaultcolor">Businessman</small>
                   </div>
@@ -667,7 +667,7 @@
                      <div class="testimonial-text">
                         <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                      </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3')}}"></div>
+                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3.jpg')}}"></div>
                      <h4 class="darkcolor">Doe Raleway</h4>
                      <small class="defaultcolor">Businessman</small>
                   </div>
@@ -678,7 +678,7 @@
                      <div class="testimonial-text">
                         <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                      </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-1')}}"></div>
+                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-1.jpg')}}"></div>
                      <h4 class="darkcolor">Shamoun Raleway</h4>
                      <small class="defaultcolor">Businessman</small>
                   </div>
@@ -689,7 +689,7 @@
                      <div class="testimonial-text">
                         <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                      </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3')}}"></div>
+                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3.jpg')}}"></div>
                      <h4 class="darkcolor">Albugdadi Raleway</h4>
                      <small class="defaultcolor">Businessman</small>
                   </div>
@@ -700,7 +700,7 @@
                      <div class="testimonial-text">
                         <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                      </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3')}}"></div>
+                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3.jpg')}}"></div>
                      <h4 class="darkcolor">Albugdadi Raleway</h4>
                      <small class="defaultcolor">Businessman</small>
                   </div>
@@ -721,34 +721,34 @@
          <div class="col-md-12 col-sm-12">
             <div id="partners-slider" class="owl-carousel">
                <div class="item">
-                  <div class="logo-item"> <img alt="" src="{{ asset('frontEnd/images/logo-1')}}"></div>
+                  <div class="logo-item"> <img alt="" src="{{ asset('frontEnd/images/logo-1.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-2')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-2.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-3')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-3.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-4')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-4.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-5')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-5.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-1')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-1.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-2')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-2.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="images/logo-3')}}"></div>
+                  <div class="logo-item"><img alt="" src="images/logo-3.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-4')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-4.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-5')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/logo-5.png')}}"></div>
                </div>
             </div>
          </div>
@@ -763,7 +763,7 @@
    <div class="container-fluid">
       <div class="row">
          <div class="col-md-6 col-sm-6 nopadding">
-            <div class="image hover-effect"><img src="{{ asset('frontEnd/images/split-blog')}}" alt="our blog" class="equalheight"></div>
+            <div class="image hover-effect"><img src="{{ asset('frontEnd/images/split-blog.jpg')}}" alt="our blog" class="equalheight"></div>
          </div>
          <div class="col-md-6 col-sm-6">
             <div class="split-box text-center center-block equalheight container-padding">
@@ -885,62 +885,62 @@
 
 
 <!-- jQuery first, then Popper')}}, then Bootstrap JS -->
-<script src="{{ asset('frontEnd/bootstrap.min')}}"></script>
-<script src="{{ asset('frontEnd/jquery-3.6.0.min')}}"></script>
+<script src="{{ asset('frontEnd/js/bootstrap.min.js')}}"></script>
+<script src="{{ asset('frontEnd/js/jquery-3.6.0.min.js')}}"></script>
 
 <!--Bootstrap Core-->
-<script src="{{ asset('frontEnd/popper.min')}}"></script>
+<script src="{{ asset('frontEnd/js/popper.min.js')}}"></script>
 
 
 <!--to view items on reach-->
-<script src="{{ asset('frontEnd/jquery.appear')}}"></script>
+<script src="{{ asset('frontEnd/js/jquery.appear.js')}}"></script>
 
 <!--Equal-Heights-->
-<script src="{{ asset('frontEnd/jquery.matchHeight-min')}}"></script>
+<script src="{{ asset('frontEnd/js/jquery.matchHeight-min.js')}}"></script>
 
 <!--Owl Slider-->
-<script src="{{ asset('frontEnd/owl.carousel.min')}}"></script>
+<script src="{{ asset('frontEnd/js/owl.carousel.min.js')}}"></script>
 
 <!--number counters-->
-<script src="{{ asset('frontEnd/jquery-countTo')}}"></script>
+<script src="{{ asset('frontEnd/js/jquery-countTo.js')}}"></script>
  
 <!--Parallax Background-->
-<script src="{{ asset('frontEnd/parallaxie')}}"></script>
+<script src="{{ asset('frontEnd/js/parallaxie.js')}}"></script>
   
 <!--Cubefolio Gallery-->
-<script src="{{ asset('frontEnd/jquery.cubeportfolio.min')}}"></script>
+<script src="{{ asset('frontEnd/js/jquery.cubeportfolio.min.js')}}"></script>
 
 <!--FancyBox popup-->
-<script src="{{ asset('frontEnd/jquery.fancybox.min')}}"></script>         
+<script src="{{ asset('frontEnd/js/jquery.fancybox.min.js')}}"></script>         
 
 <!-- Video Background-->
-<script src="{{ asset('frontEnd/jquery.background-video')}}"></script>
+<script src="{{ asset('frontEnd/js/jquery.background-video.js')}}"></script>
 
 <!--TypeWriter-->
-<script src="{{ asset('frontEnd/typewriter')}}"></script> 
+<script src="{{ asset('frontEnd/js/typewriter.js')}}"></script> 
       
 <!--Particles-->
-<script src="{{ asset('frontEnd/particles.min')}}"></script>            
+<script src="{{ asset('frontEnd/js/particles.min.js')}}"></script>            
         
 <!--WOw animations-->
-<script src="{{ asset('frontEnd/wow.min')}}"></script>
+<script src="{{ asset('frontEnd/js/wow.min.js')}}"></script>
              
 <!--Revolution SLider-->
-<script src="{{ asset('frontEnd/revolution/jquery.themepunch.tools.min')}}"></script>
-<script src="{{ asset('frontEnd/revolution/jquery.themepunch.revolution.min')}}"></script>
+<script src="{{ asset('frontEnd/js/revolution/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{ asset('frontEnd/js/revolution/jquery.themepunch.revolution.min.js')}}"></script>
 <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script src="{{ asset('frontEnd/revolution/extensions/revolution.extension.actions.min')}}"></script>
-<script src="{{ asset('frontEnd/revolution/extensions/revolution.extension.carousel.min')}}"></script>
-<script src="{{ asset('frontEnd/revolution/extensions/revolution.extension.kenburn.min')}}"></script>
-<script src="{{ asset('frontEnd/revolution/extensions/revolution.extension.layeranimation.min')}}"></script>
-<script src="{{ asset('frontEnd/revolution/extensions/revolution.extension.migration.min')}}"></script>
-<script src="{{ asset('frontEnd/revolution/extensions/revolution.extension.navigation.min')}}"></script>
-<script src="{{ asset('frontEnd/revolution/extensions/revolution.extension.parallax.min')}}"></script>
-<script src="{{ asset('frontEnd/revolution/extensions/revolution.extension.slideanims.min')}}"></script>
-<script src="{{ asset('frontEnd/revolution/extensions/revolution.extension.video.min')}}"></script>  
+<script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.actions.min.js')}}"></script>
+<script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.carousel.min.js')}}"></script>
+<script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.kenburn.min.js')}}"></script>
+<script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+<script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.migration.min.js')}}"></script>
+<script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.navigation.min.js')}}"></script>
+<script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.parallax.min.js')}}"></script>
+<script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.slideanims.min.js')}}"></script>
+<script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.video.min.js')}}"></script>  
 		
 <!--Google Map API-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJnKEvlwpyjXfS_h-J1Cne2fPMqeb44Mk"></script>
-<script src="{{ asset('frontEnd/functions')}}"></script>	
+<script src="{{ asset('frontEnd/js/functions.js')}}"></script>	
 </body>
 </html>

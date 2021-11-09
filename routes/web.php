@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\SiteConfigController;
 use Illuminate\Support\Facades\Route;
-
-
+use App\Http\Controllers\LayoutController;
+use App\Http\Controllers\TeamController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,12 +18,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('onepage');
 });
+Route::get('/',[LayoutController::class,'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 Route::group(["middleware" => ['auth:sanctum', 'verified']], function () {
+
+    Route::resource('team', TeamController::class);
 
     Route::post('/pengaturan-situs/simpan-video', [SiteConfigController::class, 'upSectionVideo'])->name('site.usv');
     Route::post('/pengaturan-situs/simpan-sosmed', [SiteConfigController::class, 'upSocialMedia'])->name('site.usm');

@@ -9,7 +9,6 @@ use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
-
 class SiteConfigController extends Controller
 {
     public function siteConfiguration()
@@ -41,7 +40,7 @@ class SiteConfigController extends Controller
         } else {
             $new_name = 'NULL';
         }
-        
+
         $form_data = array(
             'siteName' => $request->siteName,
             'siteDescription' => $request->siteDescription,
@@ -67,7 +66,7 @@ class SiteConfigController extends Controller
         $slug_photo = Str::slug($file->getClientOriginalName(), '-');
         $new_name = Str::random(4).'-'.$slug_photo.'.'.$file->getClientOriginalExtension();
         $file->move(public_path('images_site'), $new_name);
-    
+
         SiteConfiguration::updateOrCreate(
             ['id', 1],
             ['siteFavicon' => $new_name]
@@ -108,7 +107,7 @@ class SiteConfigController extends Controller
         $slug_photo = Str::slug($file->getClientOriginalName(), '-');
         $new_name = Str::random(4).'-'.$slug_photo.'.'.$file->getClientOriginalExtension();
         $file->move(public_path('videos_site'), $new_name);
-    
+
         $form_data = array(
             'video' => $new_name,
             'description' => $request->descripton

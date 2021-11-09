@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\SiteConfigController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +22,14 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::group(["middleware" => ['auth:sanctum', 'verified']], function () {
+
+    Route::post('/pengaturan-situs/simpan-video', [SiteConfigController::class, 'upSectionVideo'])->name('site.usv');
+    Route::post('/pengaturan-situs/simpan-sosmed', [SiteConfigController::class, 'upSocialMedia'])->name('site.usm');
+    Route::post('/pengaturan-situs/simpan-favicon', [SiteConfigController::class, 'upFavicon'])->name('site.uf');
+    Route::post('/pengaturan-situs/simpan-konfigurasi', [SiteConfigController::class, 'upSiteConfig'])->name('site.usc');
+    Route::get('/pengaturan-situs', [SiteConfigController::class, 'siteConfiguration'])->name('site.sc');
+});
 
 require __DIR__.'/auth.php';

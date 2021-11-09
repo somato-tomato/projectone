@@ -147,7 +147,7 @@
          <div class="col-md-2 col-sm-1"></div>
       </div>
    </div> 
-   <video class="my-background-video jquery-background-video" loop autoplay muted poster="{{ asset('frontEnd/video/thumb-slide')}}">
+   <video class="my-background-video jquery-background-video" loop autoplay muted poster="{{ asset('frontEnd/video/thumb-slide.jpg')}}">
 		<source src=" {{ asset('frontEnd/images/logo-transparent')}}') }}" type="video/mp4">
 		<source src="{{ asset('frontEnd/images/logo-transparent')}}') }}" type="video/webm">
 		<source src=" {{ asset('frontEnd/video/video-slide.webm') }}" type="video/ogg">

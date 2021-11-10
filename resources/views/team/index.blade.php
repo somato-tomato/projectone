@@ -1,10 +1,26 @@
 @extends('dashLayout.app')
 
 @section('content')
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div style="float: right">
+                    <nav aria-label="breadcrumb" class="main-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{{url('/dashboard')}}">Home</a></li>
+{{--                            <li class="breadcrumb-item"><a href="javascript:void(0)">Team</a></li>--}}
+                            <li class="breadcrumb-item active" aria-current="page">Team Info</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
+
                     <div class="card-title">
                         Team
                     </div>
@@ -32,7 +48,14 @@
                                 <td>{{$teams->jobdes}}</td>
                                 <td>{{$teams->perusahaan}}</td>
                                 <td>{{$teams->deskripsi}}</td>
-                                <td>Lihat</td>
+                                <td>
+                                    <form method="post" class="delete_form" action="{{ route('team.destroy',$teams->id) }}" id="studentForm_{{$teams->id}}">
+                                        <a href="{{route('team.show',$teams->id)}}" class="btn btn-info"><i class="fa fa-eye"></i></a>
+                                        {{ method_field('delete') }}
+                                        {{  csrf_field() }}
+                                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                                    </form>
+                                </td>
                             </tr>
                         @endforeach
                     </table>
@@ -44,3 +67,21 @@
 
         </div>
         @endsection
+
+@push('modals')
+            <script>
+                $(document).ready(function(){
+                    $('.delete_form').on('submit', function(){
+                        if(confirm("Are you sure you want to delete it?"))
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    });
+                });
+            </script>
+
+@endpush

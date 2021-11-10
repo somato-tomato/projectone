@@ -34,7 +34,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="custom-file">
-                                            <input type="file" class="custom-file-input" name="file_ktp"
+                                            <input type="file" class="custom-file-input" name="foto"
                                                    onchange="showPreview(event);">
                                             <label class="custom-file-label">Upload file ktp</label>
                                         </div>

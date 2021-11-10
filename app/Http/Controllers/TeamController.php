@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Kemampuan;
 use App\Models\Team;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use RealRashid\SweetAlert\Facades\Alert;
-
+use Image;
 class TeamController extends Controller
 {
     /**
@@ -41,6 +42,16 @@ class TeamController extends Controller
     {
         //
         $team = Team::create($request->only(['nama_team', 'jobdes', 'perusahaan', 'deskripsi']));
+        $file = $request->file('foto');
+        if (!empty($file)) {
+            Storage::disk('local')->makeDirectory('public/foto/'.$team->id, 0775, true);
+            $destinationPath = storage_path('app/public/foto/'.$team->id);
+            Storage::makeDirectory($destinationPath);
+            $filesname =$file->getClientOriginalName();
+            $image_resize = Image::make($file->getRealPath());
+            $image_resize->resize(400, 400);
+            $image_resize->save($destinationPath.'/foto.' . $filesname, 80);
+        }
         for ($nama_kemampuan = 0; $nama_kemampuan < count($request->nama_kemampuan); $nama_kemampuan++) {
             $orderdetail = new Kemampuan;
             $orderdetail->id_team = $team->id;
@@ -58,9 +69,11 @@ class TeamController extends Controller
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function show(Team $team)
+    public function show(Request $request,$id)
     {
-        //
+        $team = Team::with('kemampuans')->find($id);
+        $file_foto = Storage::disk('public')->files('foto/'.$id);
+        return view('team.show',compact('team','file_foto'));
     }
 
     /**
@@ -85,15 +98,22 @@ class TeamController extends Controller
     {
         //
     }
-
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Team $team)
+    public function destroy(Request $request,$id)
     {
-        //
+        Kemampuan::whereIn('id_team',explode(",",$id))->delete();
+        $team = Team::find($id);
+        $team->delete();
+
+        $destinationPath = storage_path('app/public/foto/'.$id);
+        Storage::disk()->delete($destinationPath);
+        Alert::success('Berhasil !', 'Team berhasil di Hapus !');
+        return redirect()
+            ->back();
     }
 }

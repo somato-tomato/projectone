@@ -11,4 +11,7 @@
     <li>
         <a href="{{ route('team.index') }}"><i class="fas fa-chart-line"></i>Team</a>
     </li>
+    <li>
+        <a href="{{ route('portofolio.index') }}"><i class="fas fa-chart-line"></i>Portofolio</a>
+    </li>
 </ul>

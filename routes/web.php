@@ -4,6 +4,7 @@ use App\Http\Controllers\SiteConfigController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\PortofolioController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +28,7 @@ Route::get('/dashboard', function () {
 Route::group(["middleware" => ['auth:sanctum', 'verified']], function () {
 
     Route::resource('team', TeamController::class);
+    Route::resource('portofolio', PortofolioController::class);
 
     Route::post('/pengaturan-situs/simpan-video', [SiteConfigController::class, 'upSectionVideo'])->name('site.usv');
     Route::post('/pengaturan-situs/simpan-sosmed', [SiteConfigController::class, 'upSocialMedia'])->name('site.usm');

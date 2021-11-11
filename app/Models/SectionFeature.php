@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SectionVideo extends Model
+class SectionFeature extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'video', 'description', 'button', 'descriptionDua'
+        'sectionName', 'sectionTitle', 'sectionDescription', 'sectionImage'
     ];
 }

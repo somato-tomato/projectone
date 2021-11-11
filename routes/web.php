@@ -30,6 +30,8 @@ Route::group(["middleware" => ['auth:sanctum', 'verified']], function () {
     Route::resource('team', TeamController::class);
     Route::resource('portofolio', PortofolioController::class);
 
+
+    Route::post('/pengautran-situs/simpan-fitur', [SiteConfigController::class, 'sectionFeature'])->name('site.sf');
     Route::post('/pengaturan-situs/simpan-video', [SiteConfigController::class, 'upSectionVideo'])->name('site.usv');
     Route::post('/pengaturan-situs/simpan-sosmed', [SiteConfigController::class, 'upSocialMedia'])->name('site.usm');
     Route::post('/pengaturan-situs/simpan-favicon', [SiteConfigController::class, 'upFavicon'])->name('site.uf');

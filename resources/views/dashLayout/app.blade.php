@@ -23,15 +23,7 @@
     <link href="{{ asset('srcDash/css/main.css') }}" rel="stylesheet">
 {{--    <link href="{{ asset('srcDash/css/dark-theme.css') }}" rel="stylesheet">--}}
 
-    <link href="{{ asset('css/option.css') }}" rel="stylesheet">
-
     <link href="{{ asset('srcDash/css/custom.css') }}" rel="stylesheet">
-
-    <link href="{{ asset('pickerdate/css/classic.css')}}" rel="stylesheet" />
-	<link href="{{ asset('pickerdate/css/classic.time.css')}}" rel="stylesheet" />
-	<link href="{{ asset('pickerdate/css/classic.date.css')}}" rel="stylesheet" />
-
-    <link rel="stylesheet" href="{{ asset('css/cards.css') }}">
 
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.1.1/dist/select2-bootstrap-5-theme.min.css" />
@@ -79,13 +71,8 @@
 <script src="{{ asset('srcDash/js/main.js') }}"></script>
 <script src="{{ asset('srcDash/js/pages/dashboard.js') }}"></script>
 
-<script src="{{ asset('pickerdate/js/legacy.js') }}"></script>
-<script src="{{ asset('pickerdate/js/picker.js') }}"></script>
-<script src="{{ asset('pickerdate/js/picker.date.js') }}"></script>
-<script src="{{ asset('pickerdate/js/picker.time.js') }}"></script>
-
 {{--<script src="{{ asset('srcDash/js/app.js') }}"></script>--}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js" integrity="sha512-WL6WGKMPBiM9PnHRYIn5YEtq0Z8XP4fkVb4qy7PP4vhmYQErJ/dySyXuFIMDf1eEYCXCrQrMJfkNwKc9gsjTjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.1.1/dist/select2-bootstrap-5-theme.min.css" />
 <script src="https://datatables.yajrabox.com/js/handlebars.js"></script>

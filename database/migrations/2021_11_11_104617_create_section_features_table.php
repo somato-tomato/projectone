@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSectionVideosTable extends Migration
+class CreateSectionFeaturesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateSectionVideosTable extends Migration
      */
     public function up()
     {
-        Schema::create('section_videos', function (Blueprint $table) {
+        Schema::create('section_features', function (Blueprint $table) {
             $table->id();
-            $table->string('video');
-            $table->string('description');
-            $table->string('descriptionDua')->nullable();
-            $table->string('button')->nullable();
+            $table->string('sectionName')->nullable();
+            $table->string('sectionTitle')->nullable();
+            $table->text('sectionDescription')->nullable();
+            $table->string('sectionImage')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateSectionVideosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('section_videos');
+        Schema::dropIfExists('section_features');
     }
 }

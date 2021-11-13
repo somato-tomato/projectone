@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Portofolio;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Image;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class PortofolioController extends Controller
 {
@@ -14,8 +17,10 @@ class PortofolioController extends Controller
      */
     public function index()
     {
-        //
-        return view('portofolio.index');
+        $portofolio = Portofolio::orderBy('created_at', 'DESC')->paginate(10);
+
+        return view('portofolio.index',compact('portofolio'));
+
     }
 
     /**
@@ -25,7 +30,7 @@ class PortofolioController extends Controller
      */
     public function create()
     {
-        //
+        return view('portofolio.create');
     }
 
     /**
@@ -36,7 +41,21 @@ class PortofolioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $team = Portofolio::create($request->all());
+        $file = $request->file('foto');
+
+        if (!empty($file)) {
+            Storage::disk('local')->makeDirectory('public/portofolio/'.$team->id, 0775, true);
+            $destinationPath = storage_path('app/public/portofolio/'.$team->id);
+            Storage::makeDirectory($destinationPath);
+            $filesname =$file->getClientOriginalName();
+            $image_resize = Image::make($file->getRealPath());
+            $image_resize->resize(549, 550);
+            $image_resize->save($destinationPath.'/portofolio.' . $filesname, 80);
+        }
+        Alert::success('Berhasil !', 'Portofolio berhasil di perbarui !');
+
+        return redirect()->route('portofolio.index');
     }
 
     /**
@@ -45,9 +64,11 @@ class PortofolioController extends Controller
      * @param  \App\Models\Portofolio  $portofolio
      * @return \Illuminate\Http\Response
      */
-    public function show(Portofolio $portofolio)
+    public function show(Request $request,$id)
     {
-        //
+        $team = Portofolio::find($id);
+        $file_foto = Storage::disk('public')->files('portofolio/'.$id);
+        return view('portofolio.show',compact('team','file_foto'));
     }
 
     /**
@@ -79,8 +100,15 @@ class PortofolioController extends Controller
      * @param  \App\Models\Portofolio  $portofolio
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Portofolio $portofolio)
+    public function destroy(Request $request,$id)
     {
-        //
+        $team = Portofolio::find($id);
+        $team->delete();
+
+        $destinationPath = storage_path('app/public/portofolio/'.$id);
+        Storage::disk()->delete($destinationPath);
+        Alert::success('Berhasil !', 'Team berhasil di Hapus !');
+        return redirect()
+            ->back();
     }
 }

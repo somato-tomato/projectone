@@ -66,6 +66,7 @@
             </div>
 
         </div>
+    </div>
         @endsection
 
 @push('modals')

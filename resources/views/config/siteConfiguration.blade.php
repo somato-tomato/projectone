@@ -191,7 +191,40 @@
                             <td>{{ $s->sectionName }}</td>
                             <td>{{ $s->sectionTitle }}</td>
                             <td>
-                                {{ $s->sectionDescription }}
+                                {{ \Illuminate\Support\Str::limit($s->sectionDescription, '100', ' (...)') }}
+                            </td>
+                            <td>
+                                x
+                            </td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Bagian Proses
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Judul</th>
+                        <th scope="col">Deskripsi</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($sectionFeature as $s)
+                        <tr>
+                            <td><img style="width: 100px; height: auto" src="{{ asset('images_site/'.$s->sectionImage) }}" class="img-thumbnail" alt="a"></td>
+                            <td>{{ $s->sectionName }}</td>
+                            <td>{{ $s->sectionTitle }}</td>
+                            <td>
+                                {{ \Illuminate\Support\Str::limit($s->sectionDescription, '100', ' (...)') }}
                             </td>
                             <td>
                                 x

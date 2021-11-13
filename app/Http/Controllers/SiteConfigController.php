@@ -147,11 +147,16 @@ class SiteConfigController extends Controller
     public function sectionFeature(Request $request)
     {
         $request->validate([
-            'sectionImage' => 'mimes:jpeg,png,bmp|max:300',
+            'sectionImage' => 'required|mimes:jpeg,png,bmp|max:500',
             'sectionName' => 'required|string|max:255',
             'sectionTitle' => 'required|string|max:255|unique:section_features',
-            'sectionDescription' => 'required|string|max:255',
+            'sectionDescription' => 'required|string',
         ]);
+
+        $file = $request->file('sectionImage');
+        $slug_photo = Str::slug($file->getClientOriginalName(), '-');
+        $new_name = Str::random(4).'-'.$slug_photo.'.'.$file->getClientOriginalExtension();
+        $file->move(public_path('images_site'), $new_name);
 
         $form_data = array(
             'sectionImage' => $new_name,

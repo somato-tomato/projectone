@@ -150,7 +150,7 @@
    <video class="my-background-video jquery-background-video" loop autoplay muted poster="{{ asset('frontEnd/video/thumb-slide.jpg')}}">
 		<source src=" {{ asset('frontEnd/images/logo-transparent')}}') }}" type="video/mp4">
 		<source src="{{ asset('frontEnd/images/logo-transparent')}}') }}" type="video/webm">
-		<source src=" {{ asset('frontEnd/video/video-slide.webm') }}" type="video/ogg">
+		<source src=" {{ asset('frontEnd/video/vid.webm') }}" type="video/ogg">
 	</video>
 </section>
 
@@ -161,7 +161,7 @@
       <div class="row">
          <div class="col-lg-6 nopadding">
             <div class="image img-container">
-               <img alt="" src="{{ asset('frontEnd/images/perawatan.PNG')}}" class="equalheight">
+               <img alt="" src="{{ asset('frontEnd/images/i1.jpg')}}" class="equalheight">
             </div>
          </div>
          <div class="col-lg-6 nopadding">
@@ -192,7 +192,7 @@
          </div>
          <div class="col-lg-6 nopadding">
             <div class="image img-container">
-               <img alt="" src="{{ asset('frontEnd/images/perawatan2.PNG') }}" style="padding-right: 20px;height: 70%"  class="equalheight">
+               <img alt="" src="{{ asset('frontEnd/images/i2.jpg') }}" style="padding-right: 20px;height: 70%"  class="equalheight">
             </div>
          </div>
       </div>
@@ -256,71 +256,50 @@
             </div>
          </div>
       </div>
-      <div class="row">
+       <div class="row">
            <div class="col-md-4 col-xs-12">
-              <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
-               <div class="image">
-                  <img src="{{ asset('frontEnd/images/team-4.jpg')}}" alt="">
+               <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
+                   <div class="image">
+                       <img src="{{ asset('frontEnd/images/p1.jpg') }}" alt="">
+                   </div>
+                   <div class="team-content gradient_bg whitecolor">
+                       <h3>Usep Seumpena.ST, SPd,</h3>
+                       <p class="bottom40">Project Manager, Importir Lift Rumah Indonesia</p>
+                       <div class="text-center">
+                           <h3>"We give the best services !"</h3>
+                       </div>
+                   </div>
                </div>
-               <div class="team-content gradient_bg whitecolor">
-                  <h3>Johny Walkin.</h3>
-                  <p class="bottom40">CEO, liftrumah.id</p>
-                  <div class="progress-bars">
-                     <div class="progress">
-                        <p>Owner ...</p>
-                        <div class="progress-bar" data-value="100"><span>100%</span></div>
-                     </div>
-                     <div class="progress">
-                        <p>Owner ...</p>
-                        <div class="progress-bar" data-value="100"><span>100%</span></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
            </div>
-          <div class="col-md-4 col-xs-12">
-              <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
-                  <div class="image">
-                      <img src="{{ asset('frontEnd/images/team-4.jpg')}}" alt="">
-                  </div>
-                  <div class="team-content gradient_bg whitecolor">
-                      <h3>Johny Walkin.</h3>
-                      <p class="bottom40">CEO, liftrumah.id</p>
-                      <div class="progress-bars">
-                          <div class="progress">
-                              <p>Owner ...</p>
-                              <div class="progress-bar" data-value="100"><span>100%</span></div>
-                          </div>
-                          <div class="progress">
-                              <p>Owner ...</p>
-                              <div class="progress-bar" data-value="100"><span>100%</span></div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 col-xs-12">
-              <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
-                  <div class="image">
-                      <img src="{{ asset('frontEnd/images/team-4.jpg')}}" alt="">
-                  </div>
-                  <div class="team-content gradient_bg whitecolor">
-                      <h3>Johny Walkin.</h3>
-                      <p class="bottom40">CEO, liftrumah.id</p>
-                      <div class="progress-bars">
-                          <div class="progress">
-                              <p>Owner ...</p>
-                              <div class="progress-bar" data-value="100"><span>100%</span></div>
-                          </div>
-                          <div class="progress">
-                              <p>Owner ...</p>
-                              <div class="progress-bar" data-value="100"><span>100%</span></div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+           <div class="col-md-4 col-xs-12">
+               <div class="team-box top60 wow fadeIn" data-wow-delay="400ms">
+                   <div class="image">
+                       <img src="{{ asset('frontEnd/images/p2.jpg') }}" alt="">
+                   </div>
+                   <div class="team-content gradient_bg_default whitecolor">
+                       <h3>Aep ASDQ.SLR, DSLr</h3>
+                       <p class="bottom40">Accountant, Importir Lift Rumah Indonesia</p>
+                       <div class="text-center">
+                           <h3>"We give our best to satisfy people"</h3>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-4 col-xs-12">
+               <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
+                   <div class="image">
+                       <img src="{{ asset('frontEnd/images/p3.jpg') }}" alt="">
+                   </div>
+                   <div class="team-content gradient_bg whitecolor">
+                       <h3>Richard Lioness.</h3>
+                       <p class="bottom40">Head Technician, Importir Lift Rumah Indonesia</p>
+                       <div class="text-center">
+                           <h3>"Teknisi kami selalu siap untuk anda"</h3>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
    </div>
 </section>
 <!-- Our Team ends-->
@@ -375,7 +354,7 @@
             </div>
          </div>
          <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/4.PNG')}}" alt="">
+            <img src="{{ asset('frontEnd/images/pr3.jpg')}}" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/4.PNG')}}"></a>
                <h4 class="top30">Wood Work</h4>
@@ -407,7 +386,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-              <img src="{{ asset('frontEnd/images/7.PNG')}}" alt="">
+              <img src="{{ asset('frontEnd/images/pr1.jpg')}}" alt="">
               <div class="overlay center-block whitecolor">
                   <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
                   <h4 class="top30">Wood Work</h4>
@@ -415,7 +394,7 @@
               </div>
           </div>
           <div class="cbp-item itemshadow">
-              <img src="{{ asset('frontEnd/images/7.PNG')}}" alt="">
+              <img src="{{ asset('frontEnd/images/pr2.jpg')}}" alt="">
               <div class="overlay center-block whitecolor">
                   <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
                   <h4 class="top30">Wood Work</h4>
@@ -423,7 +402,7 @@
               </div>
           </div>
           <div class="cbp-item itemshadow">
-              <img src="{{ asset('frontEnd/images/7.PNG')}}" alt="">
+              <img src="{{ asset('frontEnd/images/pr5.jpg')}}" alt="">
               <div class="overlay center-block whitecolor">
                   <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
                   <h4 class="top30">Wood Work</h4>
@@ -553,51 +532,51 @@
 <!--Counters ends-->
 
 <!-- Pricing Tables -->
-<section id="our-pricings" class="padding pricing-bg">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-8 offset-md-2 col-sm-12 text-center">
-            <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
-               <span>Choose The Best One</span>
-               <h2 class="bottom30">About Company</h2>
+{{--<section id="our-pricings" class="padding pricing-bg">--}}
+{{--   <div class="container">--}}
+{{--      <div class="row">--}}
+{{--         <div class="col-md-8 offset-md-2 col-sm-12 text-center">--}}
+{{--            <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">--}}
+{{--               <span>Choose The Best One</span>--}}
+{{--               <h2 class="bottom30">About Company</h2>--}}
 {{--               <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>--}}
-            </div>
-         </div>
-      </div>
-      <div class="row centered-table">
-         <div class="col-md-6 col-sm-12">
-            <div class="price-table top60 wow fadeIn" data-wow-delay="300ms">
-               <h3 class="bottom20 darkcolor">Visi Perusahaan</h3>
-               <ul class="top20">
-                  <li><span>LIFT RUMAH PALING EKONOMIS</span></li>
-                  <li><span> HIGH QUALITY PRODUCTS</span></li>
-                  <li><span>SERVICES WITH 3 YEARS OF WARRANTY</span></li>
-                  <li><span>TERBAIK DI KELASNYA</span></li>
-               </ul>
-               <div class="clearfix"></div>
+{{--            </div>--}}
+{{--         </div>--}}
+{{--      </div>--}}
+{{--      <div class="row centered-table">--}}
+{{--         <div class="col-md-6 col-sm-12">--}}
+{{--            <div class="price-table top60 wow fadeIn" data-wow-delay="300ms">--}}
+{{--               <h3 class="bottom20 darkcolor">Visi Perusahaan</h3>--}}
+{{--               <ul class="top20">--}}
+{{--                  <li><span>LIFT RUMAH PALING EKONOMIS</span></li>--}}
+{{--                  <li><span> HIGH QUALITY PRODUCTS</span></li>--}}
+{{--                  <li><span>SERVICES WITH 3 YEARS OF WARRANTY</span></li>--}}
+{{--                  <li><span>TERBAIK DI KELASNYA</span></li>--}}
+{{--               </ul>--}}
+{{--               <div class="clearfix"></div>--}}
 {{--               <div class="ammount top50">--}}
 {{--                  <h2 class="defaultcolor"><i class="fa fa-dollar"></i> 9.99</h2>--}}
 {{--               </div>--}}
 {{--               <a href="javascript:void(0)" class="button btnprimary top50">Get Started </a>--}}
-            </div>
-         </div>
-         <div class="col-md-6 col-sm-12">
-            <div class="price-table active top60 wow fadeIn" data-wow-delay="350ms">
-                <h3 class="bottom20 darkcolor">Misi Perusahaan</h3>
-                <ul class="top20">
-                    <li><span>LIFT RUMAH PALING EKONOMIS</span></li>
-                    <li><span> HIGH QUALITY PRODUCTS</span></li>
-                    <li><span>SERVICES WITH 3 YEARS OF WARRANTY</span></li>
-                    <li><span>TERBAIK DI KELASNYA</span></li>
-                </ul>
-               </ul>
-               <div class="clearfix"></div>
+{{--            </div>--}}
+{{--         </div>--}}
+{{--         <div class="col-md-6 col-sm-12">--}}
+{{--            <div class="price-table active top60 wow fadeIn" data-wow-delay="350ms">--}}
+{{--                <h3 class="bottom20 darkcolor">Misi Perusahaan</h3>--}}
+{{--                <ul class="top20">--}}
+{{--                    <li><span>LIFT RUMAH PALING EKONOMIS</span></li>--}}
+{{--                    <li><span> HIGH QUALITY PRODUCTS</span></li>--}}
+{{--                    <li><span>SERVICES WITH 3 YEARS OF WARRANTY</span></li>--}}
+{{--                    <li><span>TERBAIK DI KELASNYA</span></li>--}}
+{{--                </ul>--}}
+{{--               </ul>--}}
+{{--               <div class="clearfix"></div>--}}
 {{--               <div class="ammount top50">--}}
 {{--                  <h2 class="defaultcolor"><i class="fa fa-dollar"></i> 29.99</h2>--}}
 {{--               </div>--}}
 {{--               <a href="javascript:void(0)" class="button btnsecondary top50">Get Started </a>--}}
-            </div>
-         </div>
+{{--            </div>--}}
+{{--         </div>--}}
 {{--         <div class="col-md-4 col-sm-12">--}}
 {{--            <div class="price-table top60 wow fadeInUp" data-wow-delay="400ms">--}}
 {{--               <h3 class="bottom20 darkcolor">Expert Plan</h3>--}}
@@ -615,11 +594,71 @@
 {{--               <a href="javascript:void(0)" class="button btnprimary top50">Get Started </a>--}}
 {{--            </div>--}}
 {{--         </div>--}}
-      </div>
-   </div>
-</section>
+{{--      </div>--}}
+{{--   </div>--}}
+{{--</section>--}}
 <!--Pricing Tables ends-->
 
+<section id="our-pricings" class="padding pricing-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+                <div style="color: black;" class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
+                    <span style="color: black;">Choose The Best One</span>
+                    <h2 class="bottom30">Our Packages</h2>
+                    <p>Kami juga menyediakan pilihan paket untuk anda.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row centered-table">
+            <div class="col-md-4 col-sm-12">
+                <div class="price-table top60 wow fadeIn" data-wow-delay="300ms">
+                    <h3 class="bottom20 darkcolor">Slow Down Elevator</h3>
+                    <ul class="top20">
+                        <li><span>Konsultasi Gratis</span></li>
+                        <li><span>Pemasangan Elevator</span></li>
+                        <li><span>Diskon Pemasangan 10%</span></li>
+                        <li><span>Perawatan selama 3 bulan</span></li>
+                        <li><span>X</span></li>
+                        <li><span>X</span></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <a href="javascript:void(0)" class="button btnprimary top50">Hubungi Kami</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="price-table active top60 wow fadeIn" data-wow-delay="350ms">
+                    <h3 class="bottom20 darkcolor">Middle Elevator</h3>
+                    <ul class="top20">
+                        <li><span>Konsultasi Gratis</span></li>
+                        <li><span>Pemasangan Elevator</span></li>
+                        <li><span>Diskon Pemasangan 15%</span></li>
+                        <li><span>Perawatan selama 6 bulan</span></li>
+                        <li><span>VIP Customer Care 3 Bulan</span></li>
+                        <li><span>Pelayanan Lain</span></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <a href="javascript:void(0)" class="button btnsecondary top50">Hubungi Kami </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="price-table top60 wow fadeInUp" data-wow-delay="400ms">
+                    <h3 class="bottom20 darkcolor">Expert Plan</h3>
+                    <ul class="top20">
+                        <li><span>Konsultasi Gratis</span></li>
+                        <li><span>Pemasangan Elevator</span></li>
+                        <li><span>Diskon Pemasangan 25%</span></li>
+                        <li><span>Perawatan selama 12 bulan</span></li>
+                        <li><span>VIP Customer Care 6 Bulan</span></li>
+                        <li><span>Pelayanan Lain</span></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <a href="javascript:void(0)" class="button btnprimary top50">Hubungi Kami </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Background Parallax -->
 <section id="video-parallax" class="video-parallax padding parallaxie">
@@ -627,7 +666,7 @@
       <div class="row">
          <div class="col-md-7 col-sm-7">
             <div class="heading-title whitecolor text-md-start text-center wow fadeIn" data-wow-delay="500ms">
-               <span>We have an excellent story</span>
+               <span >We have an excellent story</span>
                <h2 class="fontregular">Watch Our Video</h2>
                <a data-fancybox href="https://youtu.be/ecjSmq-5680?list=TLGGYHkkgSG1gGQxMDExMjAyMQ" class="button btnprimary fontmedium top20"><i class="fa fa-play"></i> &nbsp;Play Now</a>
             </div>
@@ -921,7 +960,7 @@
                <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
                <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a> </li>
             </ul>
-            <p class="copyrights wow fadeInUp" data-wow-delay="350ms"> &copy; 2019 XeOne. made with love by <a href="http://www.themesindustry.com/" target="_blank">themesindustry</a> </p>
+            <p class="copyrights wow fadeInUp" data-wow-delay="350ms"> &copy; 2021 liftrumah.id  made with love by <a href="#" target="_blank">Panji Denis Giantoro</a> </p>
          </div>
       </div>
    </div>

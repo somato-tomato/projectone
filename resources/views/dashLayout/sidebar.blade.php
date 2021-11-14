@@ -14,4 +14,7 @@
     <li>
         <a href="{{ route('portofolio.index') }}"><i class="fas fa-chart-line"></i>Portofolio</a>
     </li>
+    <li>
+        <a href="{{ route('site.t') }}"><i class="fas fa-chart-line"></i>Testimoni</a>
+    </li>
 </ul>

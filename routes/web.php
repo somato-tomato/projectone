@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\PortofolioController;
+use App\Http\Controllers\PackageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +30,7 @@ Route::group(["middleware" => ['auth:sanctum', 'verified']], function () {
 
     Route::resource('team', TeamController::class);
     Route::resource('portofolio', PortofolioController::class);
+    Route::resource('package', PackageController::class);
 
     Route::post('/pengautran-situs/simpan-fitur', [SiteConfigController::class, 'sectionFeature'])->name('site.sf');
     Route::post('/pengaturan-situs/simpan-video', [SiteConfigController::class, 'upSectionVideo'])->name('site.usv');

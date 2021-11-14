@@ -42,7 +42,8 @@
 <header class="site-header">
    <nav class="navbar navbar-expand-lg fixed-bottom gradient_bg">
       <div class="container">
-         <a class="navbar-brand" href="index.html"> <img src=" {{ asset('images/logo-transparent.png')}}') }}" alt="logo"> </a>
+         <a class="navbar-brand" href="{{url('/')}}">
+             <img src="{{ asset('frontEnd/images/logo.png')}}" alt="logo"> </a>
          <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#xenav">
             <span> </span>
             <span> </span>
@@ -126,8 +127,7 @@
       </div>
    </div>
    <a id="close_side_menu" href="javascript:void(0);"></a>
-   <!-- End side menu -->
-</header>
+   <!-- End side menu --PT. INDORASMI PERKASA>
 <!-- header -->
 
 <!--Ful Screen Section Video with caption-->
@@ -138,8 +138,8 @@
          <div class="col-md-8 col-sm-10">
                <div class="center-item text-center video-content">
                   <h2 class="text-capitalize top50 bottom35  whitecolor">
-                     <span class="font-xlight block wow fadeIn" data-wow-delay="400ms">IMPORTIR LIFT RUMAH INDONESIA
-                     </span><span class="block fontbold wow fadeIn" data-wow-delay="500ms">Your Home Lift Solution</span>
+                     <span class="font-xlight block wow fadeIn" data-wow-delay="400ms">PT. INDORASMI PERKASA
+                     </span><span class="block fontbold wow fadeIn" data-wow-delay="500ms">Lift With Care</span>
                   </h2>
                    <a href="#btn-feature" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">features</a>
                </div>
@@ -161,13 +161,13 @@
       <div class="row">
          <div class="col-lg-6 nopadding">
             <div class="image img-container">
-               <img alt="" src="{{ asset('frontEnd/images/i1.jpg')}}" class="equalheight">
+               <img alt="" src="{{ asset('frontEnd/images/f1.png')}}" class="equalheight">
             </div>
          </div>
          <div class="col-lg-6 nopadding">
             <div class="split-box text-center center-block container-padding equalheight" id="btn-feature">
                <div class="heading-title padding">
-               <span class=" wow fadeIn" data-wow-delay="300ms">Services We Offer</span>
+               <span class=" wow fadeIn" data-wow-delay="300ms">Layanan yang Kami Tawarkan</span>
                <h2 class="darkcolor bottom20 wow fadeIn" data-wow-delay="350ms">Supplier Elevator</h2>
                <p class="heading_space wow fadeIn" data-wow-delay="400ms">Kami menawarkan dua model Lift Rumah yang biasanya dipesan oleh seluruh customer kami. Model pertama, Lift Rumah dengan bahan full stainless yang mana lift model ini tertutup dan tidak terlihat dari dalam dan luar oleh orang lain. Kedua, model lift dengan bahan kaca tembus pandang. Sehingga terlihat baik dari luar maupun dalam lift. Kaca yang dipakai sangat tebal dan kokoh, dengan jenis kaca tempered dan laminate 5+5.</p>
                <a href="#portfolio-xe" class="button btnprimary pagescroll wow fadeInUp" data-wow-delay="500ms">Design Works</a>
@@ -192,7 +192,7 @@
          </div>
          <div class="col-lg-6 nopadding">
             <div class="image img-container">
-               <img alt="" src="{{ asset('frontEnd/images/i2.jpg') }}" style="padding-right: 20px;height: 70%"  class="equalheight">
+               <img alt="" src="{{ asset('frontEnd/images/f2.png') }}" style="padding-right: 20px;height: 70%"  class="equalheight">
             </div>
          </div>
       </div>
@@ -943,7 +943,7 @@
    </div>
 
    <!--Location Map here-->
-<div id="map-container"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.306952197492!2d106.84752771471683!3d-6.22319659549515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f38ee5d21441%3A0x44b3ece8d15487ea!2sRT.6%2FRW.2%2C%20South%20Manggarai%2C%20Tebet%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1636822551297!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 <!--Contact US Ends-->
 

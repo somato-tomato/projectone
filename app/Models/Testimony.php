@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SectionFeature extends Model
+class Testimony extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'sectionName', 'sectionTitle', 'sectionDescription', 'sectionImage', 'buttonName', 'buttonDestination'
+        'testimony', 'name', 'occupation', 'photo'
     ];
 }

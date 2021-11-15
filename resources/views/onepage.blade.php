@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>XeOne</title>
-<link href="images/favicon')}}" rel="icon">
+<link href="images/favicon" rel="icon">
 <link rel="stylesheet" href="{{ asset('frontEnd/css/plugins.css') }}">
 <link rel="stylesheet" href="{{ asset('frontEnd/css/style.css') }}">
 
@@ -415,78 +415,6 @@
 </section>
 <!--Gallery ends -->
 
-<!-- Mobile Apps -->
-{{--<section id="our-apps" class="padding">--}}
-{{--   <div class="container">--}}
-{{--      <div class="row">--}}
-{{--         <div class="col-md-12 col-sm-12 text-center">--}}
-{{--            <div class="heading-title wow fadeInUp" data-wow-delay="300ms">--}}
-{{--               <span>Yes We Provide Mobile Apps</span>--}}
-{{--               <h2 class="darkcolor heading_space">Mobile Applications</h2>--}}
-{{--            </div>--}}
-{{--         </div>--}}
-{{--      </div>--}}
-{{--      <div class="row" id="app-feature">--}}
-{{--         <div class="col-lg-4 col-md-4 col-sm-12">--}}
-{{--            <div class="content-left clearfix">--}}
-{{--               <div class="feature-item left top30 bottom30 wow fadeInUp" data-wow-delay="300ms">--}}
-{{--                  <span class="icon"><i class="fa fa-mobile-phone"></i></span>--}}
-{{--                  <div class="text">--}}
-{{--                     <h4>Responsive Design</h4>--}}
-{{--                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
-{{--               <div class="feature-item left top30 bottom30 wow fadeInUp" data-wow-delay="350ms">--}}
-{{--                  <span class="icon"><i class="fa fa-cog"></i></span>--}}
-{{--                  <div class="text">--}}
-{{--                     <h4>Amazing Theme Options</h4>--}}
-{{--                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
-{{--               <div class="feature-item left top30 bottom30 wow fadeInUp" data-wow-delay="400ms">--}}
-{{--                  <span class="icon"><i class="fa fa-edit"></i></span>--}}
-{{--                  <div class="text">--}}
-{{--                     <h4>Easy to Customize</h4>--}}
-{{--                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
-{{--            </div>--}}
-{{--         </div>--}}
-{{--         <div class="col-lg-4 col-md-4 col-sm-12">--}}
-{{--            <div class="image feature-item text-center wow fadeIn" data-wow-delay="500ms">--}}
-{{--               <img src="{{ asset('frontEnd/images/responsive.png')}}" alt="">--}}
-{{--            </div>--}}
-{{--         </div>--}}
-{{--         <div class="col-lg-4 col-md-4 col-sm-12">--}}
-{{--            <div class="content-right clearfix">--}}
-{{--               <div class="feature-item right top30 bottom30 wow fadeInUp" data-wow-delay="300ms">--}}
-{{--                  <span class="icon"><i class="fa fa-code"></i></span>--}}
-{{--                  <div class="text">--}}
-{{--                     <h4>Powerful BackEnd</h4>--}}
-{{--                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
-{{--               <div class="feature-item right top30 bottom30 wow fadeInUp" data-wow-delay="350ms">--}}
-{{--                  <span class="icon"><i class="fa fa-folder-o"></i></span>--}}
-{{--                  <div class="text">--}}
-{{--                     <h4>Well Documented</h4>--}}
-{{--                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
-{{--               <div class="feature-item right top30 bottom30 wow fadeInUp" data-wow-delay="400ms">--}}
-{{--                  <span class="icon"><i class="fa fa-support"></i></span>--}}
-{{--                  <div class="text">--}}
-{{--                     <h4>24/7 Support</h4>--}}
-{{--                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
-{{--            </div>--}}
-{{--         </div>--}}
-{{--      </div>--}}
-{{--   </div>--}}
-{{--</section>--}}
-<!--Mobile Apps ends-->
-
 <!-- Counters -->
 <section id="funfacts" class="padding_top fact-iconic gradient_bg">
    <div class="container">
@@ -530,74 +458,6 @@
    </div>
 </section>
 <!--Counters ends-->
-
-<!-- Pricing Tables -->
-{{--<section id="our-pricings" class="padding pricing-bg">--}}
-{{--   <div class="container">--}}
-{{--      <div class="row">--}}
-{{--         <div class="col-md-8 offset-md-2 col-sm-12 text-center">--}}
-{{--            <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">--}}
-{{--               <span>Choose The Best One</span>--}}
-{{--               <h2 class="bottom30">About Company</h2>--}}
-{{--               <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>--}}
-{{--            </div>--}}
-{{--         </div>--}}
-{{--      </div>--}}
-{{--      <div class="row centered-table">--}}
-{{--         <div class="col-md-6 col-sm-12">--}}
-{{--            <div class="price-table top60 wow fadeIn" data-wow-delay="300ms">--}}
-{{--               <h3 class="bottom20 darkcolor">Visi Perusahaan</h3>--}}
-{{--               <ul class="top20">--}}
-{{--                  <li><span>LIFT RUMAH PALING EKONOMIS</span></li>--}}
-{{--                  <li><span> HIGH QUALITY PRODUCTS</span></li>--}}
-{{--                  <li><span>SERVICES WITH 3 YEARS OF WARRANTY</span></li>--}}
-{{--                  <li><span>TERBAIK DI KELASNYA</span></li>--}}
-{{--               </ul>--}}
-{{--               <div class="clearfix"></div>--}}
-{{--               <div class="ammount top50">--}}
-{{--                  <h2 class="defaultcolor"><i class="fa fa-dollar"></i> 9.99</h2>--}}
-{{--               </div>--}}
-{{--               <a href="javascript:void(0)" class="button btnprimary top50">Get Started </a>--}}
-{{--            </div>--}}
-{{--         </div>--}}
-{{--         <div class="col-md-6 col-sm-12">--}}
-{{--            <div class="price-table active top60 wow fadeIn" data-wow-delay="350ms">--}}
-{{--                <h3 class="bottom20 darkcolor">Misi Perusahaan</h3>--}}
-{{--                <ul class="top20">--}}
-{{--                    <li><span>LIFT RUMAH PALING EKONOMIS</span></li>--}}
-{{--                    <li><span> HIGH QUALITY PRODUCTS</span></li>--}}
-{{--                    <li><span>SERVICES WITH 3 YEARS OF WARRANTY</span></li>--}}
-{{--                    <li><span>TERBAIK DI KELASNYA</span></li>--}}
-{{--                </ul>--}}
-{{--               </ul>--}}
-{{--               <div class="clearfix"></div>--}}
-{{--               <div class="ammount top50">--}}
-{{--                  <h2 class="defaultcolor"><i class="fa fa-dollar"></i> 29.99</h2>--}}
-{{--               </div>--}}
-{{--               <a href="javascript:void(0)" class="button btnsecondary top50">Get Started </a>--}}
-{{--            </div>--}}
-{{--         </div>--}}
-{{--         <div class="col-md-4 col-sm-12">--}}
-{{--            <div class="price-table top60 wow fadeInUp" data-wow-delay="400ms">--}}
-{{--               <h3 class="bottom20 darkcolor">Expert Plan</h3>--}}
-{{--               <ul class="top20">--}}
-{{--                  <li><span>Designing a small brand</span></li>--}}
-{{--                  <li><span>Redesign the company logo</span></li>--}}
-{{--                  <li><span>New visual design of the website</span></li>--}}
-{{--                  <li><span>Deploying a website</span></li>--}}
-{{--                  <li><span>Studio and product photography</span></li>--}}
-{{--               </ul>--}}
-{{--               <div class="clearfix"></div>--}}
-{{--               <div class="ammount top50">--}}
-{{--                  <h2 class="defaultcolor"><i class="fa fa-dollar"></i> 99.99 </h2>--}}
-{{--               </div>--}}
-{{--               <a href="javascript:void(0)" class="button btnprimary top50">Get Started </a>--}}
-{{--            </div>--}}
-{{--         </div>--}}
-{{--      </div>--}}
-{{--   </div>--}}
-{{--</section>--}}
-<!--Pricing Tables ends-->
 
 <section id="our-pricings" class="padding pricing-bg">
     <div class="container">
@@ -843,25 +703,25 @@
 
 
 <!-- Our Blogs -->
-{{--<section id="our-blog" class="half-section bglight">--}}
-{{--   <div class="container-fluid">--}}
-{{--      <div class="row">--}}
-{{--         <div class="col-md-6 col-sm-6 nopadding">--}}
-{{--            <div class="image hover-effect"><img src="{{ asset('frontEnd/images/split-blog.jpg')}}" alt="our blog" class="equalheight"></div>--}}
-{{--         </div>--}}
-{{--         <div class="col-md-6 col-sm-6">--}}
-{{--            <div class="split-box text-center center-block equalheight container-padding">--}}
-{{--               <div class="heading-title padding_half">--}}
-{{--               <span class="wow fadeIn" data-wow-delay="300ms">Read Our News</span>--}}
-{{--               <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">Latest Blog Post</h2>--}}
-{{--               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>--}}
-{{--               <a href="blog.html" class="button btnsecondary wow fadeInUp" data-wow-delay="500ms">Read Full Story</a>--}}
-{{--            </div>--}}
-{{--            </div>--}}
-{{--         </div>--}}
-{{--      </div>--}}
-{{--   </div>--}}
-{{--</section>--}}
+<section id="our-blog" class="half-section bglight">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-6 col-sm-6 nopadding">
+            <div class="image hover-effect"><img src="{{ asset('frontEnd/images/split-blog.jpg')}}" alt="our blog" class="equalheight"></div>
+         </div>
+         <div class="col-md-6 col-sm-6">
+            <div class="split-box text-center center-block equalheight container-padding">
+               <div class="heading-title padding_half">
+               <span class="wow fadeIn" data-wow-delay="300ms">Read Our News</span>
+               <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">Latest Blog Post</h2>
+               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+               <a href="blog.blade.php" class="button btnsecondary wow fadeInUp" data-wow-delay="500ms">Read Full Story</a>
+            </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
 <!--Our Blogs Ends-->
 
 

@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\SectionFeature;
+use App\Models\SectionProcess;
 use App\Models\SiteConfiguration;
 use App\Models\SectionVideo;
+use App\Models\Testimony;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -17,7 +19,7 @@ class SiteConfigController extends Controller
     public function siteConfiguration()
     {
         $siteConfig = DB::table('site_configurations')
-            ->select('siteName', 'siteDescription', 'siteLogo', 'siteFavicon', 'instagram', 'facebook', 'twitter', 'alamat', 'telponSatu', 'telponDua')
+            ->select('siteName', 'siteDescription', 'siteLogo', 'siteFavicon', 'instagram', 'facebook', 'youtube', 'alamat', 'telponSatu', 'telponDua', 'email')
             ->where('id', '=', 1)->first();
 
         $var_fav = 'fav-'.$siteConfig->siteLogo;
@@ -26,9 +28,19 @@ class SiteConfigController extends Controller
             ->select('video', 'description', 'descriptionDua')->where('id', '=', 1)->first();
 
         $sectionFeature = DB::table('section_features')
-            ->select('sectionImage', 'sectionName', 'sectionTitle', 'sectionDescription')->get();
+            ->select('sectionImage', 'sectionName', 'sectionTitle', 'sectionDescription', 'id', 'buttonDestination')->get();
 
-        return view('config.siteConfiguration', compact('siteConfig', 'sectionVideo', 'var_fav', 'sectionFeature'));
+        $sectionProcess = DB::table('section_processes')
+            ->select('number', 'processName', 'processDesc')->get();
+
+        return view('config.siteConfiguration', compact('siteConfig', 'sectionVideo', 'var_fav', 'sectionFeature', 'sectionProcess'));
+    }
+
+    public function testimony()
+    {
+        $testi = DB::table('testimonies')->paginate(3);
+
+        return view('config.testimoni', compact('testi'));
     }
 
     public function upSiteConfig(Request $request)
@@ -95,7 +107,7 @@ class SiteConfigController extends Controller
             'telponSatu' => $request->telponSatu,
             'telponDua' => $request->telponDua,
             'facebook' => $request->facebook,
-            'twitter' => $request->twitter,
+            'youtube' => $request->youtube,
             'instagram' => $request->instagram
         );
 
@@ -106,7 +118,7 @@ class SiteConfigController extends Controller
                 'telponSatu' => $request->telponSatu,
                 'telponDua' => $request->telponDua,
                 'facebook' => $request->facebook,
-                'twitter' => $request->twitter,
+                'youtube' => $request->youtube,
                 'instagram' => $request->instagram
             ]
         );
@@ -162,11 +174,73 @@ class SiteConfigController extends Controller
             'sectionImage' => $new_name,
             'sectionName' => $request->sectionName,
             'sectionTitle' => $request->sectionTitle,
-            'sectionDescription' => $request->sectionDescription
+            'sectionDescription' => $request->sectionDescription,
+            'buttonName' => $request->buttonName,
+            'buttonDestination' => $request->buttonDestination
         );
 
         SectionFeature::create($form_data);
         Alert::success('Sukses', 'Situs berhasil diperbarui !');
         return back();
     }
+
+    public function deleteSectionFeature($id)
+    {
+        $id = SectionFeature::find($id);
+        File::delete('images_site/'.$id->sectionImage);
+        $id->delete();
+
+        return response()->json([
+            'success' => 'Record has been deleted successfully!'
+        ]);
+    }
+
+    public function upProcess(Request $request)
+    {
+        SectionProcess::where('number', $request->number)->update(
+            ['processName' => $request->processName, 'processDesc' => $request->processDesc]
+        );
+
+        Alert::success('Berhasil', 'Situs berhasil di perbarui !');
+        return back();
+    }
+
+    public function addTestimony(Request $request)
+    {
+        $request->validate([
+            'testimony' => 'required|string',
+            'name' => 'required|string',
+            'occupation' => 'required|string',
+            'photo' => 'required|mimes:jpeg,png,bmp|max:500'
+        ]);
+
+        $file = $request->file('photo');
+        $slug_photo = Str::slug($file->getClientOriginalName(), '-');
+        $new_name = Str::random(4).'-'.$slug_photo.'.'.$file->getClientOriginalExtension();
+        $file->move(public_path('images_site'), $new_name);
+
+        $form_data = array(
+            'photo' => $new_name,
+            'name' => $request->name,
+            'occupation' => $request->occupation,
+            'testimony' => $request->testimony
+        );
+
+        Testimony::create($form_data);
+
+        Alert::success('Berhasil', 'Situs berhasil di perbarui !');
+        return back();
+    }
+
+    public function deleteTestimony($id)
+    {
+        $id = Testimony::find($id);
+        File::delete('images_site/'.$id->photo);
+        $id->delete();
+
+        return response()->json([
+            'success' => 'Record has been deleted successfully!'
+        ]);
+    }
+
 }

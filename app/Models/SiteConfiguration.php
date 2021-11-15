@@ -10,6 +10,6 @@ class SiteConfiguration extends Model
     use HasFactory;
 
     protected $fillable = [
-        'siteName', 'siteDescription', 'siteLogo', 'siteFavicon', 'instagram', 'facebook', 'twitter', 'alamat', 'telponSatu', 'telponDua'
+        'siteName', 'siteDescription', 'siteLogo', 'siteFavicon', 'instagram', 'facebook', 'twitter', 'alamat', 'telponSatu', 'telponDua', 'email'
     ];
 }

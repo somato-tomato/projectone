@@ -178,6 +178,7 @@ return [
         App\Providers\CanvasServiceProvider::class,
         Pawlox\VideoThumbnail\VideoThumbnailServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        App\Providers\ViewServiceProvider::class,
 
         Yajra\DataTables\DataTablesServiceProvider::class,
     ],

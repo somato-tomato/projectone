@@ -330,7 +330,7 @@
     <div class="row">
          <div class="col-md-8 offset-md-2 col-sm-12 text-center">
             <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-               <span>Portfolio Designs</span>
+               <span>Desain Portofolio</span>
                <h2 class="darkcolor bottom10">Pemasangan Kami</h2>
 {{--               <p class="heading_space">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>--}}
             </div>
@@ -492,8 +492,8 @@
    <div class="container">
       <div class="row">
          <div class="col-md-5 col-sm-12 margin_bottom whitecolor text-md-start text-center wow fadeInLeft" data-wow-delay="300ms">
-            <h3 class="bottom25">Our many years of experience in numbers</h3>
-            <p class="title">We show you our professional achievements in numbers, which show the acquired skills and trust of many clients.</p>
+            <h3 class="bottom25">Pengalaman Kami dalam Beberapa Tahun</h3>
+            <p class="title">Kami menunjukkan kepada Anda pencapaian profesional kami dalam jumlah, yang menunjukkan keterampilan dan kepercayaan yang diperoleh dari banyak klien.</p>
          </div>
          <div class="col-md-7 col-sm-12 text-center">
             <div class="row">
@@ -502,27 +502,27 @@
                      <i class="fa fa-smile-o"></i>
                   </div>
                   <div class="counters">
-                     <span class="count_nums" data-to="2500" data-speed="2500"> </span> <i class="fa fa-plus"></i>
+                     <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
                   </div>
-                  <p class="title">Satisfied customers</p>
+                  <p class="title">Pelanggan</p>
                </div>
                <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom wow fadeInRight" data-wow-delay="350ms">
                   <div class="img-icon bottom15">
                      <i class="fa fa-language"> </i>
                   </div>
                   <div class="counters">
-                     <span class="count_nums" data-to="9500" data-speed="2500"> </span> <i class="fa fa-plus"></i>
+                     <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
                   </div>
-                  <p class="title">Completed consultations</p>
+                  <p class="title">Konsultasi</p>
                </div>
                <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom wow fadeInRight" data-wow-delay="300ms">
                   <div class="img-icon bottom15">
                      <i class="fa fa-desktop"></i>
                   </div>
                   <div class="counters">
-                     <span class="count_nums" data-to="6000" data-speed="2500"> </span> <i class="fa fa-plus"></i>
+                     <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
                   </div>
-                  <p class="title">Carried out training</p>
+                  <p class="title">Pelatihan</p>
                </div>
             </div>
          </div>
@@ -604,8 +604,8 @@
         <div class="row">
             <div class="col-md-8 offset-md-2 col-sm-12 text-center">
                 <div style="color: black;" class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
-                    <span style="color: black;">Choose The Best One</span>
-                    <h2 class="bottom30">Our Packages</h2>
+                    <span style="color: black;">Pilih Yang Terbaik</span>
+                    <h2 class="bottom30">Paket Kami</h2>
                     <p>Kami juga menyediakan pilihan paket untuk anda.</p>
                 </div>
             </div>

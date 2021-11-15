@@ -370,7 +370,7 @@ a.image{
    z-index: 1600;
    opacity: 0;
    visibility: hidden;
-   bottom: 70px;
+   bottom: 90px;
    background: -webkit-linear-gradient(90deg, #423f9c, #862359);
    background: -webkit-gradient(linear, left top, right top, color-stop(#423f9c), color-stop(#862359));
    background: -webkit-linear-gradient(left, #423f9c, #862359);

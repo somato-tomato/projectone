@@ -4,8 +4,8 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>XeOne</title>
-<link href="images/favicon" rel="icon">
+<title>PT. Indorasmi Perkasa - Your Lift Home Solution</title>
+<link href="{{ asset('new_images/fav.png') }}" rel="icon">
 <link rel="stylesheet" href="{{ asset('frontEnd/css/plugins.css') }}">
 <link rel="stylesheet" href="{{ asset('frontEnd/css/style.css') }}">
 
@@ -121,9 +121,9 @@
          <ul class="social-icons-simple white top50 w-100">
             <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
             <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
-            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
+            <li><a href="javascript:void(0)"><i class="fa fa-youtube"></i> </a> </li>
          </ul>
-         <p class="whitecolor">&copy; 2018 XeOne. Made With Love by themesindustry</p>
+         <p class="whitecolor">&copy; 2021 . . . 2021 &copy;</p>
       </div>
    </div>
    <a id="close_side_menu" href="javascript:void(0);"></a>
@@ -139,7 +139,7 @@
                <div class="center-item text-center video-content">
                   <h2 class="text-capitalize top50 bottom35  whitecolor">
                      <span class="font-xlight block wow fadeIn" data-wow-delay="400ms">PT. INDORASMI PERKASA
-                     </span><span class="block fontbold wow fadeIn" data-wow-delay="500ms">Lift With Care</span>
+                     </span><span class="block fontbold wow fadeIn" data-wow-delay="500ms">Your Home Lift Solution</span>
                   </h2>
                    <a href="#btn-feature" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">features</a>
                </div>
@@ -147,10 +147,8 @@
          <div class="col-md-2 col-sm-1"></div>
       </div>
    </div>
-   <video class="my-background-video jquery-background-video" loop autoplay muted poster="{{ asset('frontEnd/video/thumb-slide.jpg')}}">
-		<source src=" {{ asset('frontEnd/images/logo-transparent')}}') }}" type="video/mp4">
-		<source src="{{ asset('frontEnd/images/logo-transparent')}}') }}" type="video/webm">
-		<source src=" {{ asset('frontEnd/video/vid.webm') }}" type="video/ogg">
+   <video class="my-background-video jquery-background-video" loop autoplay muted>
+		<source src=" {{ asset('new_images/web.webm') }}" type="video/webm">
 	</video>
 </section>
 
@@ -169,7 +167,13 @@
                <div class="heading-title padding">
                <span class=" wow fadeIn" data-wow-delay="300ms">Layanan yang Kami Tawarkan</span>
                <h2 class="darkcolor bottom20 wow fadeIn" data-wow-delay="350ms">Supplier Elevator</h2>
-               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Kami menawarkan dua model Lift Rumah yang biasanya dipesan oleh seluruh customer kami. Model pertama, Lift Rumah dengan bahan full stainless yang mana lift model ini tertutup dan tidak terlihat dari dalam dan luar oleh orang lain. Kedua, model lift dengan bahan kaca tembus pandang. Sehingga terlihat baik dari luar maupun dalam lift. Kaca yang dipakai sangat tebal dan kokoh, dengan jenis kaca tempered dan laminate 5+5.</p>
+               <p style="text-align: justify" class="heading_space wow fadeIn" data-wow-delay="400ms">
+                   Kami adalah professional dari berbagai bidang yang berkumpul di ELEVA menjadi satu kesatuan perusahaan LIFT yang tangguh dan elegant.
+                   Teknisi kami memiliki sertifikasi terkait dengan pemasangan Lift dan jam terbang yang banyak baik untuk pemasangan high rise building ataupun untuk home lift.
+                   Kami menawarkan dua model Lift Rumah yang biasanya dipesan oleh seluruh customer kami.
+                   Model pertama, Lift Rumah dengan bahan full stainless yang mana lift model ini tertutup dan tidak terlihat dari dalam dan luar oleh orang lain.
+                   Kedua, model lift dengan bahan kaca tembus pandang.
+                   Sehingga terlihat baik dari luar maupun dalam lift. Kaca yang dipakai sangat tebal dan kokoh, dengan jenis kaca tempered dan laminate 5+5.</p>
                <a href="#portfolio-xe" class="button btnprimary pagescroll wow fadeInUp" data-wow-delay="500ms">Design Works</a>
             </div>
             </div>
@@ -183,9 +187,13 @@
          <div class="col-lg-6 nopadding">
             <div class="split-box text-center center-block container-padding equalheight">
                <div class="heading-title padding">
-               <span class="wow fadeIn" data-wow-delay="300ms">Services We Offer</span>
+               <span class="wow fadeIn" data-wow-delay="300ms">Layanan yang Kami Tawarkan</span>
                <h2 class="darkcolor bottom20 wow fadeIn" data-wow-delay="350ms">Perawatan Elevator</h2>
-               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Pemeliharaan lift diperlukan karena selain menjaga kebersihan, juga untuk menjaga fungsional nya lift tersebut. Berikut merupakan beberapa bagian lift yang perlu pemeliharaan.</p>
+               <p style="text-align: justify" class="heading_space wow fadeIn" data-wow-delay="400ms">
+                   Mengingat elevator/ lift adalah alat transportasi angkut manusia atau barang yang unik,
+                   maka pekerjaan perawatan pesawat lift bukan merupakan pekerjaan yang sederhana. Tidak perlu khawatir dengan elevator yang anda gunakan,
+                   karena dengan tenaga kerja kami yang sudah terlatih dan tersertifikasi dapat merawat dan memperbaiki elevator anda. Lift kami adalah buatan Eropa dengan kualitas nomor satu di kelasnya. Support dengan berbagai macam situasi dan kondisi bangunan anda.
+               </p>
                <a href="#our-team" class="button btnsecondary pagescroll wow fadeInUp" data-wow-delay="500ms">Team Kami</a>
             </div>
             </div>
@@ -206,7 +214,7 @@
       <div class="row">
          <div class="col-md-12 col-sm-12 text-center">
             <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-               <h2 class="whitecolor">Work <span class="fontregular">Process</span> </h2>
+               <h2 class="whitecolor">Proses <span class="fontregular">Pengerjaan</span> </h2>
             </div>
          </div>
       </div>
@@ -250,7 +258,7 @@
       <div class="row">
          <div class="col-md-8 offset-md-2 col-sm-12 text-center">
             <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-               <span>Heros Behind the Company</span>
+               <span>Heroes Behind the Company</span>
                <h2 class="darkcolor bottom20">Team Kami</h2>
 {{--               <p class="bottom10">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>--}}
             </div>
@@ -263,8 +271,8 @@
                        <img src="{{ asset('frontEnd/images/p1.jpg') }}" alt="">
                    </div>
                    <div class="team-content gradient_bg whitecolor">
-                       <h3>Usep Seumpena.ST, SPd,</h3>
-                       <p class="bottom40">Project Manager, Importir Lift Rumah Indonesia</p>
+                       <h3>Dwi Guna Hadibowo</h3>
+                       <p class="bottom40">Direktur Utama/Project Manager</p>
                        <div class="text-center">
                            <h3>"We give the best services !"</h3>
                        </div>
@@ -277,8 +285,8 @@
                        <img src="{{ asset('frontEnd/images/p2.jpg') }}" alt="">
                    </div>
                    <div class="team-content gradient_bg_default whitecolor">
-                       <h3>Aep ASDQ.SLR, DSLr</h3>
-                       <p class="bottom40">Accountant, Importir Lift Rumah Indonesia</p>
+                       <h3>Maulana Firza Mahesa</h3>
+                       <p class="bottom40">Direktur Marketing</p>
                        <div class="text-center">
                            <h3>"We give our best to satisfy people"</h3>
                        </div>
@@ -291,8 +299,8 @@
                        <img src="{{ asset('frontEnd/images/p3.jpg') }}" alt="">
                    </div>
                    <div class="team-content gradient_bg whitecolor">
-                       <h3>Richard Lioness.</h3>
-                       <p class="bottom40">Head Technician, Importir Lift Rumah Indonesia</p>
+                       <h3>Adhie Kurnia</h3>
+                       <p class="bottom40">Direktur Keuangan</p>
                        <div class="text-center">
                            <h3>"Teknisi kami selalu siap untuk anda"</h3>
                        </div>
@@ -331,87 +339,116 @@
          <div class="col-md-8 offset-md-2 col-sm-12 text-center">
             <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
                <span>Desain Portofolio</span>
-               <h2 class="darkcolor bottom10">Pemasangan Kami</h2>
+               <h2 class="darkcolor bottom15">Desain Elegant Hanya Untuk Anda</h2>
 {{--               <p class="heading_space">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>--}}
             </div>
          </div>
       </div>
       <div id="flat-gallery" class="cbp">
          <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/1.PNG')}}" alt="">
+            <img src="{{ asset('new_images/prd1.jpg')}}" alt="">
             <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/1.PNG')}}"></a>
-               <h4 class="top30">Elevator</h4>
-               <p>Modern Design</p>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/2.PNG')}}" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/2.PNG')}}"></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/pr3.jpg')}}" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/4.PNG')}}"></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/5.PNG')}}" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/5.PNG')}}"></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/6.PNG')}}" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/6.PNG')}}"></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="{{ asset('frontEnd/images/7.PNG')}}" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd1.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 1</h4>
+               <p>Eleva Elevator Model 1</p>
             </div>
          </div>
           <div class="cbp-item itemshadow">
-              <img src="{{ asset('frontEnd/images/pr1.jpg')}}" alt="">
-              <div class="overlay center-block whitecolor">
-                  <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
-                  <h4 class="top30">Wood Work</h4>
-                  <p>Small Portfolio Detail Here</p>
-              </div>
-          </div>
+            <img src="{{ asset('new_images/prd2.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd2.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 2</h4>
+               <p>Eleva Elevator Model 2</p>
+            </div>
+         </div>
           <div class="cbp-item itemshadow">
-              <img src="{{ asset('frontEnd/images/pr2.jpg')}}" alt="">
-              <div class="overlay center-block whitecolor">
-                  <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
-                  <h4 class="top30">Wood Work</h4>
-                  <p>Small Portfolio Detail Here</p>
-              </div>
-          </div>
+            <img src="{{ asset('new_images/prd3.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd3.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 3</h4>
+               <p>Eleva Elevator Model 3</p>
+            </div>
+         </div>
           <div class="cbp-item itemshadow">
-              <img src="{{ asset('frontEnd/images/pr5.jpg')}}" alt="">
-              <div class="overlay center-block whitecolor">
-                  <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
-                  <h4 class="top30">Wood Work</h4>
-                  <p>Small Portfolio Detail Here</p>
-              </div>
-          </div>
-      </div>
-
-   </div>
+            <img src="{{ asset('new_images/prd4.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd4.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 4</h4>
+               <p>Eleva Elevator Model 4</p>
+            </div>
+         </div>
+          <div class="cbp-item itemshadow">
+            <img src="{{ asset('new_images/prd5.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd5.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 5</h4>
+               <p>Eleva Elevator Model 5</p>
+            </div>
+         </div>
+          <div class="cbp-item itemshadow">
+            <img src="{{ asset('new_images/prd6.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd6.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 6</h4>
+               <p>Eleva Elevator Model 6</p>
+            </div>
+         </div>
+          <div class="cbp-item itemshadow">
+            <img src="{{ asset('new_images/prd7.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd7.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 7</h4>
+               <p>Eleva Elevator Model 7</p>
+            </div>
+         </div>
+          <div class="cbp-item itemshadow">
+            <img src="{{ asset('new_images/prd8.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd8.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 8</h4>
+               <p>Eleva Elevator Model 8</p>
+            </div>
+         </div>
+          <div class="cbp-item itemshadow">
+            <img src="{{ asset('new_images/prd9.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd9.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 9</h4>
+               <p>Eleva Elevator Model 9</p>
+            </div>
+         </div>
+          <div class="cbp-item itemshadow">
+            <img src="{{ asset('new_images/prd10.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd10.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 10</h4>
+               <p>Eleva Elevator Model 10</p>
+            </div>
+         </div>
+          <div class="cbp-item itemshadow">
+            <img src="{{ asset('new_images/prd11.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd11.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 11</h4>
+               <p>Eleva Elevator Model 11</p>
+            </div>
+         </div>
+          <div class="cbp-item itemshadow">
+            <img src="{{ asset('new_images/prd12.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd12.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 12</h4>
+               <p>Eleva Elevator Model 12</p>
+            </div>
+         </div>
+          <div class="cbp-item itemshadow">
+            <img src="{{ asset('new_images/prd13.jpg')}}" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd13.jpg')}}"></a>
+               <h4 class="top30">Eleva Elevator Model 13</h4>
+               <p>Eleva Elevator Model 13</p>
+            </div>
+         </div>
 </section>
 <!--Gallery ends -->
 
@@ -420,8 +457,8 @@
    <div class="container">
       <div class="row">
          <div class="col-md-5 col-sm-12 margin_bottom whitecolor text-md-start text-center wow fadeInLeft" data-wow-delay="300ms">
-            <h3 class="bottom25">Pengalaman Kami dalam Beberapa Tahun</h3>
-            <p class="title">Kami menunjukkan kepada Anda pencapaian profesional kami dalam jumlah, yang menunjukkan keterampilan dan kepercayaan yang diperoleh dari banyak klien.</p>
+            <h3 class="bottom25">Pengalaman kami selama bertahun-tahun</h3>
+            <p class="title">Kami menunjukkan kepada Anda pencapaian profesional kami, keterampilan, kepuasan, dan kepercayaan yang diperoleh dari banyak klien dan kolega.</p>
          </div>
          <div class="col-md-7 col-sm-12 text-center">
             <div class="row">
@@ -432,7 +469,7 @@
                   <div class="counters">
                      <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
                   </div>
-                  <p class="title">Pelanggan</p>
+                  <p class="title">Pelanggan Terpuaskan</p>
                </div>
                <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom wow fadeInRight" data-wow-delay="350ms">
                   <div class="img-icon bottom15">
@@ -441,7 +478,7 @@
                   <div class="counters">
                      <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
                   </div>
-                  <p class="title">Konsultasi</p>
+                  <p class="title">Konsultasi Selesai</p>
                </div>
                <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom wow fadeInRight" data-wow-delay="300ms">
                   <div class="img-icon bottom15">
@@ -450,7 +487,7 @@
                   <div class="counters">
                      <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
                   </div>
-                  <p class="title">Pelatihan</p>
+                  <p class="title">Kegiatan Pelatihan</p>
                </div>
             </div>
          </div>
@@ -483,7 +520,7 @@
                         <li><span>X</span></li>
                     </ul>
                     <div class="clearfix"></div>
-                    <a href="javascript:void(0)" class="button btnprimary top50">Hubungi Kami</a>
+                    <a href="#contactus" class="button btnprimary top50">Hubungi Kami</a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
@@ -498,7 +535,7 @@
                         <li><span>Pelayanan Lain</span></li>
                     </ul>
                     <div class="clearfix"></div>
-                    <a href="javascript:void(0)" class="button btnsecondary top50">Hubungi Kami </a>
+                    <a href="#contactus" class="button btnsecondary top50">Hubungi Kami </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
@@ -513,7 +550,7 @@
                         <li><span>Pelayanan Lain</span></li>
                     </ul>
                     <div class="clearfix"></div>
-                    <a href="javascript:void(0)" class="button btnprimary top50">Hubungi Kami </a>
+                    <a href="#contactus" class="button btnprimary top50">Hubungi Kami </a>
                 </div>
             </div>
         </div>
@@ -526,8 +563,8 @@
       <div class="row">
          <div class="col-md-7 col-sm-7">
             <div class="heading-title whitecolor text-md-start text-center wow fadeIn" data-wow-delay="500ms">
-               <span >We have an excellent story</span>
-               <h2 class="fontregular">Watch Our Video</h2>
+               <span >Ini Cerita Kami </span>
+               <h2 class="fontregular">Lihat Video </h2>
                <a data-fancybox href="https://youtu.be/ecjSmq-5680?list=TLGGYHkkgSG1gGQxMDExMjAyMQ" class="button btnprimary fontmedium top20"><i class="fa fa-play"></i> &nbsp;Play Now</a>
             </div>
          </div>
@@ -543,112 +580,57 @@
          <div class="col-md-12 col-sm-12 text-center">
             <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms">
                <span>Testimonials</span>
-               <h2 class="darkcolor">What People Say</h2>
+               <h2 class="darkcolor">Apa yang mereka katakan</h2>
             </div>
          </div>
       </div>
       <div class="row">
          <div class="col-md-12 col-sm-12">
             <div id="testimonial-slider" class="owl-carousel">
-               <div class="item">
-                  <div class="testimonial-wrapp">
-                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                     <div class="testimonial-text">
-                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
-                     </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/logo1.png')}}"></div>
-                     <h4 class="darkcolor">David Raleway</h4>
-                     <small class="defaultcolor">Businessman</small>
-                  </div>
-               </div>
-               <div class="item">
-                  <div class="testimonial-wrapp">
-                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                     <div class="testimonial-text">
-                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
-                     </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/logo3.png')}}"></div>
-                     <h4 class="darkcolor">Sam Billings</h4>
-                     <small class="defaultcolor">Businessman</small>
-                  </div>
-               </div>
-               <div class="item">
-                  <div class="testimonial-wrapp">
-                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                     <div class="testimonial-text">
-                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
-                     </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/kleeman.jpg')}}"></div>
-                     <h4 class="darkcolor">Jatinder Shahg</h4>
-                     <small class="defaultcolor">Businessman</small>
-                  </div>
-               </div>
-               <div class="item">
-                  <div class="testimonial-wrapp">
-                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                     <div class="testimonial-text">
-                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
-                     </div>
-                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/shenxi.jpg')}}"></div>
-                     <h4 class="darkcolor">David Zucker</h4>
-                     <small class="defaultcolor">Businessman</small>
-                  </div>
-               </div>
-{{--               <div class="item">--}}
-{{--                  <div class="testimonial-wrapp">--}}
-{{--                     <span class="quoted"><i class="fa fa-quote-right"></i></span>--}}
-{{--                     <div class="testimonial-text">--}}
-{{--                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>--}}
-{{--                     </div>--}}
-{{--                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-2.jpg')}}"></div>--}}
-{{--                     <h4 class="darkcolor">Akten Jansen</h4>--}}
-{{--                     <small class="defaultcolor">Businessman</small>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
-{{--               <div class="item">--}}
-{{--                  <div class="testimonial-wrapp">--}}
-{{--                     <span class="quoted"><i class="fa fa-quote-right"></i></span>--}}
-{{--                     <div class="testimonial-text">--}}
-{{--                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>--}}
-{{--                     </div>--}}
-{{--                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3.jpg')}}"></div>--}}
-{{--                     <h4 class="darkcolor">Doe Raleway</h4>--}}
-{{--                     <small class="defaultcolor">Businessman</small>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
-{{--               <div class="item">--}}
-{{--                  <div class="testimonial-wrapp">--}}
-{{--                     <span class="quoted"><i class="fa fa-quote-right"></i></span>--}}
-{{--                     <div class="testimonial-text">--}}
-{{--                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>--}}
-{{--                     </div>--}}
-{{--                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-1.jpg')}}"></div>--}}
-{{--                     <h4 class="darkcolor">Shamoun Raleway</h4>--}}
-{{--                     <small class="defaultcolor">Businessman</small>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
-{{--               <div class="item">--}}
-{{--                  <div class="testimonial-wrapp">--}}
-{{--                     <span class="quoted"><i class="fa fa-quote-right"></i></span>--}}
-{{--                     <div class="testimonial-text">--}}
-{{--                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>--}}
-{{--                     </div>--}}
-{{--                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3.jpg')}}"></div>--}}
-{{--                     <h4 class="darkcolor">Albugdadi Raleway</h4>--}}
-{{--                     <small class="defaultcolor">Businessman</small>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
-{{--               <div class="item">--}}
-{{--                  <div class="testimonial-wrapp">--}}
-{{--                     <span class="quoted"><i class="fa fa-quote-right"></i></span>--}}
-{{--                     <div class="testimonial-text">--}}
-{{--                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>--}}
-{{--                     </div>--}}
-{{--                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3.jpg')}}"></div>--}}
-{{--                     <h4 class="darkcolor">Albugdadi Raleway</h4>--}}
-{{--                     <small class="defaultcolor">Businessman</small>--}}
-{{--                  </div>--}}
-{{--               </div>--}}
+                <div class="item">
+                    <div class="testimonial-wrapp">
+                        <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                            <p class="bottom40">Liftnya keren! Desain finishing beraneka ragam. Bahkan tanpa ruang mesin jadi ga perlu ribet-ribet lagi buat memakan ruangan terlalu banyak. Sangat memuaskan!</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/t1.jpg') }}"></div>
+                        <h4 style="margin-top: 10px;" class="darkcolor">David Raleway</h4>
+                        <small class="defaultcolor">Pro Player</small>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-wrapp">
+                        <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                            <p class="bottom40">Lift & escalator teknologi canggih dengan harga terbaik di Indonesia. Layanan purna jual yang memadai & terpercaya. Responsif, cekatan, dan profesional.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/t2.jpg') }}"></div>
+                        <h4 style="margin-top: 10px;" class="darkcolor">Sam Billings</h4>
+                        <small class="defaultcolor">CEO Ultra Corp</small>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-wrapp">
+                        <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                            <p class="bottom40">Pengerjaan yang sangat cepat dan tepat. Kualitas terjamin.begitu juga dengan kinerja nya. Ramah dan bertanggung jawab. Hemat energi pula. Saya paling suka desainnya.</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/t6.jpg') }}"></div>
+                        <h4 style="margin-top: 10px;" class="darkcolor">Jessica Wang</h4>
+                        <small class="defaultcolor">Designer</small>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-wrapp">
+                        <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                        <div class="testimonial-text">
+                            <p class="bottom40">Teknisi bersertifikat, pelayanan ramah, banyak pilihan desain dan banyak yang ga bisa saya utarakan. Sangat membantu, karena ketika lelah tidak usah naik tangga</p>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/t4.jpg') }}"></div>
+                        <h4 style="margin-top: 10px;" class="darkcolor">Cathrine</h4>
+                        <small class="defaultcolor">Businesswoman</small>
+                    </div>
+                </div>
             </div>
          </div>
       </div>
@@ -665,34 +647,19 @@
          <div class="col-md-12 col-sm-12">
             <div id="partners-slider" class="owl-carousel">
                <div class="item">
-                  <div class="logo-item"> <img alt="" src="{{ asset('frontEnd/images/1.PNG')}}"></div>
+                  <div class="logo-item"> <img alt="" src="{{ asset('new_images/c1.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/2.PNG')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('new_images/c2.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/3.PNG')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('new_images/c3.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/4.PNG')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('new_images/c4.png')}}"></div>
                </div>
                <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/5.png')}}"></div>
-               </div>
-               <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images6.png')}}"></div>
-               </div>
-               <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/7.png')}}"></div>
-               </div>
-               <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/8.png')}}"></div>
-               </div>
-               <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/9.png')}}"></div>
-               </div>
-               <div class="item">
-                  <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/10.png')}}"></div>
+                  <div class="logo-item"><img alt="" src="{{ asset('new_images/c5.png')}}"></div>
                </div>
             </div>
          </div>
@@ -707,15 +674,16 @@
    <div class="container-fluid">
       <div class="row">
          <div class="col-md-6 col-sm-6 nopadding">
-            <div class="image hover-effect"><img src="{{ asset('frontEnd/images/split-blog.jpg')}}" alt="our blog" class="equalheight"></div>
+            <div class="image hover-effect"><img src="{{ asset('new_images/blog1.jpg')}}" alt="our blog" class="equalheight"></div>
          </div>
          <div class="col-md-6 col-sm-6">
             <div class="split-box text-center center-block equalheight container-padding">
                <div class="heading-title padding_half">
-               <span class="wow fadeIn" data-wow-delay="300ms">Read Our News</span>
-               <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">Latest Blog Post</h2>
-               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
-               <a href="blog.blade.php" class="button btnsecondary wow fadeInUp" data-wow-delay="500ms">Read Full Story</a>
+               <span class="wow fadeIn" data-wow-delay="300ms">Berita Terbaru</span>
+               <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">Cerita tentang perjalanan kami</h2>
+               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Home Lift merupakan istilah yang saya baru saja dengar. Selama ini kita pasti tahu ya yang namanya lift. Dimana-mana ada. Di setiap gedung, kalau lebih dari tiga lantai pasti pakai lift atau elevator. Mungkin tak ada mahluk perkotaan yang belum pernah merasakan barang ini
+                   Namun demikian, yang baru saja kita tahu, adalah home lift. Lift untuk “rumahan”. Berbeda dengan lift pada umumnya, lift rumahan ini menawarkan sensasi dan kenyamanan yang berbeda, sekaligus inovasi yang cukup wow.</p>
+               <a href="javascript:void(0)" class="button btnsecondary wow fadeInUp" data-wow-delay="500ms">Baca Lengkapnya</a>
             </div>
             </div>
          </div>
@@ -731,34 +699,27 @@
       <div class="row">
         <div class="col-md-12 col-sm-12">
            <div class="heading-title heading_space wow fadeInUp" data-wow-delay="300ms">
-               <span>Lets Get In Touch</span>
-               <h2 class="darkcolor">Contact liftrumah.id</h2>
+               <span>Hubungi Kami </span>
+               <h2 class="darkcolor">Kontak Eleva, PT. INDORASMI PERKASA</h2>
             </div>
         </div>
          <div class="col-md-6 col-sm-12 margin_bottom wow fadeInUp" data-wow-delay="350ms">
-            <p>Even though it's only for Home, pick from futuristic, modern, or classics design, and create your ideal design with doors and cabin parts including ceiling, floor, walls, handrail, mirrors and operation panels</p>
+            <p>Kami adalah professional dari berbagai bidang yang berkumpul di ELEVA menjadi satu kesatuan perusahaan LIFT yang tangguh dan elegant. Teknisi kami memiliki sertifikasi terkait dengan pemasangan Lift dan jam terbang yang banyak baik untuk pemasangan high rise building ataupun untuk home lift.
+                Sistem keamanan lift yang aman, Desain yang Elegant, Harga yang kompetitif, dan Pelayanan yang memuaskan adalah motto perusahaan kami.
+                Lift kami adalah buatan Eropa dengan kualitas nomor satu di kelasnya. Support dengan berbagai macam situasi dan kondisi bangunan anda.</p>
             <div class="row">
                <div class="col-md-6 col-sm-6 our-address top40">
-                  <h5 class="bottom25">Our Address</h5>
+                  <h5 class="bottom25">Alamat Kami</h5>
                   <p class="bottom15">Gd Wisma Laena R317, Jl. KH. Abdullah Syafei No.7, RT.6/RW.2, Manggarai Sel., Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12860 </p>
-{{--                  <a class="pickus" href="#." data-text="Get Directions">Get Directions</a>--}}
                </div>
                <div class="col-md-6 col-sm-6 our-address top40">
-                  <h5 class="bottom25">Our Phone</h5>
-                  <p class="bottom15">Office Telephone :0812-1380-3939 <span class="block">
-{{--                     Mobile : 001 63165370895--}}
+                  <h5 class="bottom25">Whatsapp Kami</h5>
+                  <p class="bottom15">Whatsapp :0811211339 <span class="block">
                   </span> </p>
-                  <a class="pickus" href="#." data-text="Call Us">Call Us</a>
                </div>
                <div class="col-md-6 col-sm-6 our-address top40">
-                  <h5 class="bottom25">Our Email</h5>
-                  <p class="bottom15">Main Email : liftrumah@gmail.com  </p>
-                  <a class="pickus" href="#." data-text="Send a Message">Send a Message</a>
-               </div>
-               <div class="col-md-6 col-sm-6 our-address top40">
-                  <h5 class="bottom25">Our Support</h5>
-                  <p class="bottom15">Main Support : info@website.com <span>Sales : support@website</span> </p>
-                  <a class="pickus" href="#." data-text="Open a Ticket">Open a Ticket</a>
+                  <h5 class="bottom25">Email</h5>
+                  <p class="bottom15">Email Utama : elevahomelift@gmail.com  </p>
                </div>
             </div>
          </div>
@@ -814,13 +775,11 @@
          <div class="col-md-12 col-sm-12 text-center">
             <ul class="social-icons bottom25 wow fadeInUp" data-wow-delay="300ms">
                <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
-               <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
-               <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i> </a> </li>
-               <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-youtube"></i> </a> </li>
                <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
                <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a> </li>
             </ul>
-            <p class="copyrights wow fadeInUp" data-wow-delay="350ms"> &copy; 2021 liftrumah.id  made with love by <a href="#" target="_blank">Panji Denis Giantoro</a> </p>
+            <p class="copyrights wow fadeInUp" data-wow-delay="350ms"> &copy; 2021 . . . 2021 &copy;</p>
          </div>
       </div>
    </div>
@@ -882,6 +841,19 @@
 <script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.parallax.min.js')}}"></script>
 <script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.slideanims.min.js')}}"></script>
 <script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.video.min.js')}}"></script>
+<script>
+    (function () {
+        var options = {
+            whatsapp: "+62811211339", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
 
 <!--Google Map API-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJnKEvlwpyjXfS_h-J1Cne2fPMqeb44Mk"></script>

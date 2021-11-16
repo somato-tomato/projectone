@@ -43,7 +43,7 @@
    <nav class="navbar navbar-expand-lg fixed-bottom gradient_bg">
       <div class="container">
          <a class="navbar-brand" href="{{url('/')}}">
-             <img src="{{ asset('frontEnd/images/logo.png')}}" alt="logo"> </a>
+             <img src="{{ asset('frontEnd/images/logo.png')}}" alt="logo">   </a>
          <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#xenav">
             <span> </span>
             <span> </span>
@@ -137,11 +137,13 @@
          <div class="col-md-2 col-sm-1"></div>
          <div class="col-md-8 col-sm-10">
                <div class="center-item text-center video-content">
-                  <h2 class="text-capitalize top50 bottom35  whitecolor">
-                     <span class="font-xlight block wow fadeIn" data-wow-delay="400ms">PT. INDORASMI PERKASA
-                     </span><span class="block fontbold wow fadeIn" data-wow-delay="500ms">Your Home Lift Solution</span>
+                   <img src="{{ asset('frontEnd/images/logo.png')}}" alt="logo" style="width: 300px" class="" data-wow-delay="500ms">
+
+                   <h2 class="text-capitalize top50 bottom35  whitecolor">
+{{--                     <span class="font-xlight block wow fadeIn" data-wow-delay="400ms">PT. INDORASMI PERKASA--}}
+{{--                     </span><span class="block fontbold wow fadeIn" data-wow-delay="500ms">Your Home Lift Solution</span>--}}
                   </h2>
-                   <a href="#btn-feature" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">features</a>
+{{--                   <a href="#btn-feature" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">features</a>--}}
                </div>
          </div>
          <div class="col-md-2 col-sm-1"></div>
@@ -268,7 +270,7 @@
            <div class="col-md-4 col-xs-12">
                <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
                    <div class="image">
-                       <img src="{{ asset('frontEnd/images/p1.jpg') }}" alt="">
+                       <img src="{{ asset('frontEnd/images/555.jpg') }}" alt="">
                    </div>
                    <div class="team-content gradient_bg whitecolor">
                        <h3>Dwi Guna Hadibowo</h3>
@@ -282,7 +284,7 @@
            <div class="col-md-4 col-xs-12">
                <div class="team-box top60 wow fadeIn" data-wow-delay="400ms">
                    <div class="image">
-                       <img src="{{ asset('frontEnd/images/p2.jpg') }}" alt="">
+                       <img src="{{ asset('frontEnd/images/666.png') }}" alt="">
                    </div>
                    <div class="team-content gradient_bg_default whitecolor">
                        <h3>Maulana Firza Mahesa</h3>
@@ -296,7 +298,7 @@
            <div class="col-md-4 col-xs-12">
                <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
                    <div class="image">
-                       <img src="{{ asset('frontEnd/images/p3.jpg') }}" alt="">
+                       <img src="{{ asset('frontEnd/images/55555.jpg') }}" alt="">
                    </div>
                    <div class="team-content gradient_bg whitecolor">
                        <h3>Adhie Kurnia</h3>
@@ -646,19 +648,19 @@
       <div class="row">
          <div class="col-md-12 col-sm-12">
             <div id="partners-slider" class="owl-carousel">
-               <div class="item">
+               <div class="item"style="margin-top: 20px">
                   <div class="logo-item"> <img alt="" src="{{ asset('new_images/c1.png')}}"></div>
                </div>
-               <div class="item">
+               <div class="item"style="margin-top: 20px">
                   <div class="logo-item"><img alt="" src="{{ asset('new_images/c2.png')}}"></div>
                </div>
-               <div class="item">
+               <div class="item"style="margin-top: 20px">
                   <div class="logo-item"><img alt="" src="{{ asset('new_images/c3.png')}}"></div>
                </div>
-               <div class="item">
+               <div class="item"style="margin-top: 20px">
                   <div class="logo-item"><img alt="" src="{{ asset('new_images/c4.png')}}"></div>
                </div>
-               <div class="item">
+               <div class="item"style="margin-top: 20px">
                   <div class="logo-item"><img alt="" src="{{ asset('new_images/c5.png')}}"></div>
                </div>
             </div>
@@ -700,11 +702,11 @@
         <div class="col-md-12 col-sm-12">
            <div class="heading-title heading_space wow fadeInUp" data-wow-delay="300ms">
                <span>Hubungi Kami </span>
-               <h2 class="darkcolor">Kontak Eleva, PT. INDORASMI PERKASA</h2>
+               <h3 class="darkcolor"> PT. INDORASMI PERKASA</h3>
             </div>
         </div>
          <div class="col-md-6 col-sm-12 margin_bottom wow fadeInUp" data-wow-delay="350ms">
-            <p>Kami adalah professional dari berbagai bidang yang berkumpul di ELEVA menjadi satu kesatuan perusahaan LIFT yang tangguh dan elegant. Teknisi kami memiliki sertifikasi terkait dengan pemasangan Lift dan jam terbang yang banyak baik untuk pemasangan high rise building ataupun untuk home lift.
+            <p style="text-align: justify" >Kami adalah professional dari berbagai bidang yang berkumpul di ELEVA menjadi satu kesatuan perusahaan LIFT yang tangguh dan elegant. Teknisi kami memiliki sertifikasi terkait dengan pemasangan Lift dan jam terbang yang banyak baik untuk pemasangan high rise building ataupun untuk home lift.
                 Sistem keamanan lift yang aman, Desain yang Elegant, Harga yang kompetitif, dan Pelayanan yang memuaskan adalah motto perusahaan kami.
                 Lift kami adalah buatan Eropa dengan kualitas nomor satu di kelasnya. Support dengan berbagai macam situasi dan kondisi bangunan anda.</p>
             <div class="row">
@@ -763,8 +765,7 @@
       </div>
    </div>
 
-   <!--Location Map here-->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.306952197492!2d106.84752771471683!3d-6.22319659549515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f38ee5d21441%3A0x44b3ece8d15487ea!2sRT.6%2FRW.2%2C%20South%20Manggarai%2C%20Tebet%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1636822551297!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.306952197492!2d106.84752771471683!3d-6.22319659549515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f38ee5d21441%3A0x44b3ece8d15487ea!2sRT.6%2FRW.2%2C%20South%20Manggarai%2C%20Tebet%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1636822551297!5m2!1sen!2sid"width="800" height="600"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 <!--Contact US Ends-->
 

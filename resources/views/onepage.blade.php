@@ -346,7 +346,7 @@
       </div>
       <div id="flat-gallery" class="cbp">
          <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd1.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd1.jpg')}}" alt="" style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd1.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 1</h4>
@@ -354,7 +354,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd2.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd2.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd2.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 2</h4>
@@ -362,7 +362,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd3.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd3.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd3.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 3</h4>
@@ -370,7 +370,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd4.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd4.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd4.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 4</h4>
@@ -378,7 +378,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd5.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd5.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd5.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 5</h4>
@@ -386,7 +386,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd6.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd6.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd6.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 6</h4>
@@ -394,7 +394,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd7.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd7.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd7.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 7</h4>
@@ -402,7 +402,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd8.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd8.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd8.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 8</h4>
@@ -410,7 +410,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd9.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd9.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd9.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 9</h4>
@@ -418,7 +418,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd10.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd10.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd10.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 10</h4>
@@ -426,7 +426,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd11.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd11.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd11.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 11</h4>
@@ -434,7 +434,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd12.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd12.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd12.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 12</h4>
@@ -442,7 +442,7 @@
             </div>
          </div>
           <div class="cbp-item itemshadow">
-            <img src="{{ asset('new_images/prd13.jpg')}}" alt="">
+            <img src="{{ asset('new_images/prd13.jpg')}}" alt=""style="height:600px">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd13.jpg')}}"></a>
                <h4 class="top30">Eleva Elevator Model 13</h4>
@@ -565,7 +565,7 @@
             <div class="heading-title whitecolor text-md-start text-center wow fadeIn" data-wow-delay="500ms">
                <span >Ini Cerita Kami </span>
                <h2 class="fontregular">Lihat Video </h2>
-               <a data-fancybox href="https://youtu.be/ecjSmq-5680?list=TLGGYHkkgSG1gGQxMDExMjAyMQ" class="button btnprimary fontmedium top20"><i class="fa fa-play"></i> &nbsp;Play Now</a>
+               <a data-fancybox href="https://youtu.be/ecjSmq-5680?list=TLGGYHkkgSG1gGQxNjExMjAyMQ&t=10" class="button btnprimary fontmedium top20"><i class="fa fa-play"></i> &nbsp;Play Now</a>
             </div>
          </div>
       </div>
@@ -670,26 +670,26 @@
 
 
 <!-- Our Blogs -->
-<section id="our-blog" class="half-section bglight">
-   <div class="container-fluid">
-      <div class="row">
-         <div class="col-md-6 col-sm-6 nopadding">
-            <div class="image hover-effect"><img src="{{ asset('new_images/blog1.jpg')}}" alt="our blog" class="equalheight"></div>
-         </div>
-         <div class="col-md-6 col-sm-6">
-            <div class="split-box text-center center-block equalheight container-padding">
-               <div class="heading-title padding_half">
-               <span class="wow fadeIn" data-wow-delay="300ms">Berita Terbaru</span>
-               <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">Cerita tentang perjalanan kami</h2>
-               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Home Lift merupakan istilah yang saya baru saja dengar. Selama ini kita pasti tahu ya yang namanya lift. Dimana-mana ada. Di setiap gedung, kalau lebih dari tiga lantai pasti pakai lift atau elevator. Mungkin tak ada mahluk perkotaan yang belum pernah merasakan barang ini
-                   Namun demikian, yang baru saja kita tahu, adalah home lift. Lift untuk “rumahan”. Berbeda dengan lift pada umumnya, lift rumahan ini menawarkan sensasi dan kenyamanan yang berbeda, sekaligus inovasi yang cukup wow.</p>
-               <a href="javascript:void(0)" class="button btnsecondary wow fadeInUp" data-wow-delay="500ms">Baca Lengkapnya</a>
-            </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
+{{--<section id="our-blog" class="half-section bglight">--}}
+{{--   <div class="container-fluid">--}}
+{{--      <div class="row">--}}
+{{--         <div class="col-md-6 col-sm-6 nopadding">--}}
+{{--            <div class="image hover-effect"><img src="{{ asset('new_images/blog1.jpg')}}" alt="our blog" class="equalheight"></div>--}}
+{{--         </div>--}}
+{{--         <div class="col-md-6 col-sm-6">--}}
+{{--            <div class="split-box text-center center-block equalheight container-padding">--}}
+{{--               <div class="heading-title padding_half">--}}
+{{--               <span class="wow fadeIn" data-wow-delay="300ms">Berita Terbaru</span>--}}
+{{--               <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">Cerita tentang perjalanan kami</h2>--}}
+{{--               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Home Lift merupakan istilah yang saya baru saja dengar. Selama ini kita pasti tahu ya yang namanya lift. Dimana-mana ada. Di setiap gedung, kalau lebih dari tiga lantai pasti pakai lift atau elevator. Mungkin tak ada mahluk perkotaan yang belum pernah merasakan barang ini--}}
+{{--                   Namun demikian, yang baru saja kita tahu, adalah home lift. Lift untuk “rumahan”. Berbeda dengan lift pada umumnya, lift rumahan ini menawarkan sensasi dan kenyamanan yang berbeda, sekaligus inovasi yang cukup wow.</p>--}}
+{{--               <a href="javascript:void(0)" class="button btnsecondary wow fadeInUp" data-wow-delay="500ms">Baca Lengkapnya</a>--}}
+{{--            </div>--}}
+{{--            </div>--}}
+{{--         </div>--}}
+{{--      </div>--}}
+{{--   </div>--}}
+{{--</section>--}}
 <!--Our Blogs Ends-->
 
 
@@ -714,12 +714,12 @@
                </div>
                <div class="col-md-6 col-sm-6 our-address top40">
                   <h5 class="bottom25">Whatsapp Kami</h5>
-                  <p class="bottom15">Whatsapp :0811211339 <span class="block">
+                  <p class="bottom15">Whatsapp :087811781180 <span class="block">
                   </span> </p>
                </div>
                <div class="col-md-6 col-sm-6 our-address top40">
                   <h5 class="bottom25">Email</h5>
-                  <p class="bottom15">Email Utama : elevahomelift@gmail.com  </p>
+                  <p class="bottom15">Email Utama : eleva.elevator@gmail.com  </p>
                </div>
             </div>
          </div>
@@ -774,12 +774,12 @@
       <div class="row">
          <div class="col-md-12 col-sm-12 text-center">
             <ul class="social-icons bottom25 wow fadeInUp" data-wow-delay="300ms">
-               <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
-               <li><a href="javascript:void(0)"><i class="fa fa-youtube"></i> </a> </li>
-               <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
-               <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a> </li>
+               <li><a href="https://m.facebook.com/elevaindorasmi"><i class="fa fa-facebook"></i> </a> </li>
+               <li><a href="https://www.youtube.com/channel/UCHaIRS-m4-b1qy8cnstXTAQ/featured"><i class="fa fa-youtube"></i> </a> </li>
+               <li><a href="https://www.instagram.com/liftrumah.id/"><i class="fa fa-instagram"></i> </a> </li>
+               <li><a href="mailto:eleva.elevator@gmail.com"><i class="fa fa-envelope-o"></i> </a> </li>
             </ul>
-            <p class="copyrights wow fadeInUp" data-wow-delay="350ms"> &copy; 2021 . . . 2021 &copy;</p>
+            <p class="copyrights wow fadeInUp" data-wow-delay="350ms"> &copy; copyright eleva.id bersama RiseTech &copy;</p>
          </div>
       </div>
    </div>
@@ -844,7 +844,7 @@
 <script>
     (function () {
         var options = {
-            whatsapp: "+62811211339", // WhatsApp number
+            whatsapp: "+6287811781180", // WhatsApp number
             call_to_action: "Message us", // Call to action
             position: "right", // Position may be 'right' or 'left'
         };

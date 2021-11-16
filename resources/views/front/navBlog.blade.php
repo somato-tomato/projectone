@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg transparent-bg static-nav">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="{{ asset('images_site/'.$siteConfig->siteLogo) }}" style="height: 50px; width: auto" alt="logo">
+                <img src="{{ asset('images_site/'.$siteConfig->siteLogo ) }}" style="height: 50px; width: auto" alt="logo">
             </a>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#xenav">
                 <span> </span>

@@ -76,13 +76,13 @@ ul.social-icons.white li a,
 ul.social-icons-simple.white li a{
     color: #fff;
 }
-ul.social-icons-simple li a:hover, 
+ul.social-icons-simple li a:hover,
 ul.social-icons-simple li a:focus{
     color: #00bcd4;
 }
-ul.social-icons li a:hover, 
+ul.social-icons li a:hover,
 ul.social-icons li a:focus,
-ul.social-icons.white li a:hover, 
+ul.social-icons.white li a:hover,
 ul.social-icons.white li a:focus{
     color: #fff;
    -webkit-box-shadow: 0 0 15px 30px #00bcd4 inset;
@@ -104,7 +104,7 @@ ul.social-icons.white li a:focus{
 }
 .btnwhite-hole {
    background: transparent;
-   border: 1px solid #fff;  
+   border: 1px solid #fff;
 }
 .btnwhite:hover, .btnwhite:focus{
     background: #00bcd4;
@@ -214,7 +214,7 @@ ul.social-icons.white li a:focus{
    background: rgba(0,0,0,0);
 }
 
-  
+
 /*toggle responsive*/
 .navbar-toggler span {
    background: #fff;
@@ -275,24 +275,24 @@ ul.social-icons.white li a:focus{
    background: #fff;
 }
 .side-nav .navbar-nav .nav-link.active {
-   background: transparent;  
+   background: transparent;
 }
 
 
 @media (max-width: 992px) {
-   .center-brand .navbar-nav .nav-link, 
+   .center-brand .navbar-nav .nav-link,
    .transparent-bg .navbar-nav .nav-link {
       background: #00bcd4;
    }
-   .center-brand.fixedmenu .navbar-nav .nav-link, 
+   .center-brand.fixedmenu .navbar-nav .nav-link,
    .transparent-bg.fixedmenu .navbar-nav .nav-link {
       background: transparent;
-   }   
+   }
 }
 
 /*-------------------------------*/
     /*Navigation Ends */
-/*-------------------------------*/	
+/*-------------------------------*/
 
 
 /*-------------------------------*/
@@ -367,7 +367,7 @@ ul.social-icons.white li a:focus{
     -webkit-box-shadow: 0 0 0 2px #643094;
     box-shadow: 0 0 0 2px #643094;
 }
-.uranus .tp-bullet.selected .tp-bullet-inner, 
+.uranus .tp-bullet.selected .tp-bullet-inner,
 .uranus .tp-bullet:hover .tp-bullet-inner {
    background: #643094;
 }
@@ -376,7 +376,7 @@ ul.social-icons.white li a:focus{
 	cursor: url(../images/openhand.cur), move;
 }
 .rev_slider li.rev_gradient::after {
-   background: #643094; 
+   background: #643094;
 }
 .banner-overlay::after {
    background: rgba(0,0,0,.39);
@@ -395,7 +395,7 @@ ul.social-icons.white li a:focus{
     background: url("../images/split-img1.jpg") no-repeat;
 }
 .half-section .imgtwo{
-    background: url("../images/split-img2.jpg") no-repeat;   
+    background: url("../images/split-img2.jpg") no-repeat;
 }
 
 /*-------------------------------*/
@@ -468,7 +468,7 @@ ul.social-icons.white li a:focus{
    border: 20px solid #fff;
 }
 
-.team-box.no-hover .team-content { 
+.team-box.no-hover .team-content {
    -webkit-box-shadow: 0px 10px 5px -10px #b7b7b7;
    box-shadow: 0px 10px 5px -10px #b7b7b7;
    background: #fff;
@@ -600,7 +600,7 @@ ul.social-icons.white li a:focus{
 
 #app-feature .feature-item:hover .icon {
    background: #643094;
-} 
+}
 
 .feature-item.active {
    background: #f7f7f7;
@@ -890,7 +890,7 @@ ul.rounded li::before {
 .our-address .pickus::after {
 	color: #212331;
 }
-.our-address .pickus:hover, 
+.our-address .pickus:hover,
 .our-address .pickus:focus {
    color: #212331;
 }

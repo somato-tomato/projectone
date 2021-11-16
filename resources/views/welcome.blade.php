@@ -203,7 +203,7 @@
             </div>
             <div id="flat-gallery" class="cbp">
                 <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/1.PNG')}}" alt="">
+                    <img src="{{ asset('frontEnd/images/1.PNG')}}" >
                     <div class="overlay center-block whitecolor">
                         <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/1.PNG')}}"></a>
                         <h4 class="top30">Elevator</h4>
@@ -211,7 +211,7 @@
                     </div>
                 </div>
                 <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/2.PNG')}}" alt="">
+                    <img src="{{ asset('frontEnd/images/2.PNG')}}" alt="" >
                     <div class="overlay center-block whitecolor">
                         <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/2.PNG')}}"></a>
                         <h4 class="top30">Wood Work</h4>

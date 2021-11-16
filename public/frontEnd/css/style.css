@@ -255,11 +255,11 @@ section{
 	padding-right: 2.25rem;
 }
 .gradient_bg{
-    background: -webkit-linear-gradient(90deg, #423f9c 31%, #862359 69%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(31%, #423f9c), color-stop(69%, #862359));
-    background: -webkit-linear-gradient(left, #423f9c 31%, #862359 69%);
-    background: -o-linear-gradient(left, #423f9c 31%, #862359 69%);
-    background: linear-gradient(90deg, #423f9c 31%, #862359 69%);
+    background: -webkit-linear-gradient(90deg, #0dcaf0 31%, #0a6aa1 69%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(31%, #0dcaf0), color-stop(69%, #0a6aa1));
+    background: -webkit-linear-gradient(left, #0dcaf0 31%, #0a6aa1 69%);
+    background: -o-linear-gradient(left, #0dcaf0 31%, #0a6aa1 69%);
+    background: linear-gradient(90deg, #0dcaf0 31%, #0a6aa1 69%);
 }
 .gradient_bg_default{
     background: -webkit-linear-gradient(90deg, #00e4ce 31%, #00abc9 69%);
@@ -678,12 +678,13 @@ i::before,i::after{
 
    -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
-   background: -webkit-linear-gradient(90deg, #423f9c 31%, #862359 69%);
-   background: -webkit-gradient(linear, left top, right top, color-stop(31%, #423f9c), color-stop(69%, #862359));
-   background: -webkit-linear-gradient(left, #423f9c 31%, #862359 69%);
-   background: -o-linear-gradient(left, #423f9c 31%, #862359 69%);
-   background: linear-gradient(90deg, #423f9c 31%, #862359 69%);
+    background: -webkit-linear-gradient(90deg, #0dcaf0 31%, #0a6aa1 69%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(31%, #0dcaf0), color-stop(69%, #0a6aa1));
+    background: -webkit-linear-gradient(left, #0dcaf0 31%, #0a6aa1 69%);
+    background: -o-linear-gradient(left, #0dcaf0 31%, #0a6aa1 69%);
+    background: linear-gradient(90deg, #0dcaf0 31%, #0a6aa1 69%);
 }
+
 .center-brand.fixedmenu,
 .bg-white.fixedmenu,
 .bg-transparent-light.fixedmenu,
@@ -981,13 +982,14 @@ i::before,i::after{
 .side-menu.before-side {
    width: 280px;
 }
-.just-sidemenu .side-menu {
-    background: -webkit-linear-gradient(90deg, #423f9c, #862359);
-	background: -webkit-gradient(linear, left top, right top, color-stop(#423f9c), color-stop(#862359));
-	background: -webkit-linear-gradient(left, #423f9c, #862359);
-	background: -o-linear-gradient(left, #423f9c, #862359);
-	background: -webkit-gradient(linear, left top, right top, from(#423f9c), to(#862359));
-	background: linear-gradient(90deg, #423f9c, #862359);
+
+
+.just-sidemenu .side-menu{
+    background: -webkit-linear-gradient(90deg, #0dcaf0 31%, #0a6aa1 69%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(31%, #0dcaf0), color-stop(69%, #0a6aa1));
+    background: -webkit-linear-gradient(left, #0dcaf0 31%, #0a6aa1 69%);
+    background: -o-linear-gradient(left, #0dcaf0 31%, #0a6aa1 69%);
+    background: linear-gradient(90deg, #0dcaf0 31%, #0a6aa1 69%);
 }
 .transparent-sidemenu .side-menu {
     background: rgba(0,0,0,.95);
@@ -3265,6 +3267,7 @@ blockquote.blockquote {
 }
 .news_item .news_desc{
 	padding:40px 30px;
+
 }
 
 .meta-tags li, .meta-tags li a,

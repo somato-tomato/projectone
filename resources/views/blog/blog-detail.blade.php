@@ -26,6 +26,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar-nav">
 
+
 <!--PreLoader-->
 <div class="loader">
    <div class="loader-inner">
@@ -87,6 +88,12 @@
                        <li><a href="#."><i class="fa fa-calendar"></i>{{ Carbon\Carbon::createFromTimeString($post->published_at)->format('g:i a')  }}</a></li>
                        <li><a href="#."> <i class="fa fa-user-o"></i> {{ $post['user']->name }}</a></li>
                    </ul>
+                   <style>
+                       .news_item .news_desc img{
+                           width: 100px;
+
+                       }
+                   </style>
                    {!! $post->body !!}
                </div>
             </div>
@@ -97,7 +104,7 @@
                   <h4 class="text-capitalize darkcolor bottom20">Recent Posts</h4>
                    @forelse($latest as $l)
                        <div class="single_post bottom15">
-                           <a href="{{ route('sp',$l->slug) }}" class="post"><img src="{{ $l->featured_image }}" alt="post image"></a>
+                           <a href="{{ route('sp',$l->slug) }}" class="post"><img src="{{ $l->featured_image }}" alt="post image" width="60%"height="60%"></a>
                            <div class="text">
                                <a href="{{ route('sp', $l->slug) }}">{{ $l->title }}</a>
                                <span>{{ Carbon\Carbon::createFromTimeString($l->published_at)->format('g:i a')  }}</span>

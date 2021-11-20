@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddFieldIdPackageInPackagesTable extends Migration
+class AddValueImageInTeamsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,8 @@ class AddFieldIdPackageInPackagesTable extends Migration
      */
     public function up()
     {
-        Schema::table('packages', function (Blueprint $table) {
-            //
-            $table->string('id_package')->nullable()->after('id');
+        Schema::table('teams', function (Blueprint $table) {
+            $table->string('image')->after('deskripsi');
         });
     }
 
@@ -26,7 +25,7 @@ class AddFieldIdPackageInPackagesTable extends Migration
      */
     public function down()
     {
-        Schema::table('packages', function (Blueprint $table) {
+        Schema::table('teams', function (Blueprint $table) {
             //
         });
     }

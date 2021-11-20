@@ -50,7 +50,6 @@ class SiteConfigController extends Controller
             'siteDescription' => 'string|max:255',
             'siteLogo' => 'mimes:jpeg,png,bmp|max:512',
         ]);
-
         if ($request->siteLogo)
         {
             $file = $request->file('siteLogo');
@@ -60,7 +59,6 @@ class SiteConfigController extends Controller
         } else {
             $new_name = 'NULL';
         }
-
         SiteConfiguration::updateOrCreate(
             ['id' => 1],
             [

@@ -41,9 +41,8 @@ class TeamController extends Controller
     public function store(Request $request)
     {
         //
-        $team = Team::create($request->only(['nama_team', 'jobdes', 'perusahaan', 'deskripsi']));
-        $file = $request->file('foto');
-
+        $team = Team::create($request->only(['image','nama_team', 'jobdes', 'perusahaan', 'deskripsi']));
+        $file = $request->file('image');
         if (!empty($file)) {
             Storage::disk('local')->makeDirectory('public/foto/'.$team->id, 0775, true);
             $destinationPath = storage_path('app/public/foto/'.$team->id);
@@ -53,8 +52,6 @@ class TeamController extends Controller
             $image_resize->resize(400, 400);
             $image_resize->save($destinationPath.'/foto.' . $filesname, 80);
         }
-
-
         Alert::success('Berhasil !', 'Team berhasil di perbarui !');
         return redirect()->route('team.index');
     }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -267,48 +268,50 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
-                        <div class="image">
-                            <img src="{{ asset('frontEnd/images/555.jpg') }}" alt="">
-                        </div>
-                        <div class="team-content gradient_bg whitecolor">
-                            <h3>Dwi Guna Hadibowo</h3>
-                            <p class="bottom40">Direktur Utama/Project Manager</p>
-                            <div class="text-center">
-                                <h3>"We give the best services !"</h3>
+                @foreach($team as $teams)
+                    <div class="col-md-4 col-xs-12">
+                        <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
+                            <div class="image">
+                                <img src="{{ asset('storage/' . ($file_foto1[0] ?? ''))}}" alt="Admin" >
+                            </div>
+                            <div class="team-content gradient_bg whitecolor">
+                                <h3>{{$teams->nama_team}}</h3>
+                                <p class="bottom40">{{$teams->jobdes}} - {{$teams->perusahaan}}</p>
+                                <div class="text-center">
+                                    <h3>{{$teams->deskripsi}}</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-xs-12">
-                    <div class="team-box top60 wow fadeIn" data-wow-delay="400ms">
-                        <div class="image">
-                            <img src="{{ asset('frontEnd/images/666.png') }}" alt="">
-                        </div>
-                        <div class="team-content gradient_bg_default whitecolor">
-                            <h3>Maulana Firza Mahesa</h3>
-                            <p class="bottom40">Direktur Marketing</p>
-                            <div class="text-center">
-                                <h3>"We give our best to satisfy people"</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xs-12">
-                    <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
-                        <div class="image">
-                            <img src="{{ asset('frontEnd/images/55555.jpg') }}" alt="">
-                        </div>
-                        <div class="team-content gradient_bg whitecolor">
-                            <h3>Adhie Kurnia</h3>
-                            <p class="bottom40">Direktur Keuangan</p>
-                            <div class="text-center">
-                                <h3>"Teknisi kami selalu siap untuk anda"</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+{{--                <div class="col-md-4 col-xs-12">--}}
+{{--                    <div class="team-box top60 wow fadeIn" data-wow-delay="400ms">--}}
+{{--                        <div class="image">--}}
+{{--                            <img src="{{ asset('frontEnd/images/666.png') }}" alt="">--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content gradient_bg_default whitecolor">--}}
+{{--                            <h3>Maulana Firza Mahesa</h3>--}}
+{{--                            <p class="bottom40">Direktur Marketing</p>--}}
+{{--                            <div class="text-center">--}}
+{{--                                <h3>"We give our best to satisfy people"</h3>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-md-4 col-xs-12">--}}
+{{--                    <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">--}}
+{{--                        <div class="image">--}}
+{{--                            <img src="{{ asset('frontEnd/images/55555.jpg') }}" alt="">--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content gradient_bg whitecolor">--}}
+{{--                            <h3>Adhie Kurnia</h3>--}}
+{{--                            <p class="bottom40">Direktur Keuangan</p>--}}
+{{--                            <div class="text-center">--}}
+{{--                                <h3>"Teknisi kami selalu siap untuk anda"</h3>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
     </section>

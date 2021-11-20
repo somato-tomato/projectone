@@ -266,7 +266,9 @@
             </div>
          </div>
       </div>
+
        <div class="row">
+           @foreach($team as $teams)
            <div class="col-md-4 col-xs-12">
                <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
                    <div class="image">
@@ -281,6 +283,10 @@
                    </div>
                </div>
            </div>
+           @endforeach
+               <div class="card-footer">
+                   {{ $team->links() }}
+               </div>
            <div class="col-md-4 col-xs-12">
                <div class="team-box top60 wow fadeIn" data-wow-delay="400ms">
                    <div class="image">

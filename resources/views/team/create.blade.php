@@ -9,7 +9,7 @@
                         Team
                     </div>
                     <hr>
-                    <form action="{{route('team.store')}}" method="post" enctype="multipart/form-data">
+                    <form action="{{route('team.store')}}" method="post"  enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <div class="col-md-4">
@@ -34,7 +34,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="custom-file">
-                                            <input type="file" class="custom-file-input" name="foto"
+                                            <input type="file" class="custom-file-input" name="image"
                                                    onchange="showPreview(event);">
                                             <label class="custom-file-label">Upload file ktp</label>
                                         </div>
@@ -89,7 +89,6 @@
                         preview.style.display = "block";
                     }
                 }
-
             </script>
 
 

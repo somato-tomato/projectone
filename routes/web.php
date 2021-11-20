@@ -18,11 +18,9 @@ use App\Http\Controllers\PackageController;
 |
 */
 
-Route::get('/te',[HomeController::class,'home'])->name('h');
-Route::get('/onepage',[HomeController::class,'home'])->name('h');
-Route::get('/', function (){
-    return view('onepage');
-});
+//Route::get('/te',[HomeController::class,'home'])->name('h');
+Route::get('/onepage',[HomeController::class,'home'])->name('home');
+
 Route::get('/blog', [BlogController::class, 'listPost'])->name('lp');
 Route::get('/blog/{slug}', [BlogController::class, 'showPost'])->name('sp');
 

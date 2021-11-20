@@ -17,4 +17,7 @@
     <li>
         <a href="{{ route('site.t') }}"><i class="fas fa-chart-line"></i>Testimoni</a>
     </li>
+    <li>
+        <a href="{{ route('package.index') }}"><i class="fas fa-chart-line"></i>Package</a>
+    </li>
 </ul>

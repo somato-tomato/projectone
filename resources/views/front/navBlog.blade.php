@@ -2,7 +2,7 @@
 <header class="site-header">
     <nav class="navbar navbar-expand-lg transparent-bg static-nav">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="navbar-brand" href="{{url('/onepage')}}">
                 <img src="{{ asset('images_site/'.$siteConfig->siteLogo ) }}" style="height: 50px; width: auto" alt="logo">
             </a>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#xenav">
@@ -13,11 +13,11 @@
             <div class="collapse navbar-collapse" id="xenav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url('/') }}" data-text="Home">Home</a>
+                        <a class="nav-link" href="{{url('/onepage')}}" data-text="Home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/#contactus') }}" data-text="contact">contact</a>
-                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link" href="{{ url('/#contactus') }}" data-text="contact">contact</a>--}}
+{{--                    </li>--}}
                 </ul>
             </div>
         </div>
@@ -35,11 +35,11 @@
             <nav class="side-nav">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url('/') }}">Home</a>
+                        <a class="nav-link" href="{{url('/onepage')}}" data-text="Home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/#contactus') }}">contact</a>
-                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link" href="{{ url('/#contactus') }}">contact</a>--}}
+{{--                    </li>--}}
                 </ul>
             </nav>
 

@@ -35,7 +35,9 @@ class FeedrequestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Feedrequest::create($request->all());
+        Alert::success('Berhasil !', 'Feed Request  berhasil di Tersimpan !');
+
     }
 
     /**

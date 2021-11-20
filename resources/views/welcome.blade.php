@@ -76,6 +76,12 @@
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#contactus">contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{url('/login')}}" class="nav-link" target="_blank">Login</a>
+                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="{{url('/canvas/login')}}" class="nav-link" target="_blank">Login Blog</a>--}}
+{{--                    </li>--}}
                 </ul>
             </div>
         </div>
@@ -115,6 +121,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#contactus">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{url('/login')}}" class="nav-link" target="_blank">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{url('/canvas/login')}}" class="nav-link" target="_blank">Login Blog</a>
                     </li>
                 </ul>
             </nav>
@@ -550,19 +562,19 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 margin_bottom">
-                    <form class="getin_form wow fadeInUp" data-wow-delay="400ms" onsubmit="return false;">
+                    <form class="getin_form wow fadeInUp" data-wow-delay="400ms" action="{{route('feedrequests.store')}}">
                         <div class="row">
 
                             <div class="col-sm-12" id="result"></div>
 
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group bottom35">
-                                    <input class="form-control" type="text" placeholder="First Name:" required id="first_name" name="first_name">
+                                    <input class="form-control" type="text" placeholder="First Name:" required id="first_name" name="first">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group bottom35">
-                                    <input class="form-control" type="text" placeholder="Last Name:" required id="last_name" name="last_name">
+                                    <input class="form-control" type="text" placeholder="Last Name:" required id="last_name" name="last">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">

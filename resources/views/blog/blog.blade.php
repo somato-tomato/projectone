@@ -11,7 +11,7 @@
                     <div class="page-titles text-center">
                         <h2 class="whitecolor font-light bottom30">latest Blog</h2>
                         <ul class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{url('/onepage')}}">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">latest Blog</li>
                         </ul>
                     </div>

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\PortofolioController;
 use App\Http\Controllers\PackageController;
+use App\Http\Controllers\FeedrequestController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +24,7 @@ Route::get('/onepage',[HomeController::class,'home'])->name('home');
 
 Route::get('/blog', [BlogController::class, 'listPost'])->name('lp');
 Route::get('/blog/{slug}', [BlogController::class, 'showPost'])->name('sp');
+Route::resource('feedrequests', FeedrequestController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

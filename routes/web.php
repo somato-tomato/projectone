@@ -21,10 +21,10 @@ use App\Http\Controllers\FeedrequestController;
 
 //Route::get('/te',[HomeController::class,'home'])->name('h');
 Route::get('/onepage',[HomeController::class,'home'])->name('home');
+Route::post('/feedrequests',[HomeController::class,'feedrequests'])->name('feedrequests');
 
 Route::get('/blog', [BlogController::class, 'listPost'])->name('lp');
 Route::get('/blog/{slug}', [BlogController::class, 'showPost'])->name('sp');
-Route::resource('feedrequests', FeedrequestController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -35,6 +35,7 @@ Route::group(["middleware" => ['auth:sanctum', 'verified']], function () {
     Route::resource('team', TeamController::class);
     Route::resource('portofolio', PortofolioController::class);
     Route::resource('package', PackageController::class);
+    Route::resource('request', FeedrequestController::class);
 
     Route::delete('/testimoni/hapus/{id}/testimoni', [SiteConfigController::class, 'deleteTestimony'])->name('site.dt');
     Route::post('/testimoni/simpan-testimoni', [SiteConfigController::class, 'addTestimony'])->name('site.at');

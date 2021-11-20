@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Feedrequest;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class FeedrequestController extends Controller
 {
@@ -14,7 +15,8 @@ class FeedrequestController extends Controller
      */
     public function index()
     {
-        //
+        $ok = Feedrequest::orderBy('created_at','ASC')->get();
+        return view('request.index',compact('ok'));
     }
 
     /**
@@ -37,6 +39,7 @@ class FeedrequestController extends Controller
     {
         Feedrequest::create($request->all());
         Alert::success('Berhasil !', 'Feed Request  berhasil di Tersimpan !');
+        return view('welcome');
 
     }
 
@@ -46,9 +49,11 @@ class FeedrequestController extends Controller
      * @param  \App\Models\Feedrequest  $feedrequest
      * @return \Illuminate\Http\Response
      */
-    public function show(Feedrequest $feedrequest)
+    public function show($id)
     {
-        //
+        $ok = Feedrequest::where('id', $id)->first();
+
+        return view('request.index',compact('ok'));
     }
 
     /**
@@ -80,8 +85,12 @@ class FeedrequestController extends Controller
      * @param  \App\Models\Feedrequest  $feedrequest
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Feedrequest $feedrequest)
+    public function destroy($id)
     {
-        //
+        $team = Feedrequest::find($id);
+        $team->delete();
+       Alert::success('Berhasil !', 'Request berhasil di Hapus !');
+        return redirect()
+            ->back();
     }
 }

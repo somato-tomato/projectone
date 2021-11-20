@@ -562,7 +562,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 margin_bottom">
-                    <form class="getin_form wow fadeInUp" data-wow-delay="400ms" action="{{route('feedrequests.store')}}">
+                    <form method="post" class="getin_form wow fadeInUp" data-wow-delay="400ms" action="{{url('feedrequests')}}">
+                      @csrf
                         <div class="row">
 
                             <div class="col-sm-12" id="result"></div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Feedrequest;
 use App\Models\Package;
 use App\Models\Portofolio;
 use App\Models\Team;
@@ -10,6 +11,8 @@ use Illuminate\Http\Request;
 use Canvas\Models\Post as Post;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+
+use RealRashid\SweetAlert\Facades\Alert;
 
 class HomeController extends Controller
 {
@@ -35,5 +38,13 @@ class HomeController extends Controller
         $latest = Post::published()->latest()->first();
 
         return view('welcome', compact('team','video', 'features', 'process', 'latest'));
+    }
+    public function feedrequests(Request $request)
+    {
+        Feedrequest::create($request->all());
+        Alert::success('Berhasil !', 'Request berhasil di Simpan !');
+
+        return redirect()->back();
+
     }
 }

@@ -672,26 +672,26 @@
 
 
 <!-- Our Blogs -->
-{{--<section id="our-blog" class="half-section bglight">--}}
-{{--   <div class="container-fluid">--}}
-{{--      <div class="row">--}}
-{{--         <div class="col-md-6 col-sm-6 nopadding">--}}
-{{--            <div class="image hover-effect"><img src="{{ asset('new_images/blog1.jpg')}}" alt="our blog" class="equalheight"></div>--}}
-{{--         </div>--}}
-{{--         <div class="col-md-6 col-sm-6">--}}
-{{--            <div class="split-box text-center center-block equalheight container-padding">--}}
-{{--               <div class="heading-title padding_half">--}}
-{{--               <span class="wow fadeIn" data-wow-delay="300ms">Berita Terbaru</span>--}}
-{{--               <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">Cerita tentang perjalanan kami</h2>--}}
-{{--               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Home Lift merupakan istilah yang saya baru saja dengar. Selama ini kita pasti tahu ya yang namanya lift. Dimana-mana ada. Di setiap gedung, kalau lebih dari tiga lantai pasti pakai lift atau elevator. Mungkin tak ada mahluk perkotaan yang belum pernah merasakan barang ini--}}
-{{--                   Namun demikian, yang baru saja kita tahu, adalah home lift. Lift untuk “rumahan”. Berbeda dengan lift pada umumnya, lift rumahan ini menawarkan sensasi dan kenyamanan yang berbeda, sekaligus inovasi yang cukup wow.</p>--}}
-{{--               <a href="javascript:void(0)" class="button btnsecondary wow fadeInUp" data-wow-delay="500ms">Baca Lengkapnya</a>--}}
-{{--            </div>--}}
-{{--            </div>--}}
-{{--         </div>--}}
-{{--      </div>--}}
-{{--   </div>--}}
-{{--</section>--}}
+<section id="our-blog" class="half-section bglight">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-6 col-sm-6 nopadding">
+            <div class="image hover-effect"><img src="{{ asset('new_images/blog1.jpg')}}" alt="our blog" class="equalheight"></div>
+         </div>
+         <div class="col-md-6 col-sm-6">
+            <div class="split-box text-center center-block equalheight container-padding">
+               <div class="heading-title padding_half">
+               <span class="wow fadeIn" data-wow-delay="300ms">Berita Terbaru</span>
+               <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">Cerita tentang perjalanan kami</h2>
+               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Home Lift merupakan istilah yang saya baru saja dengar. Selama ini kita pasti tahu ya yang namanya lift. Dimana-mana ada. Di setiap gedung, kalau lebih dari tiga lantai pasti pakai lift atau elevator. Mungkin tak ada mahluk perkotaan yang belum pernah merasakan barang ini
+                   Namun demikian, yang baru saja kita tahu, adalah home lift. Lift untuk “rumahan”. Berbeda dengan lift pada umumnya, lift rumahan ini menawarkan sensasi dan kenyamanan yang berbeda, sekaligus inovasi yang cukup wow.</p>
+               <a href="{{route('lp')}}" class="button btnsecondary wow fadeInUp" data-wow-delay="500ms">Baca Lengkapnya</a>
+            </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
 <!--Our Blogs Ends-->
 
 

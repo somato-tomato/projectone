@@ -19,6 +19,7 @@ use App\Http\Controllers\PackageController;
 */
 
 Route::get('/te',[HomeController::class,'home'])->name('h');
+Route::get('/onepage',[HomeController::class,'home'])->name('h');
 Route::get('/', function (){
     return view('onepage');
 });

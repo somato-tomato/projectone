@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Package;
+use App\Models\Portofolio;
 use App\Models\Team;
+use App\Models\Testimony;
 use Illuminate\Http\Request;
 use Canvas\Models\Post as Post;
 use Illuminate\Support\Facades\DB;
@@ -13,18 +16,14 @@ class HomeController extends Controller
     public function home()
     {
         $team = Team::paginate(3);
-
-
-        $file_foto1 = Storage::disk('public')->files('foto/3');
-        $file_foto2 = Storage::disk('public')->files('foto/4');
-        $file_foto3 = Storage::disk('public')->files('foto/5');
+        $portofolio = Portofolio::paginate(9);
+        $package = Package::with('package_bodies')->get();
+        $testi = Testimony::get();
         $video = DB::table('section_videos')->where('id', '=', 1)->first();
         $features = DB::table('section_features')->get();
         $process = DB::table('section_processes')->get();
-
         $latest = Post::published()->latest()->first();
-
-        return view('welcome', compact('file_foto1','file_foto2','file_foto3','team','video', 'features', 'process', 'latest'));
+        return view('welcome', compact('testi','package','team','video', 'features', 'process', 'latest','portofolio'));
     }
     public function homeold()
     {

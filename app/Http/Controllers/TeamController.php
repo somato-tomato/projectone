@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use RealRashid\SweetAlert\Facades\Alert;
 use Image;
+use Illuminate\Support\Str;
+
 class TeamController extends Controller
 {
     /**
@@ -40,18 +42,20 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        $team = Team::create($request->only(['image','nama_team', 'jobdes', 'perusahaan', 'deskripsi']));
+        $request->validate([
+            'image' => 'mimes:jpeg,png,bmp|max:512',
+        ]);
         $file = $request->file('image');
-        if (!empty($file)) {
-            Storage::disk('local')->makeDirectory('public/foto/'.$team->id, 0775, true);
-            $destinationPath = storage_path('app/public/foto/'.$team->id);
-            Storage::makeDirectory($destinationPath);
-            $filesname =$file->getClientOriginalName();
-            $image_resize = Image::make($file->getRealPath());
-            $image_resize->resize(400, 400);
-            $image_resize->save($destinationPath.'/foto.' . $filesname, 80);
-        }
+        $slug_photo = Str::slug($file->getClientOriginalName(), '-');
+        $new_name = Str::random(4).'-'.$slug_photo.'.'.$file->getClientOriginalExtension();
+        $file->move(public_path('images_site'), $new_name);
+        $team = Team::create([
+            'nama_team' => $request->nama_team,
+            'jobdes' => $request->jobdes,
+            'perusahaan' => $request->perusahaan,
+            'deskripsi' => $request->deskripsi,
+            'image' =>$new_name,
+        ]);
         Alert::success('Berhasil !', 'Team berhasil di perbarui !');
         return redirect()->route('team.index');
     }

@@ -24,8 +24,8 @@
                                 <div class="card-body">
                                     <div class="d-flex flex-column align-items-center text-center">
                                         <div class="mt-3">
-                                            <h4>{{$group->judul[1][0]}}</h4>
-                                            <p class="text-secondary mb-1">{{$group[1][0]->call}}</p>
+                                            <h4>{{$group->judul}}</h4>
+                                            <p class="text-secondary mb-1">{{$group->call}}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -34,9 +34,9 @@
                                 <div class="card h-100">
                                     <div class="card-body">
                                         <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">assignment&nbsp;</i>Project Status</h6>
-                                        @foreach($group as $teams)
-                                            <small>{{$teams->content}}</small>
 
+                                        @foreach($group1 as $teams)
+                                                <small>{{$teams->content}}</small>
                                         @endforeach
                                     </div>
                                 </div>

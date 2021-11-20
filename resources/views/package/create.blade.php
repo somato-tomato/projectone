@@ -72,7 +72,7 @@
                     var tr = '<tr>' +
                         // '<td>'+ numberofrow +'</td>'+
                         '<td><input  type="text" class="form-control nama_kemampuan" name="nama_kemampuan[]"></td>' +
-                        '<td> <button class="btn btn-primary btn-block add-line add_more" type="button"><i class="fas fa-plus"></i></button>' +
+                        '<td> ' +
                         '<button class="btn btn-danger btn-block add-line delete " type="button"><i class="fas fa-trash"></i></button>' +
                         '</td>';
 

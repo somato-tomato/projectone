@@ -272,7 +272,7 @@
                     <div class="col-md-4 col-xs-12">
                         <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
                             <div class="image">
-                                <img src="{{ asset('storage/' . ($file_foto1[0] ?? ''))}}" alt="Admin" >
+                                <img src="{{ asset('images_site/'.$teams->image)}}" alt="Admin" width="400"height="400">
                             </div>
                             <div class="team-content gradient_bg whitecolor">
                                 <h3>{{$teams->nama_team}}</h3>
@@ -284,35 +284,7 @@
                         </div>
                     </div>
                 @endforeach
-{{--                <div class="col-md-4 col-xs-12">--}}
-{{--                    <div class="team-box top60 wow fadeIn" data-wow-delay="400ms">--}}
-{{--                        <div class="image">--}}
-{{--                            <img src="{{ asset('frontEnd/images/666.png') }}" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="team-content gradient_bg_default whitecolor">--}}
-{{--                            <h3>Maulana Firza Mahesa</h3>--}}
-{{--                            <p class="bottom40">Direktur Marketing</p>--}}
-{{--                            <div class="text-center">--}}
-{{--                                <h3>"We give our best to satisfy people"</h3>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="col-md-4 col-xs-12">--}}
-{{--                    <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">--}}
-{{--                        <div class="image">--}}
-{{--                            <img src="{{ asset('frontEnd/images/55555.jpg') }}" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="team-content gradient_bg whitecolor">--}}
-{{--                            <h3>Adhie Kurnia</h3>--}}
-{{--                            <p class="bottom40">Direktur Keuangan</p>--}}
-{{--                            <div class="text-center">--}}
-{{--                                <h3>"Teknisi kami selalu siap untuk anda"</h3>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-            </div>
+
         </div>
     </section>
     <!-- Our Team ends-->
@@ -350,110 +322,18 @@
                 </div>
             </div>
             <div id="flat-gallery" class="cbp">
+                @foreach($portofolio as $portofolios)
                 <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd1.jpg')}}" alt="" style="height:600px">
+                    <img src="{{ asset('images_site/'.$portofolios->image)}}" alt="" style="height:500px">
                     <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd1.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 1</h4>
-                        <p>Eleva Elevator Model 1</p>
+                        <a class="plus" data-fancybox="gallery" href="{{ asset('images_site/'.$portofolios->image)}}"></a>
+                        <h4 class="top30">{{$portofolios->nama_portofolio}}</h4>
+                        <p>{{$portofolios->deskripsi}}</p>
                     </div>
                 </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd2.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd2.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 2</h4>
-                        <p>Eleva Elevator Model 2</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd3.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd3.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 3</h4>
-                        <p>Eleva Elevator Model 3</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd4.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd4.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 4</h4>
-                        <p>Eleva Elevator Model 4</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd5.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd5.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 5</h4>
-                        <p>Eleva Elevator Model 5</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd6.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd6.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 6</h4>
-                        <p>Eleva Elevator Model 6</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd7.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd7.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 7</h4>
-                        <p>Eleva Elevator Model 7</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd8.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd8.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 8</h4>
-                        <p>Eleva Elevator Model 8</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd9.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd9.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 9</h4>
-                        <p>Eleva Elevator Model 9</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd10.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd10.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 10</h4>
-                        <p>Eleva Elevator Model 10</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd11.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd11.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 11</h4>
-                        <p>Eleva Elevator Model 11</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd12.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd12.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 12</h4>
-                        <p>Eleva Elevator Model 12</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('new_images/prd13.jpg')}}" alt=""style="height:600px">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('new_images/prd13.jpg')}}"></a>
-                        <h4 class="top30">Eleva Elevator Model 13</h4>
-                        <p>Eleva Elevator Model 13</p>
-                    </div>
-                </div>
+                @endforeach
+            </div>
+            </div>
     </section>
     <!--Gallery ends -->
 
@@ -513,51 +393,23 @@
                 </div>
             </div>
             <div class="row centered-table">
+
+                @foreach($package as $packages)
                 <div class="col-md-4 col-sm-12">
                     <div class="price-table top60 wow fadeIn" data-wow-delay="300ms">
-                        <h3 class="bottom20 darkcolor">Slow Down Elevator</h3>
+                        <h3 class="bottom20 darkcolor">{{$packages->judul}}r</h3>
                         <ul class="top20">
-                            <li><span>Konsultasi Gratis</span></li>
-                            <li><span>Pemasangan Elevator</span></li>
-                            <li><span>Diskon Pemasangan 10%</span></li>
-                            <li><span>Perawatan selama 3 bulan</span></li>
-                            <li><span>X</span></li>
-                            <li><span>X</span></li>
+                            @foreach($packages->package_bodies as $data)
+                            <li><span>{{$data->content}}</span></li>
+
+                            @endforeach
                         </ul>
                         <div class="clearfix"></div>
                         <a href="#contactus" class="button btnprimary top50">Hubungi Kami</a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="price-table active top60 wow fadeIn" data-wow-delay="350ms">
-                        <h3 class="bottom20 darkcolor">Middle Elevator</h3>
-                        <ul class="top20">
-                            <li><span>Konsultasi Gratis</span></li>
-                            <li><span>Pemasangan Elevator</span></li>
-                            <li><span>Diskon Pemasangan 15%</span></li>
-                            <li><span>Perawatan selama 6 bulan</span></li>
-                            <li><span>VIP Customer Care 3 Bulan</span></li>
-                            <li><span>Pelayanan Lain</span></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        <a href="#contactus" class="button btnsecondary top50">Hubungi Kami </a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="price-table top60 wow fadeInUp" data-wow-delay="400ms">
-                        <h3 class="bottom20 darkcolor">Expert Plan</h3>
-                        <ul class="top20">
-                            <li><span>Konsultasi Gratis</span></li>
-                            <li><span>Pemasangan Elevator</span></li>
-                            <li><span>Diskon Pemasangan 25%</span></li>
-                            <li><span>Perawatan selama 12 bulan</span></li>
-                            <li><span>VIP Customer Care 6 Bulan</span></li>
-                            <li><span>Pelayanan Lain</span></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        <a href="#contactus" class="button btnprimary top50">Hubungi Kami </a>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
         </div>
     </section>
@@ -592,50 +444,19 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div id="testimonial-slider" class="owl-carousel">
+                        @foreach($testi as $tes)
                         <div class="item">
                             <div class="testimonial-wrapp">
                                 <span class="quoted"><i class="fa fa-quote-right"></i></span>
                                 <div class="testimonial-text">
-                                    <p class="bottom40">Liftnya keren! Desain finishing beraneka ragam. Bahkan tanpa ruang mesin jadi ga perlu ribet-ribet lagi buat memakan ruangan terlalu banyak. Sangat memuaskan!</p>
+                                    <p class="bottom40">{{$tes->testimony}}</p>
                                 </div>
-                                <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/t1.jpg') }}"></div>
-                                <h4 style="margin-top: 10px;" class="darkcolor">David Raleway</h4>
-                                <small class="defaultcolor">Pro Player</small>
+                                <div class="testimonial-photo"><img alt="" src="{{ asset('images_site/'.$tes->photo)}}" height="100" width="100"></div>
+                                <h4 style="margin-top: 10px;" class="darkcolor">{{$tes->name}}</h4>
+                                <small class="defaultcolor">{{$tes->occupation}}</small>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="testimonial-wrapp">
-                                <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                                <div class="testimonial-text">
-                                    <p class="bottom40">Lift & escalator teknologi canggih dengan harga terbaik di Indonesia. Layanan purna jual yang memadai & terpercaya. Responsif, cekatan, dan profesional.</p>
-                                </div>
-                                <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/t2.jpg') }}"></div>
-                                <h4 style="margin-top: 10px;" class="darkcolor">Sam Billings</h4>
-                                <small class="defaultcolor">CEO Ultra Corp</small>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-wrapp">
-                                <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                                <div class="testimonial-text">
-                                    <p class="bottom40">Pengerjaan yang sangat cepat dan tepat. Kualitas terjamin.begitu juga dengan kinerja nya. Ramah dan bertanggung jawab. Hemat energi pula. Saya paling suka desainnya.</p>
-                                </div>
-                                <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/t6.jpg') }}"></div>
-                                <h4 style="margin-top: 10px;" class="darkcolor">Jessica Wang</h4>
-                                <small class="defaultcolor">Designer</small>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-wrapp">
-                                <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                                <div class="testimonial-text">
-                                    <p class="bottom40">Teknisi bersertifikat, pelayanan ramah, banyak pilihan desain dan banyak yang ga bisa saya utarakan. Sangat membantu, karena ketika lelah tidak usah naik tangga</p>
-                                </div>
-                                <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/t4.jpg') }}"></div>
-                                <h4 style="margin-top: 10px;" class="darkcolor">Cathrine</h4>
-                                <small class="defaultcolor">Businesswoman</small>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

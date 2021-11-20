@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Image;
 use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Support\Str;
 
 class PortofolioController extends Controller
 {
@@ -41,18 +42,19 @@ class PortofolioController extends Controller
      */
     public function store(Request $request)
     {
-        $team = Portofolio::create($request->all());
+        $request->validate([
+            'foto' => 'mimes:jpeg,png,bmp|max:512',
+        ]);
         $file = $request->file('foto');
+        $slug_photo = Str::slug($file->getClientOriginalName(), '-');
+        $new_name = Str::random(4).'-'.$slug_photo.'.'.$file->getClientOriginalExtension();
+        $file->move(public_path('images_site'), $new_name);
 
-        if (!empty($file)) {
-            Storage::disk('local')->makeDirectory('public/portofolio/'.$team->id, 0775, true);
-            $destinationPath = storage_path('app/public/portofolio/'.$team->id);
-            Storage::makeDirectory($destinationPath);
-            $filesname =$file->getClientOriginalName();
-            $image_resize = Image::make($file->getRealPath());
-            $image_resize->resize(549, 550);
-            $image_resize->save($destinationPath.'/portofolio.' . $filesname, 80);
-        }
+        $team = Portofolio::create([
+            'nama_portofolio' => $request->nama_portofolio,
+            'deskripsi' => $request->deskripsi,
+            'image' => $new_name,
+        ]);
         Alert::success('Berhasil !', 'Portofolio berhasil di perbarui !');
 
         return redirect()->route('portofolio.index');

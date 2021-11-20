@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kemampuan;
 use App\Models\Package;
+use App\Models\PackageBody;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -17,17 +18,9 @@ class PackageController extends Controller
      */
     public function index()
     {
-//        $package= Package::orderBy('created_at', 'DESC')->paginate(10);
-        $group = Package::all()->groupBy('id_package');
+        $package= Package::orderBy('created_at', 'DESC')->paginate(10);
 
-        foreach ($group as $i => $data) {
-            $round = 0;
-            foreach ($data as $r => $amount) {
-                $round += 1;
-            }
-            $group[$i]->round = $round;
-        }
-        return view('package.index',compact('group'));
+        return view('package.index',compact('package'));
     }
 
     /**
@@ -50,12 +43,11 @@ class PackageController extends Controller
     public function store(Request $request)
     {
 
-        $max = Package::max('id')+1;
+        $package = Package::create($request->all());
+
         for ($nama_kemampuan = 0; $nama_kemampuan < count($request->nama_kemampuan); $nama_kemampuan++) {
-            $orderdetail = new Package();
-            $orderdetail->id_package = $max;
-            $orderdetail->judul = $request->judul;
-            $orderdetail->call = $request->call;
+            $orderdetail = new PackageBody;
+            $orderdetail->id_package = $package->id;
             $orderdetail->content = $request->nama_kemampuan[$nama_kemampuan];
             $orderdetail->save();
         }
@@ -70,17 +62,10 @@ class PackageController extends Controller
      */
     public function show(Request $request,$id)
     {
-        $group = Package::all()->where('id_package', $id)->groupBy('id_package');
+        $group = Package::where('id', $id)->first();
+        $group1 = PackageBody::where('id_package', $id)->get();
 
-        foreach ($group as $i => $data) {
-            $round = 0;
-            foreach ($data as $r => $amount) {
-                $round += 1;
-            }
-            $group[$i]->round = $round;
-        }
-        ddd($group);
-        return view('package.show',compact('group'));
+        return view('package.show',compact('group','group1'));
     }
 
     /**

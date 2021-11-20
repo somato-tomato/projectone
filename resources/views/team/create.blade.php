@@ -44,41 +44,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <tr>
-                                            <th>
-                                                Kemampuan
-                                            </th>
-                                            <th>
-                                                Range Kemampuan
-                                            </th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                        <tbody class="addMoreProduct">
 
-                                        <tr>
-                                            <td>
-                                                <input type="text" name="nama_kemampuan[]"
-                                                       class="form-control nama_kemampuan">
-                                            </td>
-                                            <td>
-                                                <input type="range" name="range_kemampuan[]"
-                                                       class="form-range range_kemampuan" min="0" max="100"
-                                                       id="customRange2">
-                                            </td>
-                                            <td>
-                                                <button class="btn btn-primary btn-block add-line add_more"
-                                                        type="button"><i class="fas fa-plus"></i></button>
-                                                <button class="btn btn-danger btn-block add-line delete " type="button">
-                                                    <i class="fas fa-trash"></i></button>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
                         </div>
                         <br>
                         <div class="text-right">

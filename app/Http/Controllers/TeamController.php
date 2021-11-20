@@ -54,13 +54,7 @@ class TeamController extends Controller
             $image_resize->save($destinationPath.'/foto.' . $filesname, 80);
         }
 
-        for ($nama_kemampuan = 0; $nama_kemampuan < count($request->nama_kemampuan); $nama_kemampuan++) {
-            $orderdetail = new Kemampuan;
-            $orderdetail->id_team = $team->id;
-            $orderdetail->nama_kemampuan = $request->nama_kemampuan[$nama_kemampuan];
-            $orderdetail->range_kemampuan = $request->range_kemampuan[$nama_kemampuan];
-            $orderdetail->save();
-        }
+
         Alert::success('Berhasil !', 'Team berhasil di perbarui !');
         return redirect()->route('team.index');
     }

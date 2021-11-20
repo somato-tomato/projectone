@@ -31,19 +31,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card mt-3">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">assignment&nbsp;</i>Project Status</h6>
-                                        @foreach($team->kemampuans as $teams)
-                                        <small>{{$teams->nama_kemampuan}}</small>
-                                        <div class="progress mb-3" style="height: 5px">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: {{$teams->range_kemampuan}}%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        @endforeach
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-md-8">
                             <div class="card mb-3">

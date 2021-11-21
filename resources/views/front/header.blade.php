@@ -33,7 +33,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#contactus">contact</a>
-                    </li>
+                    </li>close_side_menu
                 </ul>
             </div>
         </div>

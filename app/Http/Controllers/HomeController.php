@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Feedrequest;
 use App\Models\Package;
 use App\Models\Portofolio;
+use App\Models\SiteConfiguration;
 use App\Models\Team;
 use App\Models\Testimony;
 use Illuminate\Http\Request;
@@ -26,7 +27,8 @@ class HomeController extends Controller
         $features = DB::table('section_features')->get();
         $process = DB::table('section_processes')->get();
         $latest = Post::published()->latest()->first();
-        return view('welcome', compact('testi','package','team','video', 'features', 'process', 'latest','portofolio'));
+        $site = SiteConfiguration::find(1)->first();
+        return view('welcome', compact('site','testi','package','team','video', 'features', 'process', 'latest','portofolio'));
     }
     public function homeold()
     {

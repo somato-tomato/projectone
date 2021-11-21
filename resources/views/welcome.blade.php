@@ -542,22 +542,20 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 margin_bottom wow fadeInUp" data-wow-delay="350ms">
-                    <p style="text-align: justify" >Kami adalah professional dari berbagai bidang yang berkumpul di ELEVA menjadi satu kesatuan perusahaan LIFT yang tangguh dan elegant. Teknisi kami memiliki sertifikasi terkait dengan pemasangan Lift dan jam terbang yang banyak baik untuk pemasangan high rise building ataupun untuk home lift.
-                        Sistem keamanan lift yang aman, Desain yang Elegant, Harga yang kompetitif, dan Pelayanan yang memuaskan adalah motto perusahaan kami.
-                        Lift kami adalah buatan Eropa dengan kualitas nomor satu di kelasnya. Support dengan berbagai macam situasi dan kondisi bangunan anda.</p>
+                    <p style="text-align: justify" >{{$site->siteDescription ?? ''}}</p>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 our-address top40">
                             <h5 class="bottom25">Alamat Kami</h5>
-                            <p class="bottom15">Gd Wisma Laena R317, Jl. KH. Abdullah Syafei No.7, RT.6/RW.2, Manggarai Sel., Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12860 </p>
+                            <p class="bottom15">{{$site->alamat ?? ''}}</p>
                         </div>
                         <div class="col-md-6 col-sm-6 our-address top40">
                             <h5 class="bottom25">Whatsapp Kami</h5>
-                            <p class="bottom15">Whatsapp :087811781180 <span class="block">
+                            <p class="bottom15">Whatsapp :{{$site->telponSatu ?? ''}} <span class="block">
                   </span> </p>
                         </div>
                         <div class="col-md-6 col-sm-6 our-address top40">
                             <h5 class="bottom25">Email</h5>
-                            <p class="bottom15">Email Utama : eleva.elevator@gmail.com  </p>
+                            <p class="bottom15">Email Utama : {{$site->email ?? ''}} </p>
                         </div>
                     </div>
                 </div>

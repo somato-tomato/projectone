@@ -10,11 +10,13 @@
                 <div class="col-md-2 col-sm-1"></div>
                 <div class="col-md-12 col-sm-12">
                     <div class="center-item text-center video-content">
-                        <h2 class="text-capitalize top50 bottom35  whitecolor">
-                     <span class="font-xlight block wow fadeIn" data-wow-delay="400ms">{{ $video->description }}
-                     </span><span class="block fontbold wow fadeIn" data-wow-delay="500ms">{{ $video->descriptionDua }}</span>
-                        </h2>
-                        <a href="#btn-feature" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">features</a>
+                        <img src="{{ asset('frontEnd/images/logo.png')}}" alt="logo" style="width: 300px" class="" data-wow-delay="500ms">
+
+                        {{--                        <h2 class="text-capitalize top50 bottom35  whitecolor">--}}
+{{--                     <span class="font-xlight block wow fadeIn" data-wow-delay="400ms">{{ $video->description }}--}}
+{{--                     </span><span class="block fontbold wow fadeIn" data-wow-delay="500ms">{{ $video->descriptionDua }}</span>--}}
+{{--                        </h2>--}}
+{{--                        <a href="#btn-feature" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">features</a>--}}
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-1"></div>
@@ -122,48 +124,26 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
-                        <div class="image">
-                            <img src="{{ asset('frontEnd/images/p1.jpg') }}" alt="">
-                        </div>
-                        <div class="team-content gradient_bg whitecolor">
-                            <h3>Usep Seumpena.ST, SPd,</h3>
-                            <p class="bottom40">Project Manager, Importir Lift Rumah Indonesia</p>
-                            <div class="text-center">
-                                <h3>"We give the best services !"</h3>
+                @forelse($team as $teams)
+                    <div class="col-md-4 col-xs-12">
+                        <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
+                            <div class="image">
+                                <img src="{{ asset('images_site/'.$teams->image)}}" alt="Admin" width="400"height="400">
+                            </div>
+                            <div class="team-content gradient_bg whitecolor">
+                                <h3>{{$teams->nama_team}}</h3>
+                                <p class="bottom40">{{$teams->jobdes}} - {{$teams->perusahaan}}</p>
+                                <div class="text-center">
+                                    <h3>{{$teams->deskripsi}}</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-xs-12">
-                    <div class="team-box top60 wow fadeIn" data-wow-delay="400ms">
-                        <div class="image">
-                            <img src="{{ asset('frontEnd/images/p2.jpg') }}" alt="">
-                        </div>
-                        <div class="team-content gradient_bg_default whitecolor">
-                            <h3>Aep ASDQ.SLR, DSLr</h3>
-                            <p class="bottom40">Accountant, Importir Lift Rumah Indonesia</p>
-                            <div class="text-center">
-                                <h3>"We give our best to satisfy people"</h3>
-                            </div>
-                        </div>
+                @empty
+                    <div class="text-center">
+                        <h3>Team belum di tambahkan </h3>
                     </div>
-                </div>
-                <div class="col-md-4 col-xs-12">
-                    <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
-                        <div class="image">
-                            <img src="{{ asset('frontEnd/images/p3.jpg') }}" alt="">
-                        </div>
-                        <div class="team-content gradient_bg whitecolor">
-                            <h3>Richard Lioness.</h3>
-                            <p class="bottom40">Head Technician, Importir Lift Rumah Indonesia</p>
-                            <div class="text-center">
-                                <h3>"Teknisi kami selalu siap untuk anda"</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforelse
             </div>
         </div>
     </section>
@@ -202,80 +182,21 @@
                 </div>
             </div>
             <div id="flat-gallery" class="cbp">
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/1.PNG')}}" >
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/1.PNG')}}"></a>
-                        <h4 class="top30">Elevator</h4>
-                        <p>Modern Design</p>
+                @forelse($portofolio as $portofolios)
+                    <div class="cbp-item itemshadow">
+                        <img src="{{ asset('images_site/'.$portofolios->image)}}" alt="" style="height:500px">
+                        <div class="overlay center-block whitecolor">
+                            <a class="plus" data-fancybox="gallery" href="{{ asset('images_site/'.$portofolios->image)}}"></a>
+                            <h4 class="top30">{{$portofolios->nama_portofolio}}</h4>
+                            <p>{{$portofolios->deskripsi}}</p>
+                        </div>
                     </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/2.PNG')}}" alt="" >
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/2.PNG')}}"></a>
-                        <h4 class="top30">Wood Work</h4>
-                        <p>Small Portfolio Detail Here</p>
+                @empty
+                    <div class="text-center">
+                        <h3>Produk belum di tambahkan </h3>
                     </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/pr3.jpg')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/4.PNG')}}"></a>
-                        <h4 class="top30">Wood Work</h4>
-                        <p>Small Portfolio Detail Here</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/5.PNG')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/5.PNG')}}"></a>
-                        <h4 class="top30">Wood Work</h4>
-                        <p>Small Portfolio Detail Here</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/6.PNG')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/6.PNG')}}"></a>
-                        <h4 class="top30">Wood Work</h4>
-                        <p>Small Portfolio Detail Here</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/7.PNG')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
-                        <h4 class="top30">Wood Work</h4>
-                        <p>Small Portfolio Detail Here</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/pr1.jpg')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
-                        <h4 class="top30">Wood Work</h4>
-                        <p>Small Portfolio Detail Here</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/pr2.jpg')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
-                        <h4 class="top30">Wood Work</h4>
-                        <p>Small Portfolio Detail Here</p>
-                    </div>
-                </div>
-                <div class="cbp-item itemshadow">
-                    <img src="{{ asset('frontEnd/images/pr5.jpg')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{ asset('frontEnd/images/7.PNG')}}"></a>
-                        <h4 class="top30">Wood Work</h4>
-                        <p>Small Portfolio Detail Here</p>
-                    </div>
-                </div>
+                @endforelse
             </div>
-
         </div>
     </section>
     <!--Gallery ends -->
@@ -285,8 +206,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-sm-12 margin_bottom whitecolor text-md-start text-center wow fadeInLeft" data-wow-delay="300ms">
-                    <h3 class="bottom25">Our many years of experience in numbers</h3>
-                    <p class="title">We show you our professional achievements in numbers, which show the acquired skills and trust of many clients.</p>
+                    <h3 class="bottom25">Pengalaman kami selama bertahun-tahun</h3>
+                    <p class="title">Kami menunjukkan kepada Anda pencapaian profesional kami, keterampilan, kepuasan, dan kepercayaan yang diperoleh dari banyak klien dan kolega.</p>
                 </div>
                 <div class="col-md-7 col-sm-12 text-center">
                     <div class="row">
@@ -295,27 +216,27 @@
                                 <i class="fa fa-smile-o"></i>
                             </div>
                             <div class="counters">
-                                <span class="count_nums" data-to="2500" data-speed="2500"> </span> <i class="fa fa-plus"></i>
+                                <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
                             </div>
-                            <p class="title">Satisfied customers</p>
+                            <p class="title">Pelanggan Terpuaskan</p>
                         </div>
                         <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom wow fadeInRight" data-wow-delay="350ms">
                             <div class="img-icon bottom15">
                                 <i class="fa fa-language"> </i>
                             </div>
                             <div class="counters">
-                                <span class="count_nums" data-to="9500" data-speed="2500"> </span> <i class="fa fa-plus"></i>
+                                <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
                             </div>
-                            <p class="title">Completed consultations</p>
+                            <p class="title">Konsultasi Selesai</p>
                         </div>
                         <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom wow fadeInRight" data-wow-delay="300ms">
                             <div class="img-icon bottom15">
                                 <i class="fa fa-desktop"></i>
                             </div>
                             <div class="counters">
-                                <span class="count_nums" data-to="6000" data-speed="2500"> </span> <i class="fa fa-plus"></i>
+                                <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
                             </div>
-                            <p class="title">Carried out training</p>
+                            <p class="title">Kegiatan Pelatihan</p>
                         </div>
                     </div>
                 </div>
@@ -329,58 +250,34 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2 col-sm-12 text-center">
                     <div style="color: black;" class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
-                        <span style="color: black;">Choose The Best One</span>
-                        <h2 class="bottom30">Our Packages</h2>
+                        <span style="color: black;">Pilih Yang Terbaik</span>
+                        <h2 class="bottom30">Paket Kami</h2>
                         <p>Kami juga menyediakan pilihan paket untuk anda.</p>
                     </div>
                 </div>
             </div>
             <div class="row centered-table">
-                <div class="col-md-4 col-sm-12">
-                    <div class="price-table top60 wow fadeIn" data-wow-delay="300ms">
-                        <h3 class="bottom20 darkcolor">Slow Down Elevator</h3>
-                        <ul class="top20">
-                            <li><span>Konsultasi Gratis</span></li>
-                            <li><span>Pemasangan Elevator</span></li>
-                            <li><span>Diskon Pemasangan 10%</span></li>
-                            <li><span>Perawatan selama 3 bulan</span></li>
-                            <li><span>X</span></li>
-                            <li><span>X</span></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        <a href="javascript:void(0)" class="button btnprimary top50">Hubungi Kami</a>
+
+                @forelse($package as $packages)
+                    <div class="col-md-4 col-sm-12">
+                        <div class="price-table top60 wow fadeIn" data-wow-delay="300ms">
+                            <h3 class="bottom20 darkcolor">{{$packages->judul}}r</h3>
+                            <ul class="top20">
+                                @foreach($packages->package_bodies as $data)
+                                    <li><span>{{$data->content}}</span></li>
+
+                                @endforeach
+                            </ul>
+                            <div class="clearfix"></div>
+                            <a href="#contactus" class="button btnprimary top50">Hubungi Kami</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="price-table active top60 wow fadeIn" data-wow-delay="350ms">
-                        <h3 class="bottom20 darkcolor">Middle Elevator</h3>
-                        <ul class="top20">
-                            <li><span>Konsultasi Gratis</span></li>
-                            <li><span>Pemasangan Elevator</span></li>
-                            <li><span>Diskon Pemasangan 15%</span></li>
-                            <li><span>Perawatan selama 6 bulan</span></li>
-                            <li><span>VIP Customer Care 3 Bulan</span></li>
-                            <li><span>Pelayanan Lain</span></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        <a href="javascript:void(0)" class="button btnsecondary top50">Hubungi Kami </a>
+                @empty
+                    <div class="text-center">
+                        <h3>Pricing belum di tambahkan</h3>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="price-table top60 wow fadeInUp" data-wow-delay="400ms">
-                        <h3 class="bottom20 darkcolor">Expert Plan</h3>
-                        <ul class="top20">
-                            <li><span>Konsultasi Gratis</span></li>
-                            <li><span>Pemasangan Elevator</span></li>
-                            <li><span>Diskon Pemasangan 25%</span></li>
-                            <li><span>Perawatan selama 12 bulan</span></li>
-                            <li><span>VIP Customer Care 6 Bulan</span></li>
-                            <li><span>Pelayanan Lain</span></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        <a href="javascript:void(0)" class="button btnprimary top50">Hubungi Kami </a>
-                    </div>
-                </div>
+                @endforelse
+
             </div>
         </div>
     </section>
@@ -408,112 +305,30 @@
                 <div class="col-md-12 col-sm-12 text-center">
                     <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms">
                         <span>Testimonials</span>
-                        <h2 class="darkcolor">What People Say</h2>
+                        <h2 class="darkcolor">Apa yang mereka katakan</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div id="testimonial-slider" class="owl-carousel">
-                        <div class="item">
-                            <div class="testimonial-wrapp">
-                                <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                                <div class="testimonial-text">
-                                    <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                        @forelse($testi as $tes)
+                            <div class="item">
+                                <div class="testimonial-wrapp">
+                                    <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                                    <div class="testimonial-text">
+                                        <p class="bottom40">{{$tes->testimony}}</p>
+                                    </div>
+                                    <div class="testimonial-photo"><img alt="" src="{{ asset('images_site/'.$tes->photo)}}" height="100" width="100"></div>
+                                    <h4 style="margin-top: 10px;" class="darkcolor">{{$tes->name}}</h4>
+                                    <small class="defaultcolor">{{$tes->occupation}}</small>
                                 </div>
-                                <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/logo1.png')}}"></div>
-                                <h4 class="darkcolor">David Raleway</h4>
-                                <small class="defaultcolor">Businessman</small>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-wrapp">
-                                <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                                <div class="testimonial-text">
-                                    <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
-                                </div>
-                                <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/logo3.png')}}"></div>
-                                <h4 class="darkcolor">Sam Billings</h4>
-                                <small class="defaultcolor">Businessman</small>
+                        @empty
+                            <div class="text-center">
+                                <h3>Testimonial belum di tambahkan</h3>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-wrapp">
-                                <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                                <div class="testimonial-text">
-                                    <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
-                                </div>
-                                <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/kleeman.jpg')}}"></div>
-                                <h4 class="darkcolor">Jatinder Shahg</h4>
-                                <small class="defaultcolor">Businessman</small>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-wrapp">
-                                <span class="quoted"><i class="fa fa-quote-right"></i></span>
-                                <div class="testimonial-text">
-                                    <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
-                                </div>
-                                <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/shenxi.jpg')}}"></div>
-                                <h4 class="darkcolor">David Zucker</h4>
-                                <small class="defaultcolor">Businessman</small>
-                            </div>
-                        </div>
-                        {{--               <div class="item">--}}
-                        {{--                  <div class="testimonial-wrapp">--}}
-                        {{--                     <span class="quoted"><i class="fa fa-quote-right"></i></span>--}}
-                        {{--                     <div class="testimonial-text">--}}
-                        {{--                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>--}}
-                        {{--                     </div>--}}
-                        {{--                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-2.jpg')}}"></div>--}}
-                        {{--                     <h4 class="darkcolor">Akten Jansen</h4>--}}
-                        {{--                     <small class="defaultcolor">Businessman</small>--}}
-                        {{--                  </div>--}}
-                        {{--               </div>--}}
-                        {{--               <div class="item">--}}
-                        {{--                  <div class="testimonial-wrapp">--}}
-                        {{--                     <span class="quoted"><i class="fa fa-quote-right"></i></span>--}}
-                        {{--                     <div class="testimonial-text">--}}
-                        {{--                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>--}}
-                        {{--                     </div>--}}
-                        {{--                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3.jpg')}}"></div>--}}
-                        {{--                     <h4 class="darkcolor">Doe Raleway</h4>--}}
-                        {{--                     <small class="defaultcolor">Businessman</small>--}}
-                        {{--                  </div>--}}
-                        {{--               </div>--}}
-                        {{--               <div class="item">--}}
-                        {{--                  <div class="testimonial-wrapp">--}}
-                        {{--                     <span class="quoted"><i class="fa fa-quote-right"></i></span>--}}
-                        {{--                     <div class="testimonial-text">--}}
-                        {{--                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>--}}
-                        {{--                     </div>--}}
-                        {{--                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-1.jpg')}}"></div>--}}
-                        {{--                     <h4 class="darkcolor">Shamoun Raleway</h4>--}}
-                        {{--                     <small class="defaultcolor">Businessman</small>--}}
-                        {{--                  </div>--}}
-                        {{--               </div>--}}
-                        {{--               <div class="item">--}}
-                        {{--                  <div class="testimonial-wrapp">--}}
-                        {{--                     <span class="quoted"><i class="fa fa-quote-right"></i></span>--}}
-                        {{--                     <div class="testimonial-text">--}}
-                        {{--                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>--}}
-                        {{--                     </div>--}}
-                        {{--                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3.jpg')}}"></div>--}}
-                        {{--                     <h4 class="darkcolor">Albugdadi Raleway</h4>--}}
-                        {{--                     <small class="defaultcolor">Businessman</small>--}}
-                        {{--                  </div>--}}
-                        {{--               </div>--}}
-                        {{--               <div class="item">--}}
-                        {{--                  <div class="testimonial-wrapp">--}}
-                        {{--                     <span class="quoted"><i class="fa fa-quote-right"></i></span>--}}
-                        {{--                     <div class="testimonial-text">--}}
-                        {{--                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>--}}
-                        {{--                     </div>--}}
-                        {{--                     <div class="testimonial-photo"><img alt="" src="{{ asset('frontEnd/images/testimonial-3.jpg')}}"></div>--}}
-                        {{--                     <h4 class="darkcolor">Albugdadi Raleway</h4>--}}
-                        {{--                     <small class="defaultcolor">Businessman</small>--}}
-                        {{--                  </div>--}}
-                        {{--               </div>--}}
+                        @endforelse
                     </div>
                 </div>
             </div>
@@ -522,42 +337,27 @@
     <!--Testimonials Ends-->
 
 
-    <!-- Partners -->
+    <<!-- Partners -->
     <section id="logos" class="padding_bottom">
         <div class="container">
             <h3 class="invisible">hidden</h3>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div id="partners-slider" class="owl-carousel">
-                        <div class="item">
-                            <div class="logo-item"> <img alt="" src="{{ asset('frontEnd/images/1.PNG')}}"></div>
+                        <div class="item" style="margin-top: 20px">
+                            <div class="logo-item"> <img alt="" src="{{ asset('new_images/c1.png')}}"></div>
                         </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/2.PNG')}}"></div>
+                        <div class="item" style="margin-top: 20px">
+                            <div class="logo-item"><img alt="" src="{{ asset('new_images/c2.png')}}"></div>
                         </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/3.PNG')}}"></div>
+                        <div class="item" style="margin-top: 20px">
+                            <div class="logo-item"><img alt="" src="{{ asset('new_images/c3.png')}}"></div>
                         </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/4.PNG')}}"></div>
+                        <div class="item" style="margin-top: 20px">
+                            <div class="logo-item"><img alt="" src="{{ asset('new_images/c4.png')}}"></div>
                         </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/5.png')}}"></div>
-                        </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images6.png')}}"></div>
-                        </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/7.png')}}"></div>
-                        </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/8.png')}}"></div>
-                        </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/9.png')}}"></div>
-                        </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="{{ asset('frontEnd/images/10.png')}}"></div>
+                        <div class="item" style="margin-top: 20px">
+                            <div class="logo-item"><img alt="" src="{{ asset('new_images/c5.png')}}"></div>
                         </div>
                     </div>
                 </div>
@@ -572,15 +372,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-sm-6 nopadding">
-                    <div class="image hover-effect"><img src="{{ $latest->featured_image }}" alt="our blog" class="equalheight"></div>
+                    <div class="image hover-effect"><img src="{{ asset('new_images/blog1.jpg')}}" alt="our blog" class="equalheight"></div>
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="split-box text-center center-block equalheight container-padding">
                         <div class="heading-title padding_half">
-                            <span class="wow fadeIn" data-wow-delay="300ms">Read Our Latest News</span>
-                            <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">{{ $latest->title }}</h2>
-                            <p class="heading_space wow fadeIn" data-wow-delay="400ms">{{ \Illuminate\Support\Str::limit($latest->summary, '255', ' (...)') }}</p>
-                            <a href="blog.blade.php" class="button btnsecondary wow fadeInUp" data-wow-delay="500ms">Read Full Story</a>
+                            <span class="wow fadeIn" data-wow-delay="300ms">Berita Terbaru</span>
+                            <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">Cerita tentang perjalanan kami</h2>
+                            <p class="heading_space wow fadeIn" data-wow-delay="400ms">Home Lift merupakan istilah yang saya baru saja dengar. Selama ini kita pasti tahu ya yang namanya lift. Dimana-mana ada. Di setiap gedung, kalau lebih dari tiga lantai pasti pakai lift atau elevator. Mungkin tak ada mahluk perkotaan yang belum pernah merasakan barang ini
+                                Namun demikian, yang baru saja kita tahu, adalah home lift. Lift untuk “rumahan”. Berbeda dengan lift pada umumnya, lift rumahan ini menawarkan sensasi dan kenyamanan yang berbeda, sekaligus inovasi yang cukup wow.</p>
+                            <a href="{{route('lp')}}" class="button btnsecondary wow fadeInUp" data-wow-delay="500ms">Baca Lengkapnya</a>
                         </div>
                     </div>
                 </div>

@@ -31,21 +31,21 @@ class HomeController extends Controller
         return view('welcome', compact('site','testi','package','team','video', 'features', 'process', 'latest','portofolio'));
     }
 
-//    public function homeold()
-//    {
-//        $team = Team::paginate(3);
-//        $portofolio = Portofolio::paginate(9);
-//        $package = Package::with('package_bodies')->get();
-//        $testi = Testimony::get();
-//
-//        $video = DB::table('section_videos')->where('id', '=', 1)->first();
-//        $features = DB::table('section_features')->get();
-//        $process = DB::table('section_processes')->get();
-//
-//        $latest = Post::published()->latest()->first();
-//
-//        return view('welcome_old', compact('team','video', 'features', 'process', 'latest', 'portofolio', 'package', 'testi'));
-//    }
+    public function testFront()
+    {
+        $team = Team::paginate(3);
+        $portofolio = Portofolio::paginate(9);
+        $package = Package::with('package_bodies')->get();
+        $testi = Testimony::get();
+
+        $video = DB::table('section_videos')->where('id', '=', 1)->first();
+        $features = DB::table('section_features')->get();
+        $process = DB::table('section_processes')->get();
+
+        $latest = Post::published()->latest()->first();
+
+        return view('welcome_old', compact('team','video', 'features', 'process', 'latest', 'portofolio', 'package', 'testi'));
+    }
 
     public function feedrequests(Request $request)
     {

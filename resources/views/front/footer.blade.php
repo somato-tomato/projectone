@@ -30,19 +30,20 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 margin_bottom">
-                <form class="getin_form wow fadeInUp" data-wow-delay="400ms" onsubmit="return false;">
+                <form method="post" class="getin_form wow fadeInUp" data-wow-delay="400ms" action="{{url('feedrequests')}}">
+                    @csrf
                     <div class="row">
 
                         <div class="col-sm-12" id="result"></div>
 
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group bottom35">
-                                <input class="form-control" type="text" placeholder="First Name:" required id="first_name" name="first_name">
+                                <input class="form-control" type="text" placeholder="First Name:" required id="first_name" name="first">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group bottom35">
-                                <input class="form-control" type="text" placeholder="Last Name:" required id="last_name" name="last_name">
+                                <input class="form-control" type="text" placeholder="Last Name:" required id="last_name" name="last">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">

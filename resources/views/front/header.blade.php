@@ -2,7 +2,8 @@
 <header class="site-header">
     <nav class="navbar navbar-expand-lg fixed-bottom gradient_bg">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}"> <img src=" {{ asset('images_site/'.$siteConfig->siteLogo) }}" style="height: 50px; width: auto" alt="logo"> </a>
+            <a class="navbar-brand" href="{{ url('/') }}">
+                <img src=" {{ asset('images_site/'.$siteConfig->siteLogo) }}" alt="logo"> </a>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#xenav">
                 <span> </span>
                 <span> </span>
@@ -33,7 +34,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#contactus">contact</a>
-                    </li>close_side_menu
+                    </li>
                 </ul>
             </div>
         </div>
@@ -74,6 +75,12 @@
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#contactus">contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{url('/login')}}" class="nav-link" target="_blank">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{url('/canvas/login')}}" class="nav-link" target="_blank">Login Blog</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -88,7 +95,7 @@
                     <li><a href="{{ $siteConfig->youtube }}"><i class="fa fa-youtube"></i> </a> </li>
                 @endif
             </ul>
-            <p class="whitecolor">&copy; 2021 FDev. Made With Love by D-P</p>
+            <p class="whitecolor">&copy; 2021</p>
         </div>
     </div>
     <a id="close_side_menu" href="javascript:void(0);"></a>

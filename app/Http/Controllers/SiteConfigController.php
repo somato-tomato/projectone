@@ -152,9 +152,9 @@ class SiteConfigController extends Controller
     public function sectionFeature(Request $request)
     {
         $request->validate([
-            'sectionImage' => 'required|mimes:jpeg,png,bmp|max:500',
+            'sectionImage' => 'required|mimes:jpeg,png,bmp|max:1000',
             'sectionName' => 'required|string|max:255',
-            'sectionTitle' => 'required|string|max:255|unique:section_features',
+            'sectionTitle' => 'required|string|unique:section_features',
             'sectionDescription' => 'required|string',
         ]);
 

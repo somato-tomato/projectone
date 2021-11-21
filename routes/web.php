@@ -21,7 +21,7 @@ use App\Http\Controllers\FeedrequestController;
 
 //Route::get('/kntl', [HomeController::class, 'homeold']);
 Route::get('/',[HomeController::class,'home'])->name('h');
-//Route::get('/onepage',[HomeController::class,'home'])->name('home');
+Route::get('/testfront',[HomeController::class,'testFront'])->name('home');
 Route::post('/feedrequests',[HomeController::class,'feedrequests'])->name('feedrequests');
 
 Route::get('/blog', [BlogController::class, 'listPost'])->name('lp');

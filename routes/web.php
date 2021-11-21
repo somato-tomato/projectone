@@ -18,8 +18,6 @@ use App\Http\Controllers\FeedrequestController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-//Route::get('/kntl', [HomeController::class, 'homeold']);
 Route::get('/',[HomeController::class,'home'])->name('h');
 Route::get('/testfront',[HomeController::class,'testFront'])->name('home');
 Route::post('/feedrequests',[HomeController::class,'feedrequests'])->name('feedrequests');

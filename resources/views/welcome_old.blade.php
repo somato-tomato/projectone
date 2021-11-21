@@ -36,7 +36,7 @@
                     <div class="row">
                         <div class="col-lg-6 nopadding aru">
                             <div class="image img-container">
-                                <img alt="" src="{{ asset('images_site/'.$f->sectionImage)}}" class="equalheight">
+                                <img alt="" src="{{ asset('images_site/'.$f->sectionImage)}}" class="equalheight" width="300" height="350">
                             </div>
                         </div>
                         <div class="col-lg-6 nopadding nozomi">

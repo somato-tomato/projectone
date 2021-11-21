@@ -3028,7 +3028,7 @@ iframe  {
    top: 0; left: 0;
    bottom: 0; right: 0;
    position: absolute;
-   background: rgba(33,35,49,.7);
+   /*background: rgba(33,35,49,.7);*/
    z-index: 1;
 }
 .bg-video-container .video-content {

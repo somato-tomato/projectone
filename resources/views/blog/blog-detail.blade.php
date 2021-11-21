@@ -56,7 +56,7 @@
 @include('front.navBlog')
 
 <!--page Header-->
-<section class="page-header parallaxie padding_top">
+<section style="background: url({{ asset('new_images/bg1.jpg') }})" class="page-header parallaxie padding_top">
    <div class="container">
       <div class="row">
          <div class="col-sm-12">

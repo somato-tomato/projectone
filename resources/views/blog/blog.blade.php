@@ -4,14 +4,14 @@
     @include('front.navBlog')
 
     <!--page Header-->
-    <section class="page-header parallaxie padding_top center-block">
+    <section style="background: url({{ asset('new_images/bg1.jpg') }})" class="page-header parallaxie padding_top center-block">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="page-titles text-center">
                         <h2 class="whitecolor font-light bottom30">latest Blog</h2>
                         <ul class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="{{url('/onepage')}}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">latest Blog</li>
                         </ul>
                     </div>

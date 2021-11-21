@@ -3,22 +3,22 @@
         Dasbor
     </li>
     <li>
-        <a href="{{ route('dashboard') }}"><i class="fas fa-chart-line"></i>Dasbor</a>
+        <a href="{{ route('dashboard') }}"><i class="fas fa-dashboard"></i>Dasbor</a>
     </li>
     <li>
-        <a href="{{ route('site.sc') }}"><i class="fas fa-chart-line"></i>Konfigurasi Situs</a>
+        <a href="{{ route('site.sc') }}"><i class="fas fa-cog"></i>Konfigurasi Situs</a>
     </li>
     <li>
-        <a href="{{ route('team.index') }}"><i class="fas fa-chart-line"></i>Team</a>
+        <a href="{{ route('team.index') }}"><i class="fas fa-user-plus"></i>Team</a>
     </li>
     <li>
-        <a href="{{ route('portofolio.index') }}"><i class="fas fa-chart-line"></i>Portofolio</a>
+        <a href="{{ route('portofolio.index') }}"><i class="fas fa-th-list"></i>Portofolio</a>
     </li>
     <li>
-        <a href="{{ route('site.t') }}"><i class="fas fa-chart-line"></i>Testimoni</a>
+        <a href="{{ route('site.t') }}"><i class="fas fa-users"></i>Testimoni</a>
     </li>
     <li>
-        <a href="{{ route('package.index') }}"><i class="fas fa-chart-line"></i>Package</a>
+        <a href="{{ route('package.index') }}"><i class="fas fa-hand-holding-heart"></i>Package</a>
     </li>
     <li>
         <a href="{{ route('clientlogo.index') }}"><i class="fas fa-chart-line"></i>Client Logo</a>

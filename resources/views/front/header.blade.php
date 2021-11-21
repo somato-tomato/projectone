@@ -75,12 +75,12 @@
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#contactus">contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="{{url('/login')}}" class="nav-link" target="_blank">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{url('/canvas/login')}}" class="nav-link" target="_blank">Login Blog</a>
-                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="{{url('/login')}}" class="nav-link" target="_blank">Login</a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="{{url('/canvas/login')}}" class="nav-link" target="_blank">Login Blog</a>--}}
+{{--                    </li>--}}
                 </ul>
             </nav>
 

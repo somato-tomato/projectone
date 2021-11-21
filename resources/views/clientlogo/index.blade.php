@@ -6,7 +6,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="card-title">
-                        clientlogo
+                        client logo
                     </div>
                     <hr>
                                     <div class="">

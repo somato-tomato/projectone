@@ -781,7 +781,7 @@
       <div class="row">
          <div class="col-md-12 col-sm-12 text-center">
             <ul class="social-icons bottom25 wow fadeInUp" data-wow-delay="300ms">
-               <li><a href="https://m.facebook.com/elevaindorasmi"><i class="fa fa-facebook"></i> </a> </li>
+               <li><a href="https://www.facebook.com/elevaindorasmi"><i class="fa fa-facebook"></i> </a> </li>
                <li><a href="https://www.youtube.com/channel/UCHaIRS-m4-b1qy8cnstXTAQ/featured"><i class="fa fa-youtube"></i> </a> </li>
                <li><a href="https://www.instagram.com/liftrumah.id/"><i class="fa fa-instagram"></i> </a> </li>
                <li><a href="mailto:eleva.elevator@gmail.com"><i class="fa fa-envelope-o"></i> </a> </li>

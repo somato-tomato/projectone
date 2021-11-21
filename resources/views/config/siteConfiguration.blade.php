@@ -110,6 +110,9 @@
                         </div>
                         @endif
                     </div>
+                    <div class="text-center">
+                        <p>{{ $siteConfig->email }}</p>
+                    </div>
                     <div class="row text-center">
                         @if($siteConfig->facebook)
                             <div class="col-md-4">
@@ -155,16 +158,16 @@
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="{{ asset('/videos_site/'.$sectionVideo->video) }}"></iframe>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Deskripsi 1</p>
-                                <p><b>{{ $sectionVideo->description }}</b></p>
-                            </div>
-                            <div class="col-md-6">
-                                <p>Deskripsi 2</p>
-                                <p><b>{{ $sectionVideo->descriptionDua }}</b></p>
-                            </div>
-                        </div>
+{{--                        <div class="row">--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <p>Deskripsi 1</p>--}}
+{{--                                <p><b>{{ $sectionVideo->description }}</b></p>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <p>Deskripsi 2</p>--}}
+{{--                                <p><b>{{ $sectionVideo->descriptionDua }}</b></p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <button type="button" class="btn btn-lg btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#sectionVideo"
                                 data-desc="{{ $sectionVideo->description }}"
                                 data-descTwo="{{ $sectionVideo->descriptionDua }}"
@@ -268,7 +271,7 @@
                     <h5 class="modal-title" id="exampleModalLabel">Perbarui Konfigurasi Situs</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form id="fileUploadForm" action="{{ route('site.usc') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('site.usc') }}" method="post" enctype="multipart/form-data" autocomplete="off">
                     @csrf
                     <div class="modal-body">
                         <div class="form-group">
@@ -315,7 +318,7 @@
                     <h5 class="modal-title" id="exampleModalLabel">Perbarui Konfigurasi Situs</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form id="fileUploadForm" action="{{ route('site.usm') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('site.usm') }}" method="post" enctype="multipart/form-data" autocomplete="off">
                     @csrf
                     <div class="modal-body">
                         <div class="form-group">
@@ -332,7 +335,7 @@
                                 <div class="form-group">
                                     <label for="email" class="form-label">Email</label>
                                     <input class="form-control @error('email') is-invalid @enderror" type="email" name="email" id="email">
-                                    @error('alamat')
+                                    @error('email')
                                     <span class="invalid-feedback">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -414,7 +417,7 @@
                     <h5 class="modal-title" id="exampleModalLabel">Perbarui Konfigurasi Situs</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form id="fileUploadForm" action="{{ route('site.usv') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('site.usv') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
                         <div class="form-group">
@@ -426,35 +429,35 @@
                                         </span>
                             @enderror
                         </div>
-                        <div class="form-group">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="description" class="form-label">Deskripsi Pertama</label>
-                                    <input class="form-control @error('description') is-invalid @enderror" type="text" name="description" id="description">
-                                    @error('description')
-                                    <span class="invalid-feedback">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="descriptionDua" class="form-label">Deskripsi Kedua</label>
-                                    <input class="form-control @error('descriptionDua') is-invalid @enderror" type="text" name="descriptionDua" id="descriptionDua">
-                                    @error('descriptionDua')
-                                    <span class="invalid-feedback">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-                        </div>
+{{--                        <div class="form-group">--}}
+{{--                            <div class="progress">--}}
+{{--                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="row">--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="description" class="form-label">Deskripsi Pertama</label>--}}
+{{--                                    <input class="form-control @error('description') is-invalid @enderror" type="text" name="description" id="description">--}}
+{{--                                    @error('description')--}}
+{{--                                    <span class="invalid-feedback">--}}
+{{--                                            <strong>{{ $message }}</strong>--}}
+{{--                                        </span>--}}
+{{--                                    @enderror--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="descriptionDua" class="form-label">Deskripsi Kedua</label>--}}
+{{--                                    <input class="form-control @error('descriptionDua') is-invalid @enderror" type="text" name="descriptionDua" id="descriptionDua">--}}
+{{--                                    @error('descriptionDua')--}}
+{{--                                    <span class="invalid-feedback">--}}
+{{--                                            <strong>{{ $message }}</strong>--}}
+{{--                                        </span>--}}
+{{--                                    @enderror--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -676,7 +679,7 @@
                     var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
                     $.ajax({
                         method: 'DELETE',
-                        url: "{{ route('site.dsf','') }}"+'/'+x,
+                        url: "{{ url('/pengaturan-situs/hapus/fitur') }}"+'/'+x,
                         data: {_token: CSRF_TOKEN},
                         dataType: 'JSON',
                         success: function (response)
@@ -770,38 +773,38 @@
             mprocessDesc.value = processDesc
         })
     </script>
-    <script>
-        const Toast = Swal.mixin({
-            toast: true,
-            position: 'top-end',
-            showConfirmButton: false,
-            timer: 2500,
-            timerProgressBar: true,
-        })
+{{--    <script>--}}
+{{--        const Toast = Swal.mixin({--}}
+{{--            toast: true,--}}
+{{--            position: 'top-end',--}}
+{{--            showConfirmButton: false,--}}
+{{--            timer: 2500,--}}
+{{--            timerProgressBar: true,--}}
+{{--        })--}}
 
-        $(function () {
-            $(document).ready(function () {
-                $('#fileUploadForm').ajaxForm({
-                    beforeSend: function () {
-                        var percentage = '0';
-                    },
-                    uploadProgress: function (event, position, total, percentComplete) {
-                        var percentage = percentComplete;
-                        $('.progress .progress-bar').css("width", percentage+'%', function() {
-                            return $(this).attr("aria-valuenow", percentage) + "%";
-                        })
-                    },
-                    complete: function (xhr) {
-                        Toast.fire({
-                            icon: 'success',
-                            title: 'Signed in successfully'
-                        })
-                        setTimeout(function(){// wait for 5 secs(2)
-                            location.reload(); // then reload the page.(3)
-                        }, 2500);
-                    }
-                });
-            });
-        });
-    </script>
+{{--        $(function () {--}}
+{{--            $(document).ready(function () {--}}
+{{--                $('#fileUploadForm').ajaxForm({--}}
+{{--                    beforeSend: function () {--}}
+{{--                        var percentage = '0';--}}
+{{--                    },--}}
+{{--                    uploadProgress: function (event, position, total, percentComplete) {--}}
+{{--                        var percentage = percentComplete;--}}
+{{--                        $('.progress .progress-bar').css("width", percentage+'%', function() {--}}
+{{--                            return $(this).attr("aria-valuenow", percentage) + "%";--}}
+{{--                        })--}}
+{{--                    },--}}
+{{--                    complete: function (xhr) {--}}
+{{--                        Toast.fire({--}}
+{{--                            icon: 'success',--}}
+{{--                            title: 'Signed in successfully'--}}
+{{--                        })--}}
+{{--                        setTimeout(function(){// wait for 5 secs(2)--}}
+{{--                            location.reload(); // then reload the page.(3)--}}
+{{--                        }, 2500);--}}
+{{--                    }--}}
+{{--                });--}}
+{{--            });--}}
+{{--        });--}}
+{{--    </script>--}}
 @endpush

@@ -140,8 +140,6 @@
         </div>
     </div>
     <a id="close_side_menu" href="javascript:void(0);"></a>
-    <!-- End side menu --PT. INDORASMI PERKASA>
- <!-- header -->
 
     <!--Ful Screen Section Video with caption-->
     <section class="full-screen parallax-video parallaxie center-block bg-video-container" id="ourhome">

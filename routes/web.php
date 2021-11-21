@@ -19,8 +19,9 @@ use App\Http\Controllers\FeedrequestController;
 |
 */
 
-//Route::get('/te',[HomeController::class,'home'])->name('h');
-Route::get('/onepage',[HomeController::class,'home'])->name('home');
+//Route::get('/kntl', [HomeController::class, 'homeold']);
+Route::get('/',[HomeController::class,'home'])->name('h');
+//Route::get('/onepage',[HomeController::class,'home'])->name('home');
 Route::post('/feedrequests',[HomeController::class,'feedrequests'])->name('feedrequests');
 
 Route::get('/blog', [BlogController::class, 'listPost'])->name('lp');
@@ -42,7 +43,7 @@ Route::group(["middleware" => ['auth:sanctum', 'verified']], function () {
     Route::get('/testimoni', [SiteConfigController::class, 'testimony'])->name('site.t');
 
     Route::post('/pengaturan-situs/perbarui-proses', [SiteConfigController::class, 'upProcess'])->name('site.up');
-    Route::delete('/pengaturan-situs/hapus/{id}/fitur', [SiteConfigController::class, 'deleteSectionFeature'])->name('site.dsf');
+    Route::delete('/pengaturan-situs/hapus/fitur/{id}', [SiteConfigController::class, 'deleteSectionFeature'])->name('site.dsf');
     Route::post('/pengautran-situs/simpan-fitur', [SiteConfigController::class, 'sectionFeature'])->name('site.sf');
     Route::post('/pengaturan-situs/simpan-video', [SiteConfigController::class, 'upSectionVideo'])->name('site.usv');
     Route::post('/pengaturan-situs/simpan-sosmed', [SiteConfigController::class, 'upSocialMedia'])->name('site.usm');

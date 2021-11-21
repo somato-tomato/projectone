@@ -50,6 +50,7 @@ class SiteConfigController extends Controller
             'siteDescription' => 'string|max:255',
             'siteLogo' => 'mimes:jpeg,png,bmp|max:512',
         ]);
+
         if ($request->siteLogo)
         {
             $file = $request->file('siteLogo');
@@ -59,6 +60,7 @@ class SiteConfigController extends Controller
         } else {
             $new_name = 'NULL';
         }
+
         SiteConfiguration::updateOrCreate(
             ['id' => 1],
             [
@@ -100,26 +102,19 @@ class SiteConfigController extends Controller
 
     public function upSocialMedia(Request $request)
     {
-        $form_data = array(
-            'alamat' => $request->alamat,
-            'telponSatu' => $request->telponSatu,
-            'telponDua' => $request->telponDua,
-            'facebook' => $request->facebook,
-            'youtube' => $request->youtube,
-            'instagram' => $request->instagram
-        );
-
         SiteConfiguration::updateOrCreate(
             ['id' => 1],
             [
                 'alamat' => $request->alamat,
                 'telponSatu' => $request->telponSatu,
                 'telponDua' => $request->telponDua,
+                'email' => $request->email,
                 'facebook' => $request->facebook,
                 'youtube' => $request->youtube,
                 'instagram' => $request->instagram
             ]
         );
+
         Alert::success('Berhasil !', 'Situs berhasil di perbarui !');
 
         return back();
@@ -129,7 +124,6 @@ class SiteConfigController extends Controller
     {
         $request->validate([
             'video' => 'mimes:mp4,mov,ogg,webm|max:20000',
-            'description' => 'required|string|max:255',
         ]);
 
         if ($request->video)
@@ -146,12 +140,13 @@ class SiteConfigController extends Controller
             ['id' => 1],
             [
                 'video' => $new_name,
-                'description' =>  $request->description,
-                'descriptionDua' => $request->descriptionDua
+//                'description' =>  $request->description,
+//                'descriptionDua' => $request->descriptionDua
             ]
         );
 
-        return response()->json(['success'=>'Successfully uploaded.']);
+        Alert::success('Sukses', 'Situs berhasil diperbarui !');
+        return back();
     }
 
     public function sectionFeature(Request $request)

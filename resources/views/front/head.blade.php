@@ -6,15 +6,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>{{ $siteConfig->siteName }}</title>
+    <title>PT.Indorasmi Perkasa</title>
 
     <meta name="description" content="{{ $siteConfig->siteDescription }}">
 
     {{--    Open Graph Card--}}
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ $siteConfig->siteName }}" />
-    <meta property="og:description" content="{{ $siteConfig->siteDescription }}" />
+    <meta property="og:title" content="PT.Indorasmi Perkasa" />
+{{--    <meta property="og:description" content="{{ $siteConfig->siteDescription }}" />--}}
     <meta property="og:image" content="{{ asset($siteConfig->siteLogo) }}" />
     <meta property="twitter:card" content="website" />
 

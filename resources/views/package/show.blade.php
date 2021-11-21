@@ -33,11 +33,13 @@
                             <div class="card mt-3">
                                 <div class="card h-100">
                                     <div class="card-body">
-                                        <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">assignment&nbsp;</i>Project Status</h6>
+                                        <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Package&nbsp;<br></i></h6>
+                                            <ul>
+                                                @foreach($group1 as $teams)
+                                                <li>{{$teams->content}}</li>
+                                                @endforeach
+                                            </ul>
 
-                                        @foreach($group1 as $teams)
-                                                <small>{{$teams->content}}</small>
-                                        @endforeach
                                     </div>
                                 </div>
                             </div>

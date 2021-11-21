@@ -21,6 +21,6 @@
         <a href="{{ route('package.index') }}"><i class="fas fa-chart-line"></i>Package</a>
     </li>
     <li>
-        <a href="{{ route('package.index') }}"><i class="fas fa-chart-line"></i>Package</a>
+        <a href="{{ route('clientlogo.index') }}"><i class="fas fa-chart-line"></i>Client Logo</a>
     </li>
 </ul>

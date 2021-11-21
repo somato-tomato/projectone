@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ClientLogo;
 use App\Models\Feedrequest;
 use App\Models\Package;
 use App\Models\Portofolio;
@@ -37,6 +38,7 @@ class HomeController extends Controller
         $portofolio = Portofolio::paginate(9);
         $package = Package::with('package_bodies')->get();
         $testi = Testimony::get();
+        $client = ClientLogo::get();
 
         $video = DB::table('section_videos')->where('id', '=', 1)->first();
         $features = DB::table('section_features')->get();
@@ -44,7 +46,7 @@ class HomeController extends Controller
 
         $latest = Post::published()->latest()->first();
 
-        return view('welcome_old', compact('team','video', 'features', 'process', 'latest', 'portofolio', 'package', 'testi'));
+        return view('welcome_old', compact('client','team','video', 'features', 'process', 'latest', 'portofolio', 'package', 'testi'));
     }
 
     public function feedrequests(Request $request)

@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="row">
-                @forelse($team as $teams)
+                @foreach($team as $teams)
                     <div class="col-md-4 col-xs-12">
                         <div class="team-box top60 wow fadeIn" data-wow-delay="350ms">
                             <div class="image">
@@ -139,11 +139,7 @@
                             </div>
                         </div>
                     </div>
-                @empty
-                    <div class="text-center">
-                        <h3>Team belum di tambahkan </h3>
-                    </div>
-                @endforelse
+                @endforeach
             </div>
         </div>
     </section>
@@ -196,6 +192,9 @@
                         <h3>Produk belum di tambahkan </h3>
                     </div>
                 @endforelse
+            </div>
+            <div style="justify-content: center">
+                {{ $portofolio->links() }}
             </div>
         </div>
     </section>
@@ -290,7 +289,7 @@
                     <div class="heading-title whitecolor text-md-start text-center wow fadeIn" data-wow-delay="500ms">
                         <span >We have an excellent story</span>
                         <h2 class="fontregular">Watch Our Video</h2>
-                        <a data-fancybox href="https://youtu.be/ecjSmq-5680?list=TLGGYHkkgSG1gGQxMDExMjAyMQ" class="button btnprimary fontmedium top20"><i class="fa fa-play"></i> &nbsp;Play Now</a>
+                        <a data-fancybox href="https://youtu.be/ecjSmq-5680?list=TLGGYHkkgSG1gGQxNjExMjAyMQ&t=10" class="button btnprimary fontmedium top20"><i class="fa fa-play"></i> &nbsp;Play Now</a>
                     </div>
                 </div>
             </div>
@@ -336,34 +335,40 @@
     </section>
     <!--Testimonials Ends-->
 
-
-    <<!-- Partners -->
     <section id="logos" class="padding_bottom">
         <div class="container">
             <h3 class="invisible">hidden</h3>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div id="partners-slider" class="owl-carousel">
+                        @foreach($client as $cl)
                         <div class="item" style="margin-top: 20px">
-                            <div class="logo-item"> <img alt="" src="{{ asset('new_images/c1.png')}}"></div>
-                        </div>
-                        <div class="item" style="margin-top: 20px">
-                            <div class="logo-item"><img alt="" src="{{ asset('new_images/c2.png')}}"></div>
-                        </div>
-                        <div class="item" style="margin-top: 20px">
-                            <div class="logo-item"><img alt="" src="{{ asset('new_images/c3.png')}}"></div>
-                        </div>
-                        <div class="item" style="margin-top: 20px">
-                            <div class="logo-item"><img alt="" src="{{ asset('new_images/c4.png')}}"></div>
-                        </div>
-                        <div class="item" style="margin-top: 20px">
-                            <div class="logo-item"><img alt="" src="{{ asset('new_images/c5.png')}}"></div>
-                        </div>
+                                                    <div class="logo-item"> <img alt="" src="{{ asset('images_site/'.$cl->image)}}"></div>
+                                                </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <<!-- Partners -->
+{{--    <section id="logos" class="padding_bottom">--}}
+{{--        <div class="container">--}}
+{{--            <h3 class="invisible">hidden</h3>--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-md-12 col-sm-12">--}}
+{{--                    <div id="partners-slider" class="owl-carousel">--}}
+{{--                        @foreach($client as $cl)--}}
+{{--                        <div class="item" style="margin-top: 20px">--}}
+{{--                            <div class="logo-item"> <img alt="" src="{{ asset('images_site/'.$cl->image)}}"></div>--}}
+{{--                        </div>--}}
+{{--                        @endforeach--}}
+
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
     <!--Partners Ends-->
 
 

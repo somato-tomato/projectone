@@ -4,12 +4,12 @@
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <div class="heading-title heading_space wow fadeInUp" data-wow-delay="300ms">
-                    <span>Lets Get In Touch</span>
-                    <h2 class="darkcolor">Contact {{ $siteConfig->siteName }}</h2>
+{{--                    <span>Lets Get In Touch</span>--}}
+                    <h2 class="darkcolor">Contact Eleva.id</h2>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 margin_bottom wow fadeInUp" data-wow-delay="350ms">
-                <p>{{ $siteConfig->siteDescription }}</p>
+                <p style="text-align: justify">{{ $siteConfig->siteDescription }}</p>
                 <div class="row">
                     <div class="col-md-6 col-sm-6 our-address top40">
                         <h5 class="bottom25">Our Address</h5>
@@ -71,7 +71,7 @@
     </div>
 
     <!--Location Map here-->
-    <div id="map-container"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.306952197492!2d106.84752771471683!3d-6.22319659549515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f38ee5d21441%3A0x44b3ece8d15487ea!2sRT.6%2FRW.2%2C%20South%20Manggarai%2C%20Tebet%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1636822551297!5m2!1sen!2sid"width="800" height="600"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 <!--Contact US Ends-->
 
@@ -90,6 +90,7 @@
                     @if($siteConfig->instagram)
                         <li><a href="{{ $siteConfig->instagram }}"><i class="fa fa-linkedin"></i> </a> </li>
                     @endif
+                        <li><a href="mailto:eleva.elevator@gmail.com"><i class="fa fa-envelope-o"></i> </a> </li>
                 </ul>
                 <p class="copyrights wow fadeInUp" data-wow-delay="350ms"> &copy; 2021 {{ $siteConfig->siteName }}</p>
             </div>

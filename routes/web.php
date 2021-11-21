@@ -35,6 +35,7 @@ Route::group(["middleware" => ['auth:sanctum', 'verified']], function () {
     Route::resource('portofolio', PortofolioController::class);
     Route::resource('package', PackageController::class);
     Route::resource('request', FeedrequestController::class);
+    Route::resource('clientlogo', \App\Http\Controllers\ClientLogoController::class);
 
     Route::delete('/testimoni/hapus/{id}/testimoni', [SiteConfigController::class, 'deleteTestimony'])->name('site.dt');
     Route::post('/testimoni/simpan-testimoni', [SiteConfigController::class, 'addTestimony'])->name('site.at');

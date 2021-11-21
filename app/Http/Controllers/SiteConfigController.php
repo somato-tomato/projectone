@@ -45,11 +45,11 @@ class SiteConfigController extends Controller
 
     public function upSiteConfig(Request $request)
     {
-        $request->validate([
-            'siteName' => 'required|string',
-            'siteDescription' => 'string|max:255',
-            'siteLogo' => 'mimes:jpeg,png,bmp|max:512',
-        ]);
+//        $request->validate([
+//            'siteName' => 'required|string',
+//            'siteDescription' => 'string|max:255',
+//            'siteLogo' => 'mimes:jpeg,png,bmp|max:512',
+//        ]);
 
         if ($request->siteLogo)
         {
@@ -122,9 +122,9 @@ class SiteConfigController extends Controller
 
     public function upSectionVideo(Request $request)
     {
-        $request->validate([
-            'video' => 'mimes:mp4,mov,ogg,webm|max:20000',
-        ]);
+//        $request->validate([
+//            'video' => 'mimes:mp4,mov,ogg,webm|max:20000',
+//        ]);
 
         if ($request->video)
         {
@@ -151,12 +151,12 @@ class SiteConfigController extends Controller
 
     public function sectionFeature(Request $request)
     {
-        $request->validate([
-            'sectionImage' => 'required|mimes:jpeg,png,bmp|max:1000',
-            'sectionName' => 'required|string|max:255',
-            'sectionTitle' => 'required|string|unique:section_features',
-            'sectionDescription' => 'required|string',
-        ]);
+//        $request->validate([
+//            'sectionImage' => 'required|mimes:jpeg,png,bmp|max:1000',
+//            'sectionName' => 'required|string|max:255',
+//            'sectionTitle' => 'required|string|unique:section_features',
+//            'sectionDescription' => 'required|string',
+//        ]);
 
         $file = $request->file('sectionImage');
         $slug_photo = Str::slug($file->getClientOriginalName(), '-');
@@ -200,12 +200,12 @@ class SiteConfigController extends Controller
 
     public function addTestimony(Request $request)
     {
-        $request->validate([
-            'testimony' => 'required|string',
-            'name' => 'required|string',
-            'occupation' => 'required|string',
-            'photo' => 'required|mimes:jpeg,png,bmp|max:500'
-        ]);
+//        $request->validate([
+//            'testimony' => 'required|string',
+//            'name' => 'required|string',
+//            'occupation' => 'required|string',
+//            'photo' => 'required|mimes:jpeg,png,bmp|max:500'
+//        ]);
 
         $file = $request->file('photo');
         $slug_photo = Str::slug($file->getClientOriginalName(), '-');

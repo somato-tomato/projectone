@@ -42,7 +42,7 @@
                         @foreach($package as $ret)
                             <tr>
                                 <td class="col-lg-none">{{$i++}}</td>
-                                <td>{{$ret->call ?? ''}}</td>
+                                <td>{{$ret->judul ?? ''}}</td>
                                 <td>{{\Carbon\Carbon::parse($ret->created_at ?? '')->format('d M Y')}}</td>
                                 <td>
                                     <form method="post" class="delete_form" action="{{ route('package.destroy',$ret->id) }}" id="studentForm_{{$ret->id}}">

@@ -12,10 +12,10 @@
             <div class="collapse navbar-collapse" id="xenav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link pagescroll" href="#ourhome">Home</a>
+                        <a class="nav-link pagescroll" href="#ourhome">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#aboutus">Features</a>
+                        <a class="nav-link pagescroll" href="#aboutus">Fitur</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#our-team">Team</a>
@@ -24,16 +24,16 @@
                         <a class="nav-link pagescroll" href="#portfolio-xe">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#our-pricings">Packages</a>
+                        <a class="nav-link pagescroll" href="#our-pricings">Paket</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#our-testimonial">Clients</a>
+                        <a class="nav-link pagescroll" href="#our-testimonial">Klien</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#our-blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#contactus">contact</a>
+                        <a class="nav-link pagescroll" href="#contactus">Kontak</a>
                     </li>
                 </ul>
             </div>
@@ -52,10 +52,10 @@
             <nav class="side-nav">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item active">
-                        <a class="nav-link pagescroll" href="#ourhome">Home</a>
+                        <a class="nav-link pagescroll" href="#ourhome">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#aboutus">Features</a>
+                        <a class="nav-link pagescroll" href="#aboutus">Fitur</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#our-team">Team</a>
@@ -64,16 +64,16 @@
                         <a class="nav-link pagescroll" href="#portfolio-xe">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#our-pricings">Packages</a>
+                        <a class="nav-link pagescroll" href="#our-pricings">Paket</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#our-testimonial">Clients</a>
+                        <a class="nav-link pagescroll" href="#our-testimonial">Klien</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#our-blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#contactus">contact</a>
+                        <a class="nav-link pagescroll" href="#contactus">Kontak</a>
                     </li>
 {{--                    <li class="nav-item">--}}
 {{--                        <a href="{{url('/login')}}" class="nav-link" target="_blank">Login</a>--}}

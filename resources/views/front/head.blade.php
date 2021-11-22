@@ -114,7 +114,7 @@
     (function () {
         var options = {
             whatsapp: "+6287811781180", // WhatsApp number
-            call_to_action: "Message us", // Call to action
+            call_to_action: "Chat Kami", // Call to action
             position: "right", // Position may be 'right' or 'left'
         };
         var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;

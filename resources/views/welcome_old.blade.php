@@ -10,7 +10,7 @@
                 <div class="col-md-2 col-sm-1"></div>
                 <div class="col-md-12 col-sm-12">
                     <div class="center-item text-center video-content">
-                        <img src="{{ asset('frontEnd/images/logo.png')}}" alt="logo" style="width: 300px" class="" data-wow-delay="500ms">
+{{--                        <img src="{{ asset('frontEnd/images/logo.png')}}" alt="logo" style="width: 300px" class="" data-wow-delay="500ms">--}}
 
                         {{--                        <h2 class="text-capitalize top50 bottom35  whitecolor">--}}
 {{--                     <span class="font-xlight block wow fadeIn" data-wow-delay="400ms">{{ $video->description }}--}}
@@ -63,7 +63,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
                     <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-                        <h2 class="whitecolor">Work <span class="fontregular">Process</span> </h2>
+                        <h2 class="whitecolor">Proses <span class="fontregular">Kerja Kami</span> </h2>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2 col-sm-12 text-center">
                     <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-                        <span>Heros Behind the Company</span>
+{{--                        <span>Heros Behind the Company</span>--}}
                         <h2 class="darkcolor bottom20">Team Kami</h2>
                         {{--               <p class="bottom10">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>--}}
                     </div>
@@ -171,7 +171,7 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2 col-sm-12 text-center">
                     <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-                        <span>Portfolio Designs</span>
+{{--                        <span>Portfolio Designs</span>--}}
                         <h2 class="darkcolor bottom10">Pemasangan Kami</h2>
                         {{--               <p class="heading_space">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>--}}
                     </div>
@@ -205,7 +205,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-sm-12 margin_bottom whitecolor text-md-start text-center wow fadeInLeft" data-wow-delay="300ms">
-                    <h3 class="bottom25">Pengalaman kami selama bertahun-tahun</h3>
+                    <h3 class="bottom25">Pengalaman kami</h3>
                     <p class="title">Kami menunjukkan kepada Anda pencapaian profesional kami, keterampilan, kepuasan, dan kepercayaan yang diperoleh dari banyak klien dan kolega.</p>
                 </div>
                 <div class="col-md-7 col-sm-12 text-center">
@@ -215,7 +215,7 @@
                                 <i class="fa fa-smile-o"></i>
                             </div>
                             <div class="counters">
-                                <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
+                                <span class="count_nums" data-to="50" data-speed="100"> </span> <i class="fa fa-plus"></i>
                             </div>
                             <p class="title">Pelanggan Terpuaskan</p>
                         </div>
@@ -260,7 +260,7 @@
                 @forelse($package as $packages)
                     <div class="col-md-4 col-sm-12">
                         <div class="price-table top60 wow fadeIn" data-wow-delay="300ms">
-                            <h3 class="bottom20 darkcolor">{{$packages->judul}}r</h3>
+                            <h3 class="bottom20 darkcolor">{{$packages->judul}}</h3>
                             <ul class="top20">
                                 @foreach($packages->package_bodies as $data)
                                     <li><span>{{$data->content}}</span></li>
@@ -287,8 +287,8 @@
             <div class="row">
                 <div class="col-md-7 col-sm-7">
                     <div class="heading-title whitecolor text-md-start text-center wow fadeIn" data-wow-delay="500ms">
-                        <span >We have an excellent story</span>
-                        <h2 class="fontregular">Watch Our Video</h2>
+{{--                        <span >Cerita Kami</span>--}}
+                        <h2 class="fontregular">Tonton Video Kami</h2>
                         <a data-fancybox href="https://youtu.be/ecjSmq-5680?list=TLGGYHkkgSG1gGQxNjExMjAyMQ&t=10" class="button btnprimary fontmedium top20"><i class="fa fa-play"></i> &nbsp;Play Now</a>
                     </div>
                 </div>
@@ -377,7 +377,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-sm-6 nopadding">
-                    <div class="image hover-effect"><img src="{{ asset('new_images/blog1.jpg')}}" alt="our blog" class="equalheight"></div>
+                    <div class="image hover-effect"><img src="{{ asset('new_images/lift1.jpg')}}" alt="our blog" class="equalheight" height="500" width="400"></div>
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="split-box text-center center-block equalheight container-padding">

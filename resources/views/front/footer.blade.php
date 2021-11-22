@@ -5,27 +5,27 @@
             <div class="col-md-12 col-sm-12">
                 <div class="heading-title heading_space wow fadeInUp" data-wow-delay="300ms">
 {{--                    <span>Lets Get In Touch</span>--}}
-                    <h2 class="darkcolor">Contact Eleva.id</h2>
+                    <h2 class="darkcolor">Kontak eleva.id</h2>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 margin_bottom wow fadeInUp" data-wow-delay="350ms">
                 <p style="text-align: justify">{{ $siteConfig->siteDescription }}</p>
                 <div class="row">
                     <div class="col-md-6 col-sm-6 our-address top40">
-                        <h5 class="bottom25">Our Address</h5>
+                        <h5 class="bottom25">Alamat Kami</h5>
                         <p class="bottom15">{{ $siteConfig->alamat }}</p>
                     </div>
                     <div class="col-md-6 col-sm-6 our-address top40">
-                        <h5 class="bottom25">Our Phone</h5>
-                        <p class="bottom15">Telephone Number : 0{{ $siteConfig->telponSatu }} <span class="block">
+                        <h5 class="bottom25">Kontak Kami</h5>
+                        <p class="bottom15">Nomor Kontak : 0{{ $siteConfig->telponSatu }} <span class="block">
                                 @if($siteConfig->telponDua)
-                                    Telephone Number : 0{{ $siteConfig->telponDua }}
+                                    Nomor Kontak 2  : 0{{ $siteConfig->telponDua }}
                                 @endif
                   </span> </p>
                     </div>
                     <div class="col-md-6 col-sm-6 our-address top40">
-                        <h5 class="bottom25">Our Email</h5>
-                        <p class="bottom15">Main Email : {{ $siteConfig->email }}  </p>
+                        <h5 class="bottom25">Email Kami</h5>
+                        <p class="bottom15">Email : {{ $siteConfig->email }}  </p>
                     </div>
                 </div>
             </div>
@@ -38,12 +38,12 @@
 
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group bottom35">
-                                <input class="form-control" type="text" placeholder="First Name:" required id="first_name" name="first">
+                                <input class="form-control" type="text" placeholder="Nama Depan:" required id="first_name" name="first">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group bottom35">
-                                <input class="form-control" type="text" placeholder="Last Name:" required id="last_name" name="last">
+                                <input class="form-control" type="text" placeholder="Nama Belakang:" required id="last_name" name="last">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -53,16 +53,16 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group bottom35">
-                                <input class="form-control" type="tel" placeholder="Phone:" id="phone" name="phone">
+                                <input class="form-control" type="tel" placeholder="Telepon:" id="phone" name="phone">
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12">
                             <div class="form-group bottom35">
-                                <textarea class="form-control" placeholder="Message" id="message" name="message"></textarea>
+                                <textarea class="form-control" placeholder="Pesan" id="message" name="message"></textarea>
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <button type="submit" class="button btnprimary" id="submit_btn">submit request</button>
+                            <button type="submit" class="button btnprimary" id="submit_btn">Kirim</button>
                         </div>
                     </div>
                 </form>

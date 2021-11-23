@@ -215,27 +215,27 @@
                                 <i class="fa fa-smile-o"></i>
                             </div>
                             <div class="counters">
-                                <span class="count_nums" data-to="50" data-speed="100"> </span> <i class="fa fa-plus"></i>
+                                <span class="count_nums" data-to="{{$expe->pelanggan}}" data-speed="100"> </span> <i class="fa fa-plus"></i>
                             </div>
-                            <p class="title">Pelanggan Terpuaskan</p>
+                            <p class="title">{{$expe->pelanggan_puas}}</p>
                         </div>
                         <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom wow fadeInRight" data-wow-delay="350ms">
                             <div class="img-icon bottom15">
                                 <i class="fa fa-language"> </i>
                             </div>
                             <div class="counters">
-                                <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
+                                <span class="count_nums" data-to="{{$expe->konsultasi}}" data-speed="100"> </span> <i class="fa fa-plus"></i>
                             </div>
-                            <p class="title">Konsultasi Selesai</p>
+                            <p class="title">{{$expe->konsultasi_selesai}}</p>
                         </div>
                         <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom wow fadeInRight" data-wow-delay="300ms">
                             <div class="img-icon bottom15">
                                 <i class="fa fa-desktop"></i>
                             </div>
                             <div class="counters">
-                                <span class="count_nums" data-to="100" data-speed="100"> </span> <i class="fa fa-plus"></i>
+                                <span class="count_nums" data-to="{{$expe->kegiatan}}" data-speed="100"> </span> <i class="fa fa-plus"></i>
                             </div>
-                            <p class="title">Kegiatan Pelatihan</p>
+                            <p class="title">{{$expe->kegiatan_pelatihan}}</p>
                         </div>
                     </div>
                 </div>
@@ -396,3 +396,32 @@
     <!--Our Blogs Ends-->
 
 @endsection
+{{--<script>--}}
+{{--    $(document).ready(function(){--}}
+
+{{--        var _token = $('input[name="_token"]').val();--}}
+
+{{--        load_data('', _token);--}}
+
+{{--        function load_data(id="", _token)--}}
+{{--        {--}}
+{{--            $.ajax({--}}
+{{--                url:"{{ route('load_data.load_data') }}",--}}
+{{--                method:"POST",--}}
+{{--                data:{id:id, _token:_token},--}}
+{{--                success:function(data)--}}
+{{--                {--}}
+{{--                    $('#load_more_button').remove();--}}
+{{--                    $('#post_data').append(data);--}}
+{{--                }--}}
+{{--            })--}}
+{{--        }--}}
+
+{{--        $(document).on('click', '#load_more_button', function(){--}}
+{{--            var id = $(this).data('id');--}}
+{{--            $('#load_more_button').html('<b>Loading...</b>');--}}
+{{--            load_data(id, _token);--}}
+{{--        });--}}
+
+{{--    });--}}
+{{--</script>--}}

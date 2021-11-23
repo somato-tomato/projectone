@@ -21,6 +21,9 @@
         <a href="{{ route('package.index') }}"><i class="fas fa-hand-holding-heart"></i>Package</a>
     </li>
     <li>
+        <a href="{{ route('experience.edit',1) }}"><i class="fas fa-hand-holding-heart"></i>Experience</a>
+    </li>
+    <li>
         <a href="{{ route('clientlogo.index') }}"><i class="fab fa-drupal"></i>Client Logo</a>
     </li>
     <li>

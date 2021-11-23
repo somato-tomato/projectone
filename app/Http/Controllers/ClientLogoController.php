@@ -19,6 +19,7 @@ class ClientLogoController extends Controller
     public function index()
     {
         $ok = ClientLogo::orderBy('created_at','ASC')->get();
+
         return view('clientlogo.index',compact('ok'));
 
     }

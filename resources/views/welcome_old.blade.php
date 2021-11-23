@@ -178,23 +178,10 @@
                 </div>
             </div>
             <div id="flat-gallery" class="cbp">
-                @forelse($portofolio as $portofolios)
-                    <div class="cbp-item itemshadow">
-                        <img src="{{ asset('images_site/'.$portofolios->image)}}" alt="" style="height:500px">
-                        <div class="overlay center-block whitecolor">
-                            <a class="plus" data-fancybox="gallery" href="{{ asset('images_site/'.$portofolios->image)}}"></a>
-                            <h4 class="top30">{{$portofolios->nama_portofolio}}</h4>
-                            <p>{{$portofolios->deskripsi}}</p>
-                        </div>
-                    </div>
-                @empty
-                    <div class="text-center">
-                        <h3>Produk belum di tambahkan </h3>
-                    </div>
-                @endforelse
+                <livewire:product/>
             </div>
-            <div style="justify-content: center">
-                {{ $portofolio->links() }}
+            <div class="text-center">
+                <a href="javascript:void(0)" id="load-more" class="btn btn-outline-primary btn-lg">Load More</a>
             </div>
         </div>
     </section>

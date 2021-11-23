@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="{{ asset('frontEnd/css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('frontEnd/css/style.css') }}">
 
+    @livewireStyles
+
 </head>
 <body data-bs-spy="scroll" data-bs-target="#xenav">
 
@@ -110,6 +112,7 @@
 <script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.parallax.min.js')}}"></script>
 <script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.slideanims.min.js')}}"></script>
 <script src="{{ asset('frontEnd/js/revolution/extensions/revolution.extension.video.min.js')}}"></script>
+@livewireScripts
 <script>
     (function () {
         var options = {
@@ -138,6 +141,12 @@
         }
     });
 </script>
+<script type="text/javascript">
+    document.getElementById('load-more').onclick = function() {
+        window.livewire.emit('post-data');
+    };
+</script>
+
 @stack('sukuripu')
 </body>
 </html>

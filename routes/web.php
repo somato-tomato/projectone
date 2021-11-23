@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ClientLogoController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SiteConfigController;
 use Illuminate\Support\Facades\Route;
@@ -8,6 +9,7 @@ use App\Http\Controllers\TeamController;
 use App\Http\Controllers\PortofolioController;
 use App\Http\Controllers\PackageController;
 use App\Http\Controllers\FeedrequestController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,7 +37,7 @@ Route::group(["middleware" => ['auth:sanctum', 'verified']], function () {
     Route::resource('portofolio', PortofolioController::class);
     Route::resource('package', PackageController::class);
     Route::resource('request', FeedrequestController::class);
-    Route::resource('clientlogo', \App\Http\Controllers\ClientLogoController::class);
+    Route::resource('clientlogo', ClientLogoController::class);
 
     Route::delete('/testimoni/hapus/{id}/testimoni', [SiteConfigController::class, 'deleteTestimony'])->name('site.dt');
     Route::post('/testimoni/simpan-testimoni', [SiteConfigController::class, 'addTestimony'])->name('site.at');

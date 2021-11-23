@@ -20,7 +20,7 @@ class Product extends Component
 
     public function render()
     {
-        $portofolio = Portofolio::paginate($this->limitPerPage);
+        $portofolio = Portofolio::all();
 
         return view('livewire.product', ['portofolio' => $portofolio]);
     }

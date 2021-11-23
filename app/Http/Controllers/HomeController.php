@@ -35,8 +35,8 @@ class HomeController extends Controller
 
     public function testFront()
     {
-        $team = Team::paginate(3);
-        $portofolio = Portofolio::paginate(9);
+        $team = Team::all();
+        $portofolio = Portofolio::all();
         $package = Package::with('package_bodies')->get();
         $testi = Testimony::get();
         $client = ClientLogo::get();

@@ -23,6 +23,7 @@ use App\Http\Controllers\FeedrequestController;
 //Route::get('/',[HomeController::class,'home'])->name('h');
 Route::get('/',[HomeController::class,'testFront'])->name('home');
 Route::post('/feedrequests',[HomeController::class,'feedrequests'])->name('feedrequests');
+Route::post('/load',[HomeController::class,'load_data'])->name('load_data');
 
 Route::get('/blog', [BlogController::class, 'listPost'])->name('lp');
 Route::get('/blog/{slug}', [BlogController::class, 'showPost'])->name('sp');
@@ -37,7 +38,8 @@ Route::group(["middleware" => ['auth:sanctum', 'verified']], function () {
     Route::resource('portofolio', PortofolioController::class);
     Route::resource('package', PackageController::class);
     Route::resource('request', FeedrequestController::class);
-    Route::resource('clientlogo', ClientLogoController::class);
+    Route::resource('clientlogo', \App\Http\Controllers\ClientLogoController::class);
+    Route::resource('experience', \App\Http\Controllers\ExperienceController::class);
 
     Route::delete('/testimoni/hapus/{id}/testimoni', [SiteConfigController::class, 'deleteTestimony'])->name('site.dt');
     Route::post('/testimoni/simpan-testimoni', [SiteConfigController::class, 'addTestimony'])->name('site.at');
